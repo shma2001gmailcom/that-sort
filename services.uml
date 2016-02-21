@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.misha.services</OriginalElement>
+  <nodes>
+    <node x="566.4020061728395" y="415.0">org.misha.services.service.ServiceProvider</node>
+    <node x="524.1049382716049" y="118.5">org.misha.services.model.Service</node>
+    <node x="221.49999999999994" y="247.0">org.misha.services.service.impl.SearchService</node>
+    <node x="513.2716049382716" y="544.0">org.misha.services.service.Linker</node>
+    <node x="132.0216049382716" y="0.0">org.misha.services.model.Result</node>
+    <node x="10.5" y="108.0">org.misha.services.model.impl.SearchData</node>
+    <node x="678.1049382716049" y="257.0">org.misha.services.service.impl.PrintService</node>
+    <node x="715.75" y="0.0">org.misha.services.model.Data</node>
+    <node x="278.49999999999994" y="118.0">org.misha.services.model.impl.SearchResult</node>
+    <node x="799.4799382716049" y="118.0">org.misha.services.model.impl.PrintData</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.misha.services.service.ServiceProvider" target="org.misha.services.service.impl.PrintService">
+      <point x="73.33333333333337" y="-34.5" />
+      <point x="727.7353395061727" y="395.0" />
+      <point x="793.6049382716049" y="395.0" />
+      <point x="0.0" y="34.0" />
+    </edge>
+    <edge source="org.misha.services.service.impl.SearchService" target="org.misha.services.model.impl.SearchData">
+      <point x="-115.875" y="-44.0" />
+      <point x="260.12499999999994" y="222.0" />
+      <point x="196.5" y="222.0" />
+      <point x="62.0" y="44.5" />
+    </edge>
+    <edge source="org.misha.services.model.impl.SearchResult" target="org.misha.services.model.Result">
+      <point x="0.0" y="-34.5" />
+      <point x="375.99999999999994" y="68.0" />
+      <point x="205.5216049382716" y="68.0" />
+      <point x="24.5" y="24.0" />
+    </edge>
+    <edge source="org.misha.services.service.impl.PrintService" target="org.misha.services.model.Service">
+      <point x="-57.75" y="-34.0" />
+      <point x="735.8549382716049" y="222.0" />
+      <point x="646.0216049382715" y="222.0" />
+      <point x="55.41666666666663" y="34.0" />
+    </edge>
+    <edge source="org.misha.services.service.ServiceProvider" target="org.misha.services.model.Data">
+      <point x="44.0" y="-34.5" />
+      <point x="698.4020061728395" y="355.0" />
+      <point x="667.6049382716049" y="355.0" />
+      <point x="667.6049382716049" y="88.0" />
+      <point x="749.5" y="88.0" />
+      <point x="-11.25" y="24.0" />
+    </edge>
+    <edge source="org.misha.services.service.Linker" target="org.misha.services.model.Data">
+      <point x="58.33333333333337" y="-44.5" />
+      <point x="641.604938271605" y="524.0" />
+      <point x="981.9799382716049" y="524.0" />
+      <point x="981.9799382716049" y="78.0" />
+      <point x="794.5" y="78.0" />
+      <point x="33.75" y="24.0" />
+    </edge>
+    <edge source="org.misha.services.service.impl.SearchService" target="org.misha.services.model.impl.SearchResult">
+      <point x="38.625" y="-44.0" />
+      <point x="414.62499999999994" y="222.0" />
+      <point x="424.74999999999994" y="222.0" />
+      <point x="48.75" y="34.5" />
+    </edge>
+    <edge source="org.misha.services.service.Linker" target="org.misha.services.service.ServiceProvider">
+      <point x="11.666666666666629" y="-44.5" />
+      <point x="594.9382716049382" y="504.0" />
+      <point x="654.4020061728395" y="504.0" />
+      <point x="0.0" y="34.5" />
+    </edge>
+    <edge source="org.misha.services.service.Linker" target="org.misha.services.model.impl.SearchData">
+      <point x="-35.0" y="-44.5" />
+      <point x="548.2716049382716" y="514.0" />
+      <point x="72.49999999999994" y="514.0" />
+      <point x="-62.0" y="44.5" />
+    </edge>
+    <edge source="org.misha.services.service.Linker" target="org.misha.services.model.Result">
+      <point x="-58.33333333333326" y="-44.5" />
+      <point x="524.9382716049383" y="524.0" />
+      <point x="0.0" y="524.0" />
+      <point x="0.0" y="68.0" />
+      <point x="156.5216049382716" y="68.0" />
+      <point x="-24.5" y="24.0" />
+    </edge>
+    <edge source="org.misha.services.service.ServiceProvider" target="org.misha.services.model.Service">
+      <point x="-44.0" y="-34.5" />
+      <point x="610.4020061728395" y="385.0" />
+      <point x="585.1049382716049" y="385.0" />
+      <point x="585.1049382716049" y="222.0" />
+      <point x="579.5216049382715" y="222.0" />
+      <point x="-11.083333333333371" y="34.0" />
+    </edge>
+    <edge source="org.misha.services.service.impl.PrintService" target="org.misha.services.model.impl.PrintData">
+      <point x="57.75" y="-34.0" />
+      <point x="851.3549382716049" y="222.0" />
+      <point x="842.4799382716049" y="222.0" />
+      <point x="-43.0" y="34.5" />
+    </edge>
+    <edge source="org.misha.services.service.ServiceProvider" target="org.misha.services.service.impl.SearchService">
+      <point x="-73.33333333333326" y="-34.5" />
+      <point x="581.0686728395062" y="395.0" />
+      <point x="375.99999999999994" y="395.0" />
+      <point x="0.0" y="44.0" />
+    </edge>
+    <edge source="org.misha.services.service.Linker" target="org.misha.services.model.Service">
+      <point x="-11.666666666666629" y="-44.5" />
+      <point x="571.604938271605" y="504.0" />
+      <point x="541.0" y="504.0" />
+      <point x="541.0" y="222.0" />
+      <point x="557.3549382716049" y="222.0" />
+      <point x="-33.25" y="34.0" />
+    </edge>
+    <edge source="org.misha.services.service.Linker" target="org.misha.services.model.impl.PrintData">
+      <point x="35.0" y="-44.5" />
+      <point x="618.2716049382716" y="514.0" />
+      <point x="919.6049382716049" y="514.0" />
+      <point x="919.6049382716049" y="222.0" />
+      <point x="928.4799382716049" y="222.0" />
+      <point x="43.0" y="34.5" />
+    </edge>
+    <edge source="org.misha.services.model.impl.PrintData" target="org.misha.services.model.Data">
+      <point x="0.0" y="-34.5" />
+      <point x="885.4799382716049" y="88.0" />
+      <point x="772.0" y="88.0" />
+      <point x="11.25" y="24.0" />
+    </edge>
+    <edge source="org.misha.services.service.Linker" target="org.misha.services.service.Linker">
+      <point x="35.0" y="44.5" />
+      <point x="618.2716049382716" y="663.0" />
+      <point x="483.2716049382716" y="663.0" />
+      <point x="483.2716049382716" y="566.25" />
+      <point x="-70.0" y="-22.25" />
+    </edge>
+    <edge source="org.misha.services.model.impl.SearchData" target="org.misha.services.model.Data">
+      <point x="0.0" y="-44.5" />
+      <point x="134.5" y="78.0" />
+      <point x="727.0" y="78.0" />
+      <point x="-33.75" y="24.0" />
+    </edge>
+    <edge source="org.misha.services.service.impl.SearchService" target="org.misha.services.model.Service">
+      <point x="115.875" y="-44.0" />
+      <point x="491.87499999999994" y="222.0" />
+      <point x="535.1882716049382" y="222.0" />
+      <point x="-55.41666666666663" y="34.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.873015873015873" x="491.1090909090909" y="336.5" />
+  <SelectedNodes>
+    <node>org.misha.services.service.ServiceProvider</node>
+    <node>org.misha.services.model.Service</node>
+    <node>org.misha.services.service.impl.SearchService</node>
+    <node>org.misha.services.service.Linker</node>
+    <node>org.misha.services.model.Result</node>
+    <node>org.misha.services.model.impl.SearchData</node>
+    <node>org.misha.services.service.impl.PrintService</node>
+    <node>org.misha.services.model.Data</node>
+    <node>org.misha.services.model.impl.SearchResult</node>
+    <node>org.misha.services.model.impl.PrintData</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+    <Category>Inner Classes</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
