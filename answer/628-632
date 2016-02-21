@@ -1,0 +1,4 @@
+[2014-11-26 02:47:01,425]  DEBUG [org.misha.algebra.lie.endomorphism.EndoTest:116] (+ a; + b; + c)  parsed.
+[2014-11-26 02:47:11,960]  DEBUG [org.misha.algebra.lie.endomorphism.EndoTest:97] (+ a - [[c, a], c] + [[[c, b], c], c] - [[[[c, a], c], c], c]; + b + [[c, b], c] - [[[c, a], c], c]; + c)  parsed.
+[2014-11-26 02:47:13,697]  DEBUG [org.misha.algebra.lie.endomorphism.EndoTest:107] (+ a - [c, b]; + c + [b, a]; - b - [c, a])  parsed.
+[2014-11-26 02:47:13,883]  DEBUG [org.misha.algebra.lie.polynomial.Polynomial:276] .  parsed.

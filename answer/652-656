@@ -1,0 +1,4 @@
+(0; 0; 1) parsed.
+  parsed.
+[2014-11-26 02:47:13,898]  ERROR [org.misha.service.validator.Validator:38] two adjacent letters in the expression '-[ab,c]' are inadmissible.  parsed.
+[2014-11-26 02:47:13,898]  ERROR [org.misha.service.validator.Validator:33] the expression '-[a, b]]' has unmatched brackets.  parsed.

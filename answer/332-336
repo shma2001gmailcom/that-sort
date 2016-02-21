@@ -1,0 +1,4 @@
+[2014-11-26 02:31:37,333]  DEBUG [org.misha.algebra.lie.endomorphism.TupleTest:55]   parsed.
+[2014-11-26 02:31:38,076]  DEBUG [org.misha.algebra.lie.polynomial.PolynomialTest:66] + [x, a] - 3[[c, a], x] - 11[[x, a], [b, a]] + 11[[[b, a], a], x] + 33[[[b, a], x], [c, a]]  parsed.
+[2014-11-26 02:31:38,450]  DEBUG [org.misha.algebra.lie.polynomial.PolynomialTest:166] [Z, a, b, c, h, j, n, q, v, x]  parsed.
+[2014-11-26 02:31:38,464]  DEBUG [org.misha.algebra.lie.polynomial.monomial.MonomialTest:64]   parsed.

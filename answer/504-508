@@ -1,0 +1,4 @@
+[2014-11-26 02:35:15,675]  DEBUG [org.misha.algebra.lie.endomorphism.EndoTest:107] (+ a - [c, b]; + c + [b, a]; - b - [c, a])  parsed.
+[2014-11-26 02:35:17,312]  DEBUG [org.misha.service.impl.EndoServiceImpl:33] left factor=(- a + 2[c, b] + 2[[c, a], c]; + b - 2[c, a] - 2[[c, b], c] - 2[[[c, a], c], c]; + c)  parsed.
+[2014-11-26 02:35:17,313]  DEBUG [org.misha.service.impl.EndoServiceImpl:34] right factor=(- a + 2[c, b] + 2[[c, a], c]; + b - 2[c, a] - 2[[c, b], c] - 2[[[c, a], c], c]; + c)  parsed.
+[2014-11-26 02:35:19,316]  DEBUG [org.misha.algebra.lie.endomorphism.EndoTest:116] (+ a; + b; + c)  parsed.

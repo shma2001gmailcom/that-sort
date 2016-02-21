@@ -1,0 +1,4 @@
+[2014-08-22 23:28:35,652]  ERROR [org.misha.service.validator.Validator:33] the expression '-3][' has unmatched brackets.  parsed.
+[2014-08-22 23:28:35,653]  ERROR [org.misha.service.validator.Validator:44] empty left multiplier in expression '-3[[  ,b ], [a, b]]' is inadmissible.  parsed.
+[2014-08-22 23:28:35,654]  ERROR [org.misha.service.validator.Validator:44] empty left multiplier in expression '-3[[b  , ], [a, b]]' is inadmissible.  parsed.
+[2014-08-23 00:55:36,667]  DEBUG [org.misha.algebra.lie.endomorphism.EndoTest:97] (+ a - [[c, a], c] + [[[c, b], c], c] - [[[[c, a], c], c], c]; + b + [[c, b], c] - [[[c, a], c], c]; + c)  parsed.

@@ -1,0 +1,4 @@
+  parsed.
+[2014-08-22 23:23:00,452]  DEBUG [org.misha.algebra.lie.endomorphism.TupleTest:55]   parsed.
+[2014-08-22 23:23:01,425]  ERROR [org.misha.service.validator.Validator:38] two adjacent letters in the expression '-[ab,c]' are inadmissible.  parsed.
+[2014-08-22 23:23:01,426]  ERROR [org.misha.service.validator.Validator:33] the expression '-[a, b]]' has unmatched brackets.  parsed.

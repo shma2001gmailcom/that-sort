@@ -1,0 +1,4 @@
+[2014-08-27 22:45:26,420]  ERROR [org.misha.service.validator.Validator:33] the expression '-3][' has unmatched brackets.  parsed.
+[2014-08-27 22:45:26,421]  ERROR [org.misha.service.validator.Validator:44] empty left multiplier in expression '-3[[  ,b ], [a, b]]' is inadmissible.  parsed.
+[2014-08-27 22:45:26,421]  ERROR [org.misha.service.validator.Validator:44] empty left multiplier in expression '-3[[b  , ], [a, b]]' is inadmissible.  parsed.
+[2014-08-29 20:34:25,923]  ERROR [org.misha.performance.LongCommutator:88] ./long-comm.txt (No such file or directory)  parsed.

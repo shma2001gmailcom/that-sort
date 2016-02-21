@@ -1,0 +1,4 @@
+[2014-11-26 02:35:20,393]  DEBUG [org.misha.algebra.lie.polynomial.PolynomialTest:66] + [x, a] - 3[[c, a], x] - 11[[x, a], [b, a]] + 11[[[b, a], a], x] + 33[[[b, a], x], [c, a]]  parsed.
+[2014-11-26 02:35:20,756]  DEBUG [org.misha.algebra.lie.polynomial.PolynomialTest:166] [Z, a, b, c, h, j, n, q, v, x]  parsed.
+[2014-11-26 02:35:20,766]  DEBUG [org.misha.algebra.lie.polynomial.monomial.MonomialTest:64]   parsed.
+[2014-11-26 02:35:34,467]  ERROR [org.misha.service.validator.Validator:38] two adjacent letters in the expression '-[ab,c]' are inadmissible.  parsed.

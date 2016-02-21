@@ -1,0 +1,4 @@
+[2014-08-22 23:23:56,131]  DEBUG [org.misha.algebra.lie.polynomial.PolynomialTest:166] [Z, a, b, c, h, j, n, q, v, x]  parsed.
+[2014-08-22 23:28:14,836]  DEBUG [org.misha.algebra.lie.endomorphism.EndoTest:97] (+ a - [[c, a], c] + [[[c, b], c], c] - [[[[c, a], c], c], c]; + b + [[c, b], c] - [[[c, a], c], c]; + c)  parsed.
+[2014-08-22 23:28:16,596]  DEBUG [org.misha.algebra.lie.endomorphism.EndoTest:107] (+ a - [c, b]; + c + [b, a]; - b - [c, a])  parsed.
+[2014-08-22 23:28:18,348]  DEBUG [org.misha.service.impl.EndoServiceImpl:33] left factor=(- a + 2[c, b] + 2[[c, a], c]; + b - 2[c, a] - 2[[c, b], c] - 2[[[c, a], c], c]; + c)  parsed.

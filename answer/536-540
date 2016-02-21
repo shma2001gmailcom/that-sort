@@ -1,0 +1,4 @@
+[2014-11-26 02:35:34,467]  ERROR [org.misha.service.validator.Validator:33] the expression '-[a, b]]' has unmatched brackets.  parsed.
+[2014-11-26 02:35:34,468]  ERROR [org.misha.service.validator.Validator:33] the expression '-3][' has unmatched brackets.  parsed.
+[2014-11-26 02:35:34,468]  ERROR [org.misha.service.validator.Validator:44] empty multiplier in expression '-3[[  ,b ], [a, b]]' is inadmissible.  parsed.
+[2014-11-26 02:35:34,469]  ERROR [org.misha.service.validator.Validator:44] empty multiplier in expression '-3[[b  , ], [a, b]]' is inadmissible.  parsed.

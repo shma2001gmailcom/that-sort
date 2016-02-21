@@ -1,0 +1,4 @@
+[2014-08-27 22:45:13,171]  DEBUG [org.misha.algebra.lie.polynomial.PolynomialTest:166] [Z, a, b, c, h, j, n, q, v, x]  parsed.
+[2014-08-27 22:45:13,181]  DEBUG [org.misha.algebra.lie.polynomial.monomial.MonomialTest:64]   parsed.
+[2014-08-27 22:45:26,419]  ERROR [org.misha.service.validator.Validator:38] two adjacent letters in the expression '-[ab,c]' are inadmissible.  parsed.
+[2014-08-27 22:45:26,420]  ERROR [org.misha.service.validator.Validator:33] the expression '-[a, b]]' has unmatched brackets.  parsed.
