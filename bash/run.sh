@@ -1,2 +1,5 @@
-#!/bin/bash
-java -jar ../target/that-sort.jar
+#!/bin/sh
+cd ../
+mvn clean install
+cd target
+java -jar that-sort.jar
