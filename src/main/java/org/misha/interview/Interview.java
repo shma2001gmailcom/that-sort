@@ -19,7 +19,7 @@ public class Interview {
         try {
             B bb = new B();
         } catch (Throwable x) {
-            log.info("Main exception: " + x);
+            log.info("Main exception: " + x + " A.string has not been initialized yet.");
         }
     }
 
