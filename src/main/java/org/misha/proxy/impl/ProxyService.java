@@ -1,5 +1,6 @@
 package org.misha.proxy.impl;
 
+import org.apache.log4j.Logger;
 import org.misha.proxy.MyObject;
 
 import java.lang.reflect.Constructor;
@@ -14,12 +15,13 @@ import java.lang.reflect.InvocationTargetException;
 public class ProxyService {
     private static final String proxyPackage = "org.misha.proxy.impl.";//todo: configure or inject
     private static final String proxyName = "RealProxy";//todo: configure or inject
+    private static final Logger log = Logger.getLogger(ProxyService.class);
 
     public static MyObject getProxy(final int count, final String name) {
         try {
             return createProxy(proxyPackage + proxyName, count, name);
         } catch (Exception e) {
-            System.out.println(e.getMessage() + " Can't find proxy. Shutting down.");
+            log.info(e.getMessage() + " Can't find proxy. Shutting down.");
             System.exit(-1);
         }
         return null;

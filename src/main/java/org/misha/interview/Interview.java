@@ -1,21 +1,24 @@
 package org.misha.interview;
 
+import org.apache.log4j.Logger;
+
 /**
  * author: misha
  * date: 6/24/15 8:53 PM.
  */
 public class Interview {
+    private static final Logger log = Logger.getLogger(Interview.class);
     public static void main(String... args) {
         base p = new Interview.derived();
-        System.out.println(p.method1() + "\n==========================");
+        log.info(p.method1() + "\n==========================");
         String a = "a";
         String b = "b";
         a = a.concat(b);
-        System.out.println(a + "c" + "\n=============================");
+        log.info(a + "c" + "\n=============================");
         try {
             B bb = new B();
         } catch (Throwable x) {
-            System.out.println("Main exception: " + x);
+            log.info("Main exception: " + x);
         }
     }
 
@@ -35,8 +38,8 @@ public class Interview {
         private String string = "Green";
 
         public A() {
-            System.out.println("string: \"" + getString() +
-                                       "\", length: " + getString().length()
+            log.info("string: \"" + getString() +
+                             "\", length: " + getString().length()
             );
         }
 

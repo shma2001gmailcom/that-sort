@@ -1,5 +1,6 @@
 package org.misha.services.service;
 
+import org.apache.log4j.Logger;
 import org.misha.services.model.Data;
 
 import java.util.ArrayList;
@@ -16,6 +17,7 @@ public final class ServiceProvider {
     private static final char DOT = '.';
     private static final String[] serviceNames = {"PrintService", "SearchService"};
     private static final List<Service> services = new ArrayList<Service>(2);
+    private static final Logger log = Logger.getLogger(ServiceProvider.class);
 
     private ServiceProvider() {
         findServices();
@@ -32,7 +34,7 @@ public final class ServiceProvider {
                 try {
                     services.add(createService(servicesPackage + DOT + s));
                 } catch (Exception e) {
-                    System.out.println(e.getMessage() + " Can't find services. Shutting down.");
+                    log.info(e.getMessage() + " Can't find services. Shutting down.");
                     throw new RuntimeException(e);
                 }
             }

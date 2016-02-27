@@ -1,5 +1,6 @@
 package org.misha.services.service.impl;
 
+import org.apache.log4j.Logger;
 import org.misha.services.model.Data;
 import org.misha.services.model.impl.SearchData;
 import org.misha.services.model.impl.SearchResult;
@@ -17,6 +18,7 @@ import java.util.List;
 
 @SuppressWarnings("UnusedDeclaration")//used through reflection
 public final class SearchService implements Service<SearchResult> {
+    private static final Logger log = Logger.getLogger(SearchService.class);
 
     private static void search(final File file, final List<String> found, final String toSearch) {
         final boolean condition = file.getAbsolutePath().contains(toSearch);
@@ -25,20 +27,20 @@ public final class SearchService implements Service<SearchResult> {
             if (files != null) {
                 for (final File f : files) {
                     search(f, found, toSearch);
-                    System.out.println("...");
+                    log.info("...");
                 }
             }
         } else {
             if (condition) {
                 found.add(file.getAbsolutePath());
-                System.out.println("something found ...");
+                log.info("something found ...");
             }
         }
     }
 
     @Override
     public SearchResult serve(final Data data) {
-        System.out.println("search service is running.\n");
+        log.info("search service is running.\n");
         final List<String> results = new ArrayList<String>();
         final File file = new File("./");
         search(file, results, ((SearchData) data).getCriteria());

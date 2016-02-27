@@ -32,7 +32,8 @@ public final class Csv {
     }//stub
 
     public static void main(final String[] args) {
-        final Csv csv = new Csv("./lie.log");
+        log.debug(new File("./").getAbsolutePath());
+        final Csv csv = new Csv("../lie.log");
         csv.convert();
     }
 
@@ -211,7 +212,7 @@ public final class Csv {
 
         private static void writeLogs() {
             //make something meaning here
-            System.err.println("writing logs");
+            log.error("writing logs");
         }
 
         @Override

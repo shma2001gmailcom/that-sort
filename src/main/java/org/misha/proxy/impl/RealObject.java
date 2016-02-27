@@ -1,5 +1,6 @@
 package org.misha.proxy.impl;
 
+import org.apache.log4j.Logger;
 import org.misha.proxy.MyObject;
 
 /**
@@ -9,6 +10,7 @@ import org.misha.proxy.MyObject;
  */
 
 public final class RealObject implements MyObject {
+    private static final Logger log = Logger.getLogger(RealObject.class);
     private final int count;
     private final String name;
 
@@ -19,7 +21,7 @@ public final class RealObject implements MyObject {
 
     @Override
     public void printCount() {
-        System.out.println(count);
+        log.info(count);
     }
 
     @Override
@@ -27,7 +29,7 @@ public final class RealObject implements MyObject {
         int count = 0;
         while (count < times) {
             count++;
-            System.out.println(name);
+            log.info(name);
         }
     }
 }

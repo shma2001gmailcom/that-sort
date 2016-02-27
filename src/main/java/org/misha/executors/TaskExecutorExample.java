@@ -4,6 +4,7 @@ package org.misha.executors;
  * date: 8/24/15 10:48 PM.
  */
 
+import org.apache.log4j.Logger;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.core.task.TaskExecutor;
@@ -12,6 +13,7 @@ import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 import javax.inject.Inject;
 
 public class TaskExecutorExample {
+    private static final Logger log = Logger.getLogger(TaskExecutorExample.class);
 
     @Inject
     private TaskExecutor taskExecutor;
@@ -39,7 +41,7 @@ public class TaskExecutorExample {
         }
 
         public void run() {
-            System.out.println(message);
+            log.info(message);
         }
     }
 }

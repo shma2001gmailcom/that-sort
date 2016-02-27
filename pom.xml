@@ -238,7 +238,7 @@
                             <!--<mainClass>org.misha.semaphore.Main</mainClass>-->
                             <!--<mainClass>org.misha.proxy.Main</mainClass>-->
                             <!--<mainClass>org.misha.services.Launcher</mainClass>-->
-                            <mainClass>org.misha.runtime.annotation.Main</mainClass>
+                            <mainClass>org.misha.Launcher</mainClass>
                             <classpathPrefix>dependency-jars/</classpathPrefix>
                         </manifest>
                         <manifestEntries>

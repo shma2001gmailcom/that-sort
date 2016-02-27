@@ -17,7 +17,7 @@ public abstract class Consumer<T> implements Runnable {
 
     @Override
     public void run() {
-        for (; ; ) {
+        for (int i = 1; i < 20 ; ++i) {
             try {
                 final T removed = queue.remove();
                 consume(removed);

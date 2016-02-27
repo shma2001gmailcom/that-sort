@@ -1,5 +1,7 @@
 package org.misha.merge;
 
+import org.apache.log4j.Logger;
+
 /**
  * Author: mshevelin
  * Date: 9/17/14
@@ -8,7 +10,8 @@ package org.misha.merge;
 //    int a = 1234, b = 5678,  c = 15263748
 //    int merge (int a, int b) {
 //    }
-class Merge {
+public class Merge {
+    private static final Logger log = Logger.getLogger(Merge.class);
 
     private static int[] code(int a) {
         final int[] digits = new int[digitCount(a)];
@@ -41,6 +44,6 @@ class Merge {
     }
 
     public static void main(final String[] args) {
-        System.out.println(merge(103, 987450));
+        log.info(merge(103, 987450));
     }
 }

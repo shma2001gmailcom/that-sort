@@ -1,5 +1,6 @@
 package org.misha.services.service.impl;
 
+import org.apache.log4j.Logger;
 import org.misha.services.model.Data;
 import org.misha.services.model.impl.PrintData;
 import org.misha.services.model.impl.PrintResult;
@@ -13,12 +14,13 @@ import org.misha.services.service.Service;
 
 @SuppressWarnings("UnusedDeclaration")//used through reflection
 public final class PrintService implements Service<PrintResult> {
+    private static final Logger log = Logger.getLogger(PrintService.class);
 
     @SuppressWarnings("UseOfSystemOutOrSystemErr")
     @Override
     public PrintResult serve(final Data data) {
-        System.out.println("print service is running.");
-        System.out.println(data.getData());
+        log.info("print service is running.");
+        log.info(data.getData());
         return null;
     }
 

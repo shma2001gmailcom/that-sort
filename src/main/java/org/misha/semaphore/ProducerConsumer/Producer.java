@@ -17,7 +17,7 @@ public abstract class Producer<T> implements Runnable {
 
     @Override
     public void run() {
-        for (; ; ) {
+        for (int i = 1; i< 20 ; ++i) {
             try {
                 final T toAdd = produce();
                 queue.add(toAdd);

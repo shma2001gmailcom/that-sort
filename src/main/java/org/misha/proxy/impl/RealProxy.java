@@ -23,19 +23,19 @@ public final class RealProxy implements MyObject {
 
     @Override
     public void printCount() {
-        System.out.println("proxy add-on:-------------------before count");
+        log.info("proxy add-on:-------------------before count");
         proxy.printCount();
-        System.out.println("proxy add-on:-------------------after count");
+        log.info("proxy add-on:-------------------after count");
     }
 
     @Override
     public void printName(final int times) {
         if (times > 1) {//wrapping rule
-            System.out.println("proxy add-on:-------------------before name");
+            log.info("proxy add-on:-------------------before name");
             proxy.printName(times);
-            System.out.println("proxy add-on:-------------------after name");
+            log.info("proxy add-on:-------------------after name");
         } else {
-            System.out.println("proxy add-on: need more times");
+            log.info("proxy add-on: need more times");
         }
     }
 
