@@ -1,6 +1,7 @@
 package org.misha.sort;
 
 import java.util.*;
+import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.CountDownLatch;
 
 /**
@@ -27,7 +28,7 @@ class UnitThread implements Runnable {
             }
             latch.countDown();
         } catch (InterruptedException e) {
-            e.printStackTrace();
+            Thread.currentThread().interrupt();
         }
     }
 }
@@ -54,7 +55,7 @@ class Actor implements Runnable {
 }
 
 public class App {
-    private final static List<Integer> list = Collections.synchronizedList(new ArrayList<Integer>());
+    private final static List<Integer> list = new CopyOnWriteArrayList<Integer>();
 
     public static void main(String[] args) throws InterruptedException {
         int[] data = new int[170];
@@ -96,7 +97,7 @@ public class App {
             try {
                 wait(1);
             } catch (InterruptedException e) {
-                e.printStackTrace();
+                Thread.currentThread().interrupt();
             }
         }
         int[] result = new int[dataLength];

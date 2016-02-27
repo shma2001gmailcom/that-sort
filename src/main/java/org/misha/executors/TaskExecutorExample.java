@@ -14,11 +14,13 @@ import javax.inject.Inject;
 
 public class TaskExecutorExample {
     private static final Logger log = Logger.getLogger(TaskExecutorExample.class);
+    public static final int INT = 6;
 
     @Inject
     private TaskExecutor taskExecutor;
 
-    public TaskExecutorExample(ThreadPoolTaskExecutor threadPoolTaskExecutor) {
+    public TaskExecutorExample(ThreadPoolTaskExecutor taskExecutor) {
+        this.taskExecutor = taskExecutor;
     }
 
     public static void main(String... args) {
@@ -28,7 +30,7 @@ public class TaskExecutorExample {
     }
 
     public void printMessages() {
-        for (int i = 0; i < 25; i++) {
+        for (int i = 0; i < INT; i++) {
             taskExecutor.execute(new MessagePrinterTask("Message" + i));
         }
     }
