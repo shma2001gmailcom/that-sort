@@ -8,6 +8,7 @@ import org.apache.log4j.Logger;
  */
 public class Interview {
     private static final Logger log = Logger.getLogger(Interview.class);
+
     public static void main(String... args) {
         base p = new Interview.derived();
         log.info(p.method1() + "\n==========================");
