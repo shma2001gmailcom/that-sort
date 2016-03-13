@@ -134,7 +134,7 @@ public final class Csv {
                 waitForInsert.await();
                 convertSlots();
             } catch (final InterruptedException ignored) {
-                //log.error(e);
+                Thread.currentThread().interrupt();
             }
         }
     }

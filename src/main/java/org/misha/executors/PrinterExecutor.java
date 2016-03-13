@@ -5,21 +5,19 @@ package org.misha.executors;
  */
 
 import org.apache.log4j.Logger;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.core.task.TaskExecutor;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 
 import javax.inject.Inject;
 
-public class TaskExecutorExample {
-    private static final Logger log = Logger.getLogger(TaskExecutorExample.class);
+public class PrinterExecutor {
+    private static final Logger log = Logger.getLogger(PrinterExecutor.class);
     public static final int INT = 6;
 
     @Inject
     private TaskExecutor taskExecutor;
 
-    public TaskExecutorExample(ThreadPoolTaskExecutor taskExecutor) {
+    public PrinterExecutor(ThreadPoolTaskExecutor taskExecutor) {
         this.taskExecutor = taskExecutor;
     }
 

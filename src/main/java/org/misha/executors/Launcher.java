@@ -11,7 +11,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Launcher {
     public static void main(String... args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
-        TaskExecutorExample printer = context.getBean(TaskExecutorExample.class);
+        PrinterExecutor printer = context.getBean(PrinterExecutor.class);
         printer.printMessages();
     }
 }
