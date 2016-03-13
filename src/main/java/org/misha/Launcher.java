@@ -1,6 +1,5 @@
 package org.misha;
 
-import org.misha.executors.TaskExecutorExample;
 import org.misha.interview.Interview;
 import org.misha.latch.rewrite.Csv;
 import org.misha.merge.Merge;
@@ -15,7 +14,7 @@ public class Launcher {
     public static void main(String... args) throws InvocationTargetException, IllegalAccessException,
                                                    InterruptedException {
         String[] newStringNull = new String[]{null};
-        TaskExecutorExample.main(newStringNull);
+        org.misha.executors.Launcher.main(newStringNull);
         Interview.main(newStringNull);
         Csv.main(newStringNull);
         Merge.main(newStringNull);

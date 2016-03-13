@@ -23,11 +23,7 @@ public class TaskExecutorExample {
         this.taskExecutor = taskExecutor;
     }
 
-    public static void main(String... args) {
-        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
-        TaskExecutorExample printer = context.getBean(TaskExecutorExample.class);
-        printer.printMessages();
-    }
+
 
     public void printMessages() {
         for (int i = 0; i < INT; i++) {
