@@ -29,7 +29,7 @@ public class PrinterExecutor {
         }
     }
 
-    private class MessagePrinterTask implements Runnable {
+    private static class MessagePrinterTask implements Runnable {
         private String message;
 
         public MessagePrinterTask(String message) {
