@@ -33,7 +33,7 @@ public class BeansManipulator {
             node0.setNode00(node00);
             Node01 node01 = new Node01();
             node01.setString01("string01");
-            node0.setNode01(null);
+            node0.setNode01(node01);
             root.setNode0(node0);
             Node1 node1 = new Node1();
             Node10 node10 = new Node10();
