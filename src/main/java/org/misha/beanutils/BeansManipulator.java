@@ -4,6 +4,7 @@ import org.apache.log4j.Logger;
 import org.misha.beanutils.beans.*;
 
 import java.lang.reflect.Field;
+import java.lang.reflect.InvocationTargetException;
 import java.text.MessageFormat;
 import java.util.Collection;
 import java.util.Date;
@@ -18,7 +19,9 @@ import static org.misha.beanutils.BeansManipulator.RootMaker.makeRoot;
  */
 public class BeansManipulator {
     private static final Logger log = Logger.getLogger(BeansManipulator.class);
-    public static void main(String... args) {
+
+    public static void main(String... args) throws IllegalAccessException, NoSuchMethodException,
+                                                   InvocationTargetException {
         Root root = makeRoot();
         log.info(MessageFormat.format("\n\n{0}", new Describer("org.misha.beanutils.beans").describe(root, 0)));
     }
@@ -49,6 +52,10 @@ public class BeansManipulator {
             node1.setNode10(node10);
             root.setNode1(node1);
             root.setDate(new Date());
+            Node02 node02 = new Node02();
+            node02.add(NodeEnum.ONE);
+            node02.add(NodeEnum.ONE);
+            node0.setNode02(node02);
             return root;
         }
     }
@@ -60,7 +67,8 @@ public class BeansManipulator {
             beansPackage = s;
         }
 
-        String describe(Object bean, int depth) {
+        String describe(Object bean, int depth) throws IllegalAccessException, NoSuchMethodException,
+                                                       InvocationTargetException {
             StringBuilder sb = new StringBuilder(tab(depth));
             sb = sb.append(getSimpleName(bean)).append("[\n");
             for (Field field : bean.getClass().getDeclaredFields()) {
@@ -71,23 +79,26 @@ public class BeansManipulator {
                 }
                 ++depth;
                 if (value.getClass().getCanonicalName().contains(beansPackage)) {
-                    sb = sb.append(describe(value, depth));
+                    if (value instanceof Enum) {
+                        Enum e = (Enum) value;
+                        sb = sb.append(tab(depth)).append(Enum.valueOf(e.getDeclaringClass(), e.name()))
+                               .append(e.ordinal()
+                               ).append("\n");
+                    } else {
+                        sb = sb.append(describe(value, depth));
+                    }
                 } else if (value instanceof Collection) {
                     sb = sb.append(tab(depth)).append(value.getClass().getSimpleName()).append("{\n");
                     Collection collection = (Collection) value;
-                    if (collection.isEmpty()) {
-                        sb = sb.append(tab(depth)).append("[]\n");
-                    } else {
-                        for (Iterator it = collection.iterator(); it.hasNext(); ) {
-                            Object element = it.next();
-                            if (it.hasNext()) {
-                                sb = sb.append(describe(element, depth + 1));
-                            } else {
-                                sb = sb.append(describe(element, depth + 1)).append("\n");
-                            }
+                    for (Iterator it = collection.iterator(); it.hasNext(); ) {
+                        Object element = it.next();
+                        if (it.hasNext()) {
+                            sb = sb.append(describe(element, depth + 1));
+                        } else {
+                            sb = sb.append(describe(element, depth + 1)).append("\n");
                         }
-                        sb = sb.append(tab(depth)).append("}\n");
                     }
+                    sb = sb.append(tab(depth)).append("}\n");
                 } else {
                     sb = sb.append(tab(depth)).append(getSimpleName(value)).append(": ").append(value).append("\n")
                            .append(tab(depth - 1)).append("]\n");
