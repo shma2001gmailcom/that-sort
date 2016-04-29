@@ -14,7 +14,7 @@ import java.lang.reflect.InvocationTargetException;
  */
 public class Launcher {
     public static void main(String... args) throws InvocationTargetException, IllegalAccessException,
-                                                   InterruptedException {
+                                                   InterruptedException, NoSuchMethodException {
         String[] newStringNull = new String[]{null};
         org.misha.executors.Launcher.main(newStringNull);
         Interview.main(newStringNull);
