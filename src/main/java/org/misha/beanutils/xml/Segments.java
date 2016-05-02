@@ -1,6 +1,7 @@
 package org.misha.beanutils.xml;
 
 import java.util.Comparator;
+import java.util.Map;
 import java.util.TreeMap;
 
 /**
@@ -17,18 +18,16 @@ public class Segments {
             return Integer.compare(o2, o1);
         }
     });
-    private final TreeMap<Integer, Segment> byRightBound = new TreeMap<Integer, Segment>();
 
     public void add(Segment s) {
         byLeftBound.put(s.getStartIndex(), s);
-        byRightBound.put(s.getEndIndex(), s);
     }
 
     public Segment nexLeft(Segment s) {
-        return byLeftBound.lowerEntry(s.getStartIndex()).getValue();
-    }
-
-    public Segment nexRight(Segment s) {
-        return byRightBound.higherEntry(s.getEndIndex()).getValue();
+        if(s == null) {
+            return null;
+        }
+        final Map.Entry<Integer, Segment> higherEntry = byLeftBound.higherEntry(s.getStartIndex());
+        return higherEntry == null ? null : higherEntry.getValue();
     }
 }

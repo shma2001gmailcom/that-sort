@@ -22,6 +22,12 @@ public class Xml {
     private Map<Node<String>, Segment> nodeSegmentMap = new HashMap<Node<String>, Segment>();
     private Segments segments = new Segments();
 
+    public static void main(String... args) {
+        Xml xml = new Xml();
+        xml.parse(data);
+
+        //xml.print(xml.parent);
+    }
 
     private void parse(String xml) {
         Matcher startTagMatcher = startTag.matcher(xml);
@@ -44,6 +50,7 @@ public class Xml {
                 }
             }
         }
+        //for(Segment segment)
     }
 
     private void close(Matcher matcher) {
@@ -62,13 +69,6 @@ public class Xml {
         }
         Tree<String> tree = new TreeImpl<String>(node);
         System.out.println("888888888888888888888888888\n\n" + tree + "\n\n888888888888888888888888888888");
-    }
-
-    public static void main(String... args) {
-        Xml xml = new Xml();
-        xml.parse(data);
-
-        //xml.print(xml.parent);
     }
 
     private boolean isChildOf(Segment a, Segment b) {

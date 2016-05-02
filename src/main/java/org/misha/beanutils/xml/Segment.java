@@ -15,27 +15,39 @@ public class Segment {
     }
 
     public boolean sitsIn(final Segment segment) {
-        return startIndex > segment.startIndex && endIndex < segment.endIndex;
+        return segment != null && (startIndex > segment.startIndex && endIndex < segment.endIndex);
     }
 
     public Segment findParentAmong(Segments segments) {
-        Segment segment = nextSegment(segments, this, 0);
-        int counter = 0;
+        Segment segment = this;
         while (!this.sitsIn(segment)) {
-            segment = nextSegment(segments, segment, ++counter);
+            segment = segments.nexLeft(segment);
         }
         return segment;
-    }
-
-    private Segment nextSegment(Segments segments, Segment segment, int counter) {
-        return counter % 2 == 0 ? segments.nexLeft(segment) : segments.nexRight(segment);
     }
 
     public int getStartIndex() {
         return startIndex;
     }
 
-    public int getEndIndex() {
-        return endIndex;
+    @Override
+    public String toString() {
+        return "[" + startIndex + ", " + endIndex + "]";
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        final Segment segment = (Segment) o;
+        return endIndex == segment.endIndex && startIndex == segment.startIndex;
+
+    }
+
+    @Override
+    public int hashCode() {
+        int result = startIndex;
+        result = 31 * result + endIndex;
+        return result;
     }
 }

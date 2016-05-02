@@ -27,7 +27,6 @@ public final class ServiceProvider {
         return new ServiceProvider();
     }
 
-    @SuppressWarnings("UseOfSystemOutOrSystemErr")
     private void findServices() {
         if (services.isEmpty()) {
             for (final String s : serviceNames) {
