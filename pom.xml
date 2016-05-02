@@ -97,10 +97,9 @@
 
         <!--junit-->
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
+            <groupId>junit</groupId>     <!-- NOT org.junit here -->
+            <artifactId>junit-dep</artifactId>
             <version>4.8.2</version>
-            <scope>test</scope>
         </dependency>
 
         <!--jQuery-->

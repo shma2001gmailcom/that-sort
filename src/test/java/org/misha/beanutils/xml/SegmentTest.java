@@ -1,10 +1,9 @@
 package org.misha.beanutils.xml;
 
+import org.junit.*;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.Logger;
-import org.junit.Before;
-import org.junit.Test;
 
 import java.io.File;
 import java.io.IOException;
@@ -16,6 +15,11 @@ import java.util.regex.Pattern;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 
+/**
+ * author: misha
+ * date: 4/10/16
+ * time: 8:50 PM
+ */
 public class SegmentTest {
     private static final Logger log = Logger.getLogger(SegmentTest.class);
     private static final int ROOT = 0;
