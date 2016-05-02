@@ -1,6 +1,5 @@
 package org.misha.beanutils;
 
-import org.apache.commons.lang3.StringUtils;
 import org.misha.beanutils.beans.Root;
 
 import javax.xml.bind.JAXBContext;
@@ -14,6 +13,8 @@ import java.util.Calendar;
 import java.util.Collection;
 import java.util.GregorianCalendar;
 import java.util.HashSet;
+
+import static org.apache.commons.lang3.StringUtils.EMPTY;
 
 /**
  * author: misha
@@ -62,24 +63,26 @@ public class Serializer {
             try {
                 value = field.get(bean);
             } catch (IllegalAccessException e) {
-                sb = sb.append("EMPTY");
+                sb = sb.append("<INACCESSIBLE FIELD/>");
             }
-            final String name = StringUtils.capitalize(field.getName());
+            final String type = field.getType().getSimpleName();
             if (value != null) {
                 if (value instanceof Collection) {
+                    sb = sb.append("<list>");
                     final Object[] objects = ((Collection)value).toArray();
                     for (Object o : objects) {
                         sb = sb.append(describe(o));
                     }
+                    sb = sb.append("</list>");
                 } else if(needToBeDrawnAsIs(value)) {
-                    sb = openTag(sb, name).append(valueForLeaf(value, name));
-                    sb = closeTag(sb, name);
+                    sb = openTag(sb, type).append(valueForLeaf(value, type));
+                    sb = closeTag(sb, type);
                 } else {
                     sb = sb.append(describe(value));
                 }
             } else {
-                sb = openTag(sb, name).append("null");
-                sb = closeTag(sb, name);
+                sb = openTag(sb, type).append("null");
+                sb = closeTag(sb, type);
             }
         }
         return sb;
@@ -109,7 +112,7 @@ public class Serializer {
             c.set(Calendar.SECOND, 0);
             c.set(Calendar.MILLISECOND, 0);
         }
-        return c.getTime().toString().replaceAll("00:00:00", StringUtils.EMPTY);
+        return c.getTime().toString().replaceAll("00:00:00", EMPTY);
     }
 
     public static void main(String... args) throws JAXBException {
