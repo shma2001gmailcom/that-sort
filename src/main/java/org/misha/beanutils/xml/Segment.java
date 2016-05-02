@@ -23,7 +23,7 @@ public class Segment {
         while (!this.sitsIn(segment)) {
             segment = segments.nexLeft(segment);
             if(segment == null) {
-                return null;
+                break;
             }
         }
         return segment;

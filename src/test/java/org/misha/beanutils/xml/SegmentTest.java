@@ -13,6 +13,7 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 
 public class SegmentTest {
@@ -53,7 +54,6 @@ public class SegmentTest {
             int leftBound = Integer.parseInt(up);
             int rightBound = Integer.parseInt(down);
             Segment segment = new Segment(leftBound, rightBound);
-            log.debug(segment);
             segmentList.add(segment);
             segments.add(new Segment(leftBound, rightBound));
         }
@@ -80,7 +80,7 @@ public class SegmentTest {
         assertParent(STRING_S1, SECOND_NODE100_AT_LIST_AT_NODE10);
         assertParent(STRING_AT_FIRST_NODE11_AT_LIST_AT_NODE1, FIRST_NODE11_AT_LIST_AT_NODE1);
         assertParent(STRING_AT_SECOND_NODE11_AT_LIST_AT_NODE1, SECOND_NODE11_AT_LIST_AT_NODE1);
-        System.out.println(segmentList.get(0).findParentAmong(segments));
+        assertNull(segmentList.get(0).findParentAmong(segments));
     }
 
     private void assertParent(int child, int parent) {
