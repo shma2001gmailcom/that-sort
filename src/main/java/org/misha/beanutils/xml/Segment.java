@@ -22,6 +22,9 @@ public class Segment {
         Segment segment = this;
         while (!this.sitsIn(segment)) {
             segment = segments.nexLeft(segment);
+            if(this.equals(segment) || segment == null) {
+                return null;
+            }
         }
         return segment;
     }
