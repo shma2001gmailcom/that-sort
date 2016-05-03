@@ -1,4 +1,4 @@
-package org.misha.beanutils.xml;
+package org.misha.segments;
 
 /**
  * author: misha
@@ -18,19 +18,23 @@ public class Segment {
         return segment != null && (startIndex > segment.startIndex && endIndex < segment.endIndex);
     }
 
-    public Segment findParentAmong(Segments segments) {
+    public Segment parent(Segments segments) {
         Segment segment = this;
         while (!this.sitsIn(segment)) {
             segment = segments.nexLeft(segment);
-            if(segment == null) {
+            if (segment == null) {
                 break;
             }
         }
         return segment;
     }
 
-    public int getStartIndex() {
+    public int left() {
         return startIndex;
+    }
+
+    public int right() {
+        return endIndex;
     }
 
     @Override
@@ -40,11 +44,14 @@ public class Segment {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
         final Segment segment = (Segment) o;
         return endIndex == segment.endIndex && startIndex == segment.startIndex;
-
     }
 
     @Override
