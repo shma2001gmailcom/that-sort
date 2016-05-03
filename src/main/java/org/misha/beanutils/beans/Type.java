@@ -2,7 +2,6 @@ package org.misha.beanutils.beans;
 
 import java.util.Date;
 import java.util.HashMap;
-import java.util.List;
 
 /**
  * author: misha
@@ -12,14 +11,12 @@ import java.util.List;
 public enum Type {
     INTEGER(Integer.class),
     STRING(String.class),
-    DATE(Date.class),
-    LIST(List.class);
+    DATE(Date.class);
 
     private final Class type;
     private static HashMap<String, Type> map = new HashMap<String, Type>() {{
         put("Integer",INTEGER);
         put("String",STRING);
-        put("List",LIST);
         put("Date", DATE);
     }};
 

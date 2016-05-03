@@ -27,7 +27,7 @@ public class Xml {
     private static final Logger log = Logger.getLogger(Xml.class);
     private static final String CLOSE = "</(%s)>";
     private static final Pattern OPEN_PATTERN = compile("<([a-zA-Z0-9]+)>");
-    private final Map<Segment, Node<Data>> segmentToNode = new HashMap<Segment, Node<Data>>();
+    private final Map<Segment, Node<Data>> nodeBySegment = new HashMap<Segment, Node<Data>>();
     private final Segments segments = new Segments();
 
     /**
@@ -44,32 +44,33 @@ public class Xml {
             if (closeMatcher.find(openMatcher.end())) {
                 final Segment segment = new Segment(openMatcher.end(), closeMatcher.start());
                 final Node<Data> node = makeNode(type, substring(xml, segment.left(), segment.right()));
-                segmentToNode.put(segment, node);
+                nodeBySegment.put(segment, node);
                 segments.add(segment);
             }
         }
         return new TreeImpl<Data>(makeNodes());
     }
 
-    private NodeImpl<Data> makeNode(final String typeName, final String mince) {
+    private NodeImpl<Data> makeNode(final String type, final String mince) {
         final Data data = new Data();
-        data.setType(typeName);
+        data.setType(type);
         if (!OPEN_PATTERN.matcher(mince).find()) {
             data.setValue(mince);
-            log.debug(typeName + "=" + mince);
+            log.debug(type + "=" + mince);
         } else {
-            log.debug(typeName);
+            log.debug(type);
         }
         return new NodeImpl<Data>(data);
     }
 
     private Node<Data> makeNodes() {
         Node<Data> node = null;
-        for (Map.Entry<Integer, Segment> entry : segments) {
-            final Segment s = entry.getValue();
-            if (s.parent(segments) != null) {
-                node = segmentToNode.get(s);
-                segmentToNode.get(s.parent(segments)).addChild(node);
+        for (final Map.Entry<Integer, Segment> entry : segments) {
+            final Segment segment = entry.getValue();
+            final Segment parent = segment.parent(segments);
+            if (parent != null) {
+                node = nodeBySegment.get(segment);
+                nodeBySegment.get(parent).addChild(node);
             }
         }
         if (node != null) {

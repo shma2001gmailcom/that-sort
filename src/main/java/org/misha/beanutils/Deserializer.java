@@ -23,6 +23,11 @@ import static org.apache.commons.io.FileUtils.readFileToString;
 public class Deserializer {
     private final Tree<Data> tree;
     private final String pakkkage;
+    private static Map<String, Type> map = new HashMap<String, Type>() {{
+        put("Integer", Type.INTEGER);
+        put("String", Type.STRING);
+        put("Date", Type.DATE);
+    }};
 
     public Deserializer(String p) {
         tree = createTree();
@@ -30,25 +35,36 @@ public class Deserializer {
     }
 
     private Object deserealize(Node<Data> node) throws Exception {
-        Object object;
+        Object object = null;
         Data content = node.getContent();
-        if (classNames().contains(content.getType())) {
-            String className = pakkkage + "." + content;
-            object = createBean(className);
-            if (object != null) {
-                for (Field field : object.getClass().getDeclaredFields()) {
-                    if (field != null) {
-                        Collection<Node<Data>> children = node.getChildren();
-                        for (Node<Data> child : children) {
-                            if (field.getType().toString().contains(child.getContent().getType())) {
-                                field.setAccessible(true);
-                                field.set(object, deserealize(child));
+        String type = content.getType();
+        if (classNames().contains(type)) {
+            if (map.containsKey(type)) {
+                object = createLeaf(content.getValue(), type);
+            } else if ("List".equals(type)) {
+                List<Object> list = new ArrayList<Object>();
+                for (Node<Data> child : node.getChildren()) {
+                    list.add(deserealize(child));
+                    object = list;
+                }
+            } else {
+                String className = pakkkage + "." + type;
+                object = createBean(className);
+                if (object != null) {
+                    for (Field field : object.getClass().getDeclaredFields()) {
+                        if (field != null) {
+                            Collection<Node<Data>> children = node.getChildren();
+                            for (Node<Data> child : children) {
+                                if (field.getType().toString().contains(child.getContent().getType())) {
+                                    field.setAccessible(true);
+                                    field.set(object, deserealize(child));
+                                }
                             }
                         }
                     }
                 }
             }
-        } else {
+        }  else {
             object = createLeaf(node.getContent().getValue(), node.getContent().getType());
         }
         return object;
@@ -60,11 +76,9 @@ public class Deserializer {
             case INTEGER:
                 return Integer.parseInt(s);
             case DATE:
-                Calendar calendar = GregorianCalendar.getInstance();
-                calendar.setTime(new SimpleDateFormat("EEE MMM DD HH:mm:ss Z yyyy").parse(s));
-                return calendar;
-            case STRING: return s;
-
+                return new SimpleDateFormat("EEE MMM DD HH:mm:ss Z yyyy").parse(s);
+            case STRING:
+                return s;
         }
         return null;
     }
