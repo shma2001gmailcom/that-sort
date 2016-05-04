@@ -71,6 +71,13 @@ public final class NodeImpl<T> implements Node<T> {
         return parent == null;
     }
 
+    /**
+     * @return name
+     */
+    final String name() {
+        return name;
+    }
+
     @Override
     public Object getName() {
         return name;
@@ -83,7 +90,7 @@ public final class NodeImpl<T> implements Node<T> {
 
     @Override
     public final String toString() {
-        return "Node("+content.toString()+")";
+        return name();
     }
 
     @Override
