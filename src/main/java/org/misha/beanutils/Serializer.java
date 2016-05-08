@@ -2,11 +2,7 @@ package org.misha.beanutils;
 
 import org.misha.beanutils.beans.Root;
 
-import javax.xml.bind.JAXBContext;
-import javax.xml.bind.JAXBElement;
 import javax.xml.bind.JAXBException;
-import javax.xml.bind.Marshaller;
-import javax.xml.namespace.QName;
 import java.lang.reflect.Field;
 import java.math.BigDecimal;
 import java.util.Calendar;
@@ -117,15 +113,6 @@ public class Serializer {
 
     public static void main(String... args) throws JAXBException {
         System.out.println(serialize(new Serializer().createActual()));
-        QName qName = new QName("info.source4code.jaxb.model", "ListResponse");
-        Root vasya = new Serializer().createActual();
-        JAXBElement<Root> root = new JAXBElement<Root>(qName, Root.class, vasya);
-
-        JAXBContext jaxbContext = JAXBContext.newInstance(Root.class);
-        Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
-        // output pretty printed
-        jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
-        jaxbMarshaller.marshal(root, System.out);
     }
 
     private Root createActual() {

@@ -1,6 +1,6 @@
 package org.misha;
 
-import org.misha.beanutils.BeansManipulator;
+import org.misha.beanutils.BeanManipulator;
 import org.misha.interview.CounterLauncher;
 import org.misha.interview.Interview;
 import org.misha.latch.rewrite.Csv;
@@ -26,6 +26,6 @@ public class Launcher {
         org.misha.services.Launcher.main(newStringNull);
         org.misha.sort.App.main(newStringNull);
         CounterLauncher.main(newStringNull);
-        BeansManipulator.main(newStringNull);
+        BeanManipulator.main(newStringNull);
     }
 }

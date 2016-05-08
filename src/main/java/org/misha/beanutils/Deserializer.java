@@ -121,7 +121,7 @@ public class Deserializer {
     }
 
     public static void main(String... args) throws Exception {
-        new Deserializer("org.misha.beanutils.beans")
-                .unmarchall(readFileToString(new File("src/test/resources/table")));
+        System.out.println(new Deserializer("org.misha.beanutils.beans")
+                .unmarchall(readFileToString(new File("src/test/resources/table"))));
     }
 }
