@@ -6,15 +6,12 @@ import org.misha.interview.Interview;
 import org.misha.latch.rewrite.Csv;
 import org.misha.merge.Merge;
 
-import java.lang.reflect.InvocationTargetException;
-
 /**
  * author: misha
  * date: 2/27/16 8:54 PM.
  */
 public class Launcher {
-    public static void main(String... args) throws InvocationTargetException, IllegalAccessException,
-                                                   InterruptedException, NoSuchMethodException {
+    public static void main(String... args) throws ReflectiveOperationException, InterruptedException {
         String[] newStringNull = new String[]{null};
         org.misha.executors.Launcher.main(newStringNull);
         Interview.main(newStringNull);

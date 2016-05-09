@@ -15,8 +15,8 @@ public enum Type {
 
     private final Class type;
     private static HashMap<String, Type> map = new HashMap<String, Type>() {{
-        put("Integer",INTEGER);
-        put("String",STRING);
+        put("Integer", INTEGER);
+        put("String", STRING);
         put("Date", DATE);
     }};
 

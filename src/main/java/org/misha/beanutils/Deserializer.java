@@ -4,6 +4,7 @@ import org.misha.beanutils.beans.Type;
 import org.misha.beanutils.tree.Node;
 import org.misha.beanutils.tree.Tree;
 import org.misha.beanutils.tree.impl.Searcher;
+import org.misha.beanutils.xml.Describer;
 import org.misha.beanutils.xml.Xml;
 
 import java.io.File;
@@ -92,7 +93,7 @@ public class Deserializer {
         return null;
     }
 
-    public Object unmarchall(String xml) throws Exception {
+    public Object unmarshall(String xml) throws Exception {
         return deserealize(new Xml().parse(xml).root());
     }
 
@@ -120,8 +121,8 @@ public class Deserializer {
         return result;
     }
 
-    public static void main(String... args) throws Exception {
-        System.out.println(new Deserializer("org.misha.beanutils.beans")
-                .unmarchall(readFileToString(new File("src/test/resources/table"))));
+    public static void main(String... args) throws Exception {//todo ms: enums haven't been deserealised(
+        System.out.println(new Describer("org.misha.beanutils.beans").describe(new Deserializer("org.misha.beanutils.beans")
+                .unmarshall(readFileToString(new File("src/test/resources/table"))), 0));
     }
 }
