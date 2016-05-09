@@ -33,4 +33,33 @@ public class Node0 {
     public void setNode02(Node02 node02) {
         this.node02 = node02;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+        Node0 node0 = (Node0) o;
+        if (node00 != null ? !node00.equals(node0.node00) : node0.node00 != null) {
+            return false;
+        }
+        if (node01 != null ? !node01.equals(node0.node01) : node0.node01 != null) {
+            return false;
+        }
+        if (node02 != null ? !node02.equals(node0.node02) : node0.node02 != null) {
+            return false;
+        }
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = node00 != null ? node00.hashCode() : 0;
+        result = 31 * result + (node01 != null ? node01.hashCode() : 0);
+        result = 31 * result + (node02 != null ? node02.hashCode() : 0);
+        return result;
+    }
 }

@@ -37,24 +37,24 @@ public class Deserializer {
 
     private Object deserealize(Node<Data> node) throws Exception {
         Object object = null;
-        Data content = node.getContent();
-        String type = content.getType();
+        final Data content = node.getContent();
+        final String type = content.getType();
         if (classNames().contains(type)) {
             if (map.containsKey(type)) {
                 object = createLeaf(content.getValue(), type);
-            } else if ("List".equals(type)) {
-                List<Object> list = new ArrayList<Object>();
+            } else if ("List".equalsIgnoreCase(type)) {
+                final List<Object> list = new ArrayList<Object>();
                 for (Node<Data> child : node.getChildren()) {
                     list.add(deserealize(child));
                     object = list;
                 }
             } else {
-                String className = pakkkage + "." + type;
+                final String className = pakkkage + "." + type;
                 object = createBean(className);
                 if (object != null) {
                     for (Field field : object.getClass().getDeclaredFields()) {
                         if (field != null) {
-                            Collection<Node<Data>> children = node.getChildren();
+                            final Collection<Node<Data>> children = node.getChildren();
                             for (Node<Data> child : children) {
                                 if (field.getType().toString().contains(child.getContent().getType())) {
                                     field.setAccessible(true);
@@ -101,6 +101,7 @@ public class Deserializer {
         try {
             return getClass().getClassLoader().loadClass(type).newInstance();
         } catch (Exception e) {
+            e.printStackTrace();
             return null;
         }
     }

@@ -43,7 +43,7 @@ public class Xml {
             final Matcher closeMatcher = compile(format(CLOSE, type)).matcher(xml);
             if (closeMatcher.find(openMatcher.end())) {
                 final Segment segment = new Segment(openMatcher.end(), closeMatcher.start());
-                final Node<Data> node = makeNode(type, substring(xml, segment.left(), segment.right()));
+                final Node<Data> node = makeNode(type, substring(xml, segment.left(), segment.right()));//todo ms: problem with enum
                 nodeBySegment.put(segment, node);
                 segments.add(segment);
             }

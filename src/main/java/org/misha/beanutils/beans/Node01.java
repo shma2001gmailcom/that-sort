@@ -15,4 +15,24 @@ public class Node01 {
     public void setString01(String string01) {
         this.string01 = string01;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+        Node01 node01 = (Node01) o;
+        if (string01 != null ? !string01.equals(node01.string01) : node01.string01 != null) {
+            return false;
+        }
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        return string01 != null ? string01.hashCode() : 0;
+    }
 }

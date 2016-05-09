@@ -8,7 +8,7 @@ import java.util.HashMap;
  * date: 5/3/16
  * time: 12:25 PM
  */
-public enum Type {
+public enum Type {//todo ms: another types as double, calendar ...
     INTEGER(Integer.class),
     STRING(String.class),
     DATE(Date.class);

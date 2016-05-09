@@ -23,7 +23,8 @@ public class Serializer {
     public static final String LESS_THAN_SLASH = "</";
     private static final HashSet<Class> classes = new HashSet<Class>();
 
-    private Serializer() {}
+    private Serializer() {
+    }
 
     static {
         classes.add(String.class);
@@ -37,14 +38,15 @@ public class Serializer {
     }
 
     private static String describe(final Object bean) {
-        if(bean == null) {
+        if (bean == null) {
             return "<>null</>";
         }
-        if(bean instanceof String) {
+        if (bean instanceof String) {
             return (String) bean;
         }
-        if(bean instanceof Enum) {
-            return ((Enum)bean).name();
+        if (bean instanceof Enum) {
+            final Enum e = (Enum) bean;
+            return e.getDeclaringClass().getName() + ":" + e.name();
         }
         StringBuilder sb = new StringBuilder(LESS_THAN).append(bean.getClass().getSimpleName()).append(GREATER_THAN);
         sb = describeFields(bean, sb);
@@ -64,13 +66,13 @@ public class Serializer {
             final String type = field.getType().getSimpleName();
             if (value != null) {
                 if (value instanceof Collection) {
-                    sb = sb.append("<list>");
-                    final Object[] objects = ((Collection)value).toArray();
+                    sb = sb.append("<List>");
+                    final Object[] objects = ((Collection) value).toArray();
                     for (Object o : objects) {
                         sb = sb.append(describe(o));
                     }
-                    sb = sb.append("</list>");
-                } else if(needToBeDrawnAsIs(value)) {
+                    sb = sb.append("</List>");
+                } else if (needToBeDrawnAsIs(value)) {
                     sb = openTag(sb, type).append(valueForLeaf(value, type));
                     sb = closeTag(sb, type);
                 } else {
@@ -97,12 +99,12 @@ public class Serializer {
     }
 
     private static boolean needToBeDrawnAsIs(final Object value) {
-        return classes.contains(value.getClass()) ||
-                !value.getClass().getCanonicalName().contains("org.misha.beanutils.beans");
+        return classes.contains(value.getClass()) || !value.getClass().getCanonicalName()
+                                                           .contains("org.misha.beanutils.beans");
     }
 
     private static String calendarString(final GregorianCalendar c, final String name) {
-        if(!name.contains("Tm")) {
+        if (!name.contains("Tm")) {
             c.set(Calendar.HOUR_OF_DAY, 0);
             c.set(Calendar.MINUTE, 0);
             c.set(Calendar.SECOND, 0);
@@ -111,7 +113,7 @@ public class Serializer {
         return c.getTime().toString().replaceAll("00:00:00", EMPTY);
     }
 
-    public static void main(String... args) throws JAXBException {
+    public static void main(String... args) throws JAXBException, ReflectiveOperationException {
         System.out.println(serialize(new Serializer().createActual()));
     }
 
