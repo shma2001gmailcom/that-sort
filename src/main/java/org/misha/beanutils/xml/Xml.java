@@ -39,7 +39,7 @@ public class Xml {
     public Tree<Data> parse(final String xml) {
         final Matcher openMatcher = OPEN_PATTERN.matcher(xml);
         while (openMatcher.find()) {
-            final String type = openMatcher.group(1);
+            final String type = readType(openMatcher);
             final Matcher closeMatcher = compile(format(CLOSE, type)).matcher(xml);
             if (closeMatcher.find(openMatcher.end())) {
                 final Segment segment = new Segment(openMatcher.end(), closeMatcher.start());
@@ -49,6 +49,10 @@ public class Xml {
             }
         }
         return new TreeImpl<Data>(makeNodes());
+    }
+
+    protected String readType(Matcher openMatcher) {
+        return openMatcher.group(1);
     }
 
     private NodeImpl<Data> makeNode(final String type, final String mince) {
