@@ -36,6 +36,7 @@ public class RootMaker {
         Node02 node02 = new Node02();
         node02.add(NodeEnum.ONE);
         node02.add(NodeEnum.TWO);
+        node02.add(NodeEnum.ONE);
         node0.setNode02(node02);
         return root;
     }

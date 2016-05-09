@@ -3,9 +3,10 @@ package org.misha.beanutils.xml;
 import org.apache.log4j.Logger;
 
 import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.Iterator;
+import java.util.List;
 
 /**
  * author: misha
@@ -20,12 +21,15 @@ public class Describer {
         beansPackage = s;
     }
 
-    public String describe(Object bean, int depth) throws IllegalAccessException, NoSuchMethodException,
-                                                   InvocationTargetException {
+    public String describe(Object bean, int depth) throws ReflectiveOperationException {
         StringBuilder sb = new StringBuilder(tab(depth));
         sb = sb.append(getSimpleName(bean)).append("[\n");
         for (Field field : bean.getClass().getDeclaredFields()) {
-            field.setAccessible(true);
+            if (field.getName().contains("$")) {
+                return sb.append("").toString();
+            } else {
+                field.setAccessible(true);
+            }
             Object value = fieldValue(bean, field);
             if (value == null) {
                 value = "null";
@@ -33,21 +37,17 @@ public class Describer {
             ++depth;
             if (value.getClass().getCanonicalName().contains(beansPackage)) {
                 if (value instanceof Enum) {
-                    Enum e = (Enum) value;
-                    sb = sb.append(tab(depth))
-                           .append(Enum.valueOf(e.getDeclaringClass(), e.name()))
-                           .append(e.ordinal()).append("\n").append(tab(depth)).append("\n");
+                    sb = forEnum((Enum) bean, sb, (Enum) value);
                 } else {
                     sb = sb.append(describe(value, depth));
                 }
             } else if (value instanceof Collection) {
                 sb = sb.append(tab(depth)).append(value.getClass().getSimpleName()).append("{\n");
-                Collection collection = (Collection) value;
-                for (Iterator it = collection.iterator(); it.hasNext(); ) {
-                    Object element = it.next();
-                    StringBuilder description = sb.append(describe(element, depth + 1));
-                    sb = it.hasNext()? description : description.append("\n");
-                }
+                sb = forCollection(depth, sb, (Collection) value);
+                sb = sb.append(tab(depth)).append("}\n");
+            } else if (value instanceof Object[]) {
+                sb = sb.append(tab(depth)).append(value.getClass().getSimpleName()).append("{\n");
+                sb = forArray(depth, sb, (Object[]) value);
                 sb = sb.append(tab(depth)).append("}\n");
             } else {
                 sb = sb.append(tab(depth)).append(getSimpleName(value)).append(": ").append(value).append("\n")
@@ -58,8 +58,43 @@ public class Describer {
         return sb.toString().replaceAll("\\n\\n", "\n");
     }
 
+    private StringBuilder forArray(int depth,
+                                   StringBuilder sb,
+                                   Object[] value
+    ) throws ReflectiveOperationException {
+        List collection = Arrays.asList(value);
+        for (Iterator it = collection.iterator(); it.hasNext(); ) {
+            Object element = it.next();
+            StringBuilder description = sb.append(describe(element, depth + 1));
+            sb = it.hasNext() ? description : description.append("\n");
+        }
+        return sb;
+    }
+
+    private StringBuilder forEnum(Enum bean,
+                                  StringBuilder sb,
+                                  Enum value
+    ) {
+        if (bean.name().equals(value.name())) {
+            sb = sb.delete(sb.length() - 2, sb.length()).append(": ").append(value.name()).append('\n');
+        }
+        return sb;
+    }
+
+    private StringBuilder forCollection(int depth,
+                                        StringBuilder sb,
+                                        Collection value
+    ) throws ReflectiveOperationException {
+        for (Iterator it = value.iterator(); it.hasNext(); ) {
+            Object element = it.next();
+            StringBuilder description = sb.append(describe(element, depth + 1));
+            sb = it.hasNext() ? description : description.append("\n");
+        }
+        return sb;
+    }
+
     private String getSimpleName(Object value) {
-        return value == "null" ? "NULL" : value.getClass().getSimpleName();
+        return value.getClass().getSimpleName();
     }
 
     private String tab(int length) {
