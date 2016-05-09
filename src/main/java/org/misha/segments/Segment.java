@@ -7,7 +7,7 @@ import java.text.MessageFormat;
  * date: 5/1/16
  * time: 7:14 PM
  */
-public class Segment {
+public final class Segment {
     private final int startIndex;
     private final int endIndex;
 

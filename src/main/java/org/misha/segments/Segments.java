@@ -10,7 +10,7 @@ import java.util.TreeMap;
  * date: 5/1/16
  * time: 7:40 PM
  */
-public class Segments implements Iterable<Map.Entry<Integer, Segment>> {
+public final class Segments implements Iterable<Map.Entry<Integer, Segment>> {
     private final TreeMap<Integer, Segment> lefts;
 
     public Segments() {
