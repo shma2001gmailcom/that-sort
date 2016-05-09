@@ -43,12 +43,15 @@ public class Xml {
             final Matcher closeMatcher = compile(format(CLOSE, type)).matcher(xml);
             if (closeMatcher.find(openMatcher.end())) {
                 final Segment segment = new Segment(openMatcher.end(), closeMatcher.start());
-                final Node<Data> node = makeNode(type, substring(xml, segment.left(), segment.right()));//todo ms: problem with enum
-                nodeBySegment.put(segment, node);
+                nodeBySegment.put(segment, makeNode(type, cutRange(xml, segment)));
                 segments.add(segment);
             }
         }
         return new TreeImpl<Data>(makeNodes());
+    }
+
+    private String cutRange(String data, Segment segment) {
+        return substring(data, segment.left(), segment.right());
     }
 
     protected String readType(Matcher openMatcher) {
