@@ -6,6 +6,11 @@ import java.text.MessageFormat;
  * author: misha
  * date: 5/1/16
  * time: 7:14 PM
+ *
+ * represents a segment of integers
+ * among some amount of another such segments.
+ * the condition is: there aren't two different
+ * segments having common left or right bound. {@link org.misha.segments.Segments}
  */
 public final class Segment {
     private final int startIndex;

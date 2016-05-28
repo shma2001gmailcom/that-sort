@@ -9,6 +9,10 @@ import java.util.TreeMap;
  * author: misha
  * date: 5/1/16
  * time: 7:40 PM
+ *
+ * there are one-to-one correspondence
+ * between set of segments and set of
+ * its left bounds by condition at {@link org.misha.segments.Segment}
  */
 public final class Segments implements Iterable<Map.Entry<Integer, Segment>> {
     private final TreeMap<Integer, Segment> lefts;
