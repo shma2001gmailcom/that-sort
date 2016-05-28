@@ -19,7 +19,7 @@ public class ProxyService {
 
     public static MyObject getProxy(final int count, final String name) {
         try {
-            return createProxy(proxyPackage + proxyName, count, name);
+            return getMyObject(proxyPackage + proxyName, count, name);
         } catch (Exception e) {
             log.info(e.getMessage() + " Can't find proxy. Shutting down.");
             System.exit(-1);
@@ -27,13 +27,14 @@ public class ProxyService {
         return null;
     }
 
-    private static MyObject createProxy(
-            final String proxyFullyQualifiedName, final int count, final String objName
+    static MyObject getMyObject(
+            final String proxyFullyQualifiedName, final Integer count, final String objName
     ) throws ClassNotFoundException, IllegalAccessException, InstantiationException, NoSuchMethodException,
              InvocationTargetException {
         final Class<?> c = ProxyService.class.getClassLoader().loadClass(proxyFullyQualifiedName);
         if (c.getInterfaces()[0].equals(MyObject.class)) {
             final Constructor constructor = c.getDeclaredConstructor(Integer.class, String.class);
+            constructor.setAccessible(true);
             return (MyObject) constructor.newInstance(count, objName);
         }
         throw new IllegalStateException(c.getName() + "is not a correct proxy");

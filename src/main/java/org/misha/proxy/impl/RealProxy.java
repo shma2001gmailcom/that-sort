@@ -7,17 +7,19 @@ import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
+import static org.misha.proxy.impl.ProxyService.getMyObject;
+
 /**
  * Author: mshevelin
  * Date: 2/2/15
  * Time: 4:12 PM
  */
-@SuppressWarnings("UnusedDeclaration")//used through reflection)
+@SuppressWarnings("UnusedDeclaration")
 public final class RealProxy implements MyObject {
     private static final Logger log = Logger.getLogger(RealProxy.class);
     private final MyObject proxy;
 
-    public RealProxy(final Integer times, final String name) {
+    private RealProxy(final Integer times, final String name) {
         proxy = createProxy(times, name);
     }
 
@@ -40,13 +42,19 @@ public final class RealProxy implements MyObject {
     }
 
     private MyObject createProxy(final int times, final String name) {
-        return (MyObject) Proxy.newProxyInstance(MyObject.class.getClassLoader(),//loader
-                                                 new Class<?>[]{MyObject.class},//interfaces
-                                                 new RealInvocationHandler(new RealObject(times, name))//handler
-        );
+        try {
+            return (MyObject) Proxy.newProxyInstance(MyObject.class.getClassLoader(),//loader
+                                                     new Class<?>[]{MyObject.class},//interfaces
+                                                     new RealInvocationHandler(
+                                                             getMyObject("org.misha.proxy.impl.RealObject", times, name)
+                                                     )//handler
+            );
+        } catch (Exception e) {
+            throw new IllegalStateException("unable instantiate");
+        }
     }
 
-    private static class RealInvocationHandler implements InvocationHandler {
+    static class RealInvocationHandler implements InvocationHandler {
         private final MyObject impl;
 
         private RealInvocationHandler(final MyObject impl) {
