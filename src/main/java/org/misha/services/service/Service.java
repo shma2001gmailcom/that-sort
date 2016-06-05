@@ -12,5 +12,5 @@ public interface Service<T extends Result> {
 
     T serve(Data data);
 
-    boolean isSuitableFor(Class<Data<?>> c);
+    boolean isSuitableFor(Class c);
 }
