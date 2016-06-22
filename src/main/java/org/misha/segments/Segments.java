@@ -1,5 +1,6 @@
 package org.misha.segments;
 
+import java.io.Serializable;
 import java.util.Comparator;
 import java.util.Iterator;
 import java.util.Map;
@@ -42,7 +43,8 @@ public final class Segments implements Iterable<Map.Entry<Integer, Segment>> {
         return new Reverser();
     }
 
-    private static class Reverser implements Comparator<Integer> {
+    private static class Reverser implements Comparator<Integer>, Serializable{
+        private static final long serialVersionUID = -8890598769647883458L;
 
         @Override
         public int compare(final Integer i, final Integer j) {
