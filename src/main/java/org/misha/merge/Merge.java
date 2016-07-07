@@ -17,18 +17,16 @@ public class Merge {
         final int[] digits = new int[digitCount(a)];
         int i = 0;
         while (a > 0) {
-            digits[i] = a % 10;
+            digits[i++] = a % 10;
             a /= 10;
-            ++i;
         }
         return digits;
     }
 
-    private static int digitCount(final int a) {
-        int b = a;
+    private static int digitCount(int a) {
         int count = 0;
-        while (b > 0) {
-            b /= 10;
+        while (a > 0) {
+            a /= 10;
             ++count;
         }
         return count;
@@ -36,14 +34,18 @@ public class Merge {
 
     public static int merge(final int a, final int b) {
         int result = 0;
-        for (int i = 0; i < code(a).length; ++i) {
-            result += code(a)[i] * (int) Math.pow(10, 2 * i + 1);
-            result += code(b)[i] * (int) Math.pow(10, 2 * i);
-        }
+        int length = code(a).length;
+        for (int i = 0; i < length; result = doMerge(a, b, result, i++));
+        return result;
+    }
+
+    private static int doMerge(int a, int b, int result, int i) {
+        result += code(a)[i] * (int) Math.pow(10, 2 * i + 1);
+        result += code(b)[i] * (int) Math.pow(10, 2 * i);
         return result;
     }
 
     public static void main(final String[] args) {
-        log.info(merge(103, 987450));
+        log.info(merge(1357, 2468));
     }
 }
