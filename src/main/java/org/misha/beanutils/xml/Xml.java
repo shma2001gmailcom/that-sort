@@ -54,7 +54,7 @@ public class Xml {
         return substring(data, segment.left(), segment.right());
     }
 
-    protected String readType(Matcher openMatcher) {
+    private String readType(Matcher openMatcher) {
         return openMatcher.group(1);
     }
 
