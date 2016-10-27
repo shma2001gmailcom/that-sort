@@ -5,18 +5,15 @@ package org.misha.fibo;
  * date: 10/27/16
  * time: 2:46 AM
  */
-public class Fibo {
-   private final int bound;
-
-    public Fibo(final int n) {
-        bound = n;
+class Fibo {
+    int calc(int n) {
+        if (n < 3) return n < 1 ? 0 : 1;
+        int y = 1;
+        for (int i = 0, x = 1, t; i < n - 2; ++i, t = y, y += x, x = t);
+        return y;
     }
 
-    public int calc() {
-        if(bound < 1) return 0;
-        if(bound < 3) return 1;
-        int y = 1;
-        for(int i = 0, x = 1, t; i < bound - 2; ++i, t = y, y += x, x = t);
-        return  y;
+    int fibo(int n, int a, int b) {
+        return n < 1 ? 0 : n < 2 ? 1 : n == 2 ? b : fibo(n - 1, b, a + b);
     }
 }

@@ -24,7 +24,10 @@ import static org.apache.commons.io.FileUtils.readFileToString;
 public class Deserializer {
     private final Tree<Data> tree;
     private final String pakkkage;
-    private static Map<String, Type> map = new HashMap<String, Type>() {{
+    private static Map<String, Type> map = new HashMap<String, Type>() {
+        private static final long serialVersionUID = -8685406720026834192L;
+
+        {
         put("Integer", Type.INTEGER);
         put("String", Type.STRING);
         put("Date", Type.DATE);
