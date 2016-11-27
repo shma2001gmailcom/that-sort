@@ -32,7 +32,7 @@ public class Merge {
         return count;
     }
 
-    public static int merge(final int a, final int b) {
+    private static int merge(final int a, final int b) {
         int result = 0;
         int length = code(a).length;
         for (int i = 0; i < length; result = doMerge(a, b, result, i++));

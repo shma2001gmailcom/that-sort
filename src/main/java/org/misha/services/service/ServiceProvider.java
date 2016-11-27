@@ -12,7 +12,7 @@ import java.util.List;
  * Time: 3:43 PM
  */
 
-public final class ServiceProvider {
+final class ServiceProvider {
     private static final String servicesPackage = "org.misha.services.service.impl";
     private static final char DOT = '.';
     private static final String[] serviceNames = {"PrintService", "SearchService"};
@@ -23,7 +23,7 @@ public final class ServiceProvider {
         findServices();
     }
 
-    public static ServiceProvider getInstance() {
+    static ServiceProvider getInstance() {
         return new ServiceProvider();
     }
 
@@ -40,7 +40,7 @@ public final class ServiceProvider {
         }
     }
 
-    public Service getServiceFor(final Data data) {
+    Service getServiceFor(final Data data) {
         for (final Service service : services) {
             if (service.isSuitableFor(data.getClass())) {
                 return service;

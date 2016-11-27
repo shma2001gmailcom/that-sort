@@ -17,7 +17,7 @@ import java.util.List;
  */
 
 @SuppressWarnings("UnusedDeclaration")//used through reflection
-public final class SearchService implements Service<SearchResult> {
+final class SearchService implements Service<SearchResult> {
     private static final Logger log = Logger.getLogger(SearchService.class);
 
     private static void search(final File file, final List<String> found, final String toSearch) {
