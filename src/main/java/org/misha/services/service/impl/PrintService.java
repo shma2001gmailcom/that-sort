@@ -13,7 +13,7 @@ import org.misha.services.service.Service;
  */
 
 @SuppressWarnings("UnusedDeclaration")//used through reflection
-final class PrintService implements Service<PrintResult> {
+public final class PrintService implements Service<PrintResult> {
     private static final Logger log = Logger.getLogger(PrintService.class);
 
     @SuppressWarnings("UseOfSystemOutOrSystemErr")

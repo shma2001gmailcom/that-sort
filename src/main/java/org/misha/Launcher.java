@@ -11,6 +11,7 @@ import org.misha.merge.Merge;
  * date: 2/27/16 8:54 PM.
  */
 public class Launcher {
+
     public static void main(String... args) throws ReflectiveOperationException, InterruptedException {
         String[] newStringNull = new String[]{null};
         org.misha.executors.Launcher.main(newStringNull);
