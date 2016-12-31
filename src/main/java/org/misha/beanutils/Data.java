@@ -11,7 +11,6 @@ public class Data {
     private String type;
     private String value;
 
-
     public String getType() {
         return type;
     }

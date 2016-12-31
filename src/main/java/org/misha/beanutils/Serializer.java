@@ -16,11 +16,11 @@ import static org.apache.commons.lang3.StringUtils.EMPTY;
  * author: misha
  * date: 29.04.2016.
  */
-public class Serializer {
-    public static final String XML_HEADER = "<?xml version='1.0' encoding='UTF-8' standalone='yes'?>";
-    public static final String LESS_THAN = "<";
-    public static final String GREATER_THAN = ">";
-    public static final String LESS_THAN_SLASH = "</";
+public final class Serializer {
+    private static final String XML_HEADER = "<?xml version='1.0' encoding='UTF-8' standalone='yes'?>";
+    private static final String LESS_THAN = "<";
+    private static final String GREATER_THAN = ">";
+    private static final String LESS_THAN_SLASH = "</";
     private static final HashSet<Class> classes = new HashSet<Class>();
 
     private Serializer() {

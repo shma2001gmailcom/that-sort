@@ -20,7 +20,7 @@ public abstract class Searcher<T> implements Iterable<Node<T>> {
     public void search() {
         Node<T> node;
         Queue<T> queue = new Queue<T>();
-        queue.add(root);
+        queue.push(root);
         while (!queue.isEmpty()) {
             node = queue.pop();
             if (isSuitable(node)) {

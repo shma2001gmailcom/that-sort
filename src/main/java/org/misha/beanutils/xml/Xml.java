@@ -23,7 +23,7 @@ import static org.apache.commons.lang3.StringUtils.substring;
  * date: 4/30/16
  * time: 12:04 PM
  */
-public class Xml {
+public final class Xml {
     private static final Logger log = Logger.getLogger(Xml.class);
     private static final String CLOSE = "</(%s)>";
     private static final Pattern OPEN_PATTERN = compile("<([a-zA-Z0-9]+)>");
