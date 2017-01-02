@@ -22,7 +22,7 @@ public class Launcher {
         org.misha.runtime.annotation.Main.main(newStringNull);
         org.misha.semaphore.Main.main(newStringNull);
         org.misha.services.Launcher.main(newStringNull);
-        org.misha.sort.App.main(newStringNull);
+        org.misha.sort.Main.main(newStringNull);
         CounterLauncher.main(newStringNull);
         BeanManipulator.main(newStringNull);
     }
