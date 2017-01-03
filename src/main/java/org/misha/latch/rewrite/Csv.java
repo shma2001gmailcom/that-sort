@@ -84,10 +84,9 @@ public final class Csv {
         try {
             sc = new Scanner(new File(filePath));
         } catch (final FileNotFoundException e) {
-            log.error(format("{0} necessary file: {1} is not found, program is shutting down.",
-                             e.getMessage(),
-                             filePath)
-            );
+            log.error(format("{0} necessary file: {1} is not found, program is shutting down.", e.getMessage(),
+                             filePath
+            ));
             throw new RuntimeException(e);
         }
         return sc;

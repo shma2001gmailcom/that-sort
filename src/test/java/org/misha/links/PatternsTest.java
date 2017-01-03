@@ -28,7 +28,7 @@ public class PatternsTest {
         if (data != null) {
             Matcher matcher = WEB_URL.matcher(data);
             while (matcher.find()) {
-               System.out.println(matcher.group());
+                System.out.println(matcher.group());
             }
         }
     }

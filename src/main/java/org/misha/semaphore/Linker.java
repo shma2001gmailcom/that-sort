@@ -9,16 +9,16 @@ import org.misha.semaphore.ProducerConsumer.Producer;
  * Time: 10:13 AM
  */
 
-public final class Linker<T> {
+final class Linker<T> {
     private final Producer<T> producer;
     private final Consumer<T> consumer;
 
-    public Linker(final Producer<T> producer, final Consumer<T> consumer) {
+    Linker(final Producer<T> producer, final Consumer<T> consumer) {
         this.producer = producer;
         this.consumer = consumer;
     }
 
-    public void link() {
+    void link() {
         final Thread t1 = new Thread(producer);
         final Thread t2 = new Thread(consumer);
         t1.start();

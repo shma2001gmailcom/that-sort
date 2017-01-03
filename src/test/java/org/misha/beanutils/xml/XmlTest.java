@@ -14,7 +14,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 public class XmlTest {
-    private  String expected;
+    private String expected;
     private String data;
     private Root root;
 
@@ -39,5 +39,4 @@ public class XmlTest {
                 (Root) new Deserializer("org.misha.beanutils.beans").unmarshall(Serializer.serialize(root));
         //assertTrue(root.equals(yetAnotherRoot));
     }
-
 }

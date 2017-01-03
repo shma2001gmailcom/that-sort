@@ -22,23 +22,18 @@ class Slot implements Runnable {
     private final int from;
     private final int to;
 
-    private Slot(final List<String> cache,
-                 final int slotNumber,
-                 final int rowsPerSlot,
-                 final CountDownLatch latch
+    private Slot(
+            final List<String> cache, final int slotNumber, final int rowsPerSlot, final CountDownLatch latch
     ) {
         this.latch = latch;
         this.cache = cache;
         int size = cache.size();
-        from = ((slotNumber * rowsPerSlot) <= size) ? (slotNumber * rowsPerSlot)
-                                                    : (slotNumber * (size / slotNumber));
+        from = ((slotNumber * rowsPerSlot) <= size) ? (slotNumber * rowsPerSlot) : (slotNumber * (size / slotNumber));
         to = ((from + rowsPerSlot) <= size) ? (from + rowsPerSlot) : size;
     }
 
-    static Slot createSlot(final List<String> cache,
-                           final int slotNumber,
-                           final int rowsPerSlot,
-                           final CountDownLatch latch
+    static Slot createSlot(
+            final List<String> cache, final int slotNumber, final int rowsPerSlot, final CountDownLatch latch
     ) {
         final Slot result = new Slot(cache, slotNumber, rowsPerSlot, latch);
         result.addRowsToSlot();

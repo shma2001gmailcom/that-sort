@@ -10,11 +10,12 @@ import static java.lang.System.err;
 import static java.util.Arrays.copyOf;
 
 class App {
-    private final List<Integer> list = new ArrayList<Integer>();
+    private final List<Integer> list;
     private final int[] data;
 
     App(int[] data) {
         this.data = data;
+        list = new ArrayList<Integer>();
     }
 
     void sort() {

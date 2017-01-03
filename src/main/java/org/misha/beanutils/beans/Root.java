@@ -32,6 +32,10 @@ public class Root {
         return date;
     }
 
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) {
@@ -52,11 +56,6 @@ public class Root {
         result = 31 * result + (node1 != null ? node1.hashCode() : 0);
         result = 31 * result + (date != null ? date.hashCode() : 0);
         return result;
-    }
-
-    public void setDate(Date date) {
-        this.date = date;
-
     }
 
     public static class RootMaker {

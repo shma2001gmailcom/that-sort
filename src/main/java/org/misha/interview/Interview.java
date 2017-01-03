@@ -29,7 +29,7 @@ public class Interview {
         }
     }
 
-    static class derived extends base {
+    private static class derived extends base {
         public String method1() {
             return "derived";
         }
@@ -39,9 +39,7 @@ public class Interview {
         private String string = "Green";
 
         public A() {
-            log.info("string: \"" + getString() +
-                             "\", length: " + getString().length()
-            );
+            log.info("string: \"" + getString() + "\", length: " + getString().length());
         }
 
         public String getString() {

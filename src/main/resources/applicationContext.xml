@@ -17,6 +17,6 @@
     <bean id="taskExecutorExample" class="org.misha.executors.PrinterExecutor">
         <constructor-arg type="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor" ref="taskExecutor"/>
     </bean>
-    <context:property-placeholder location="classpath*:**/application.properties, classpath*:**/jdbc.properties" />
+    <context:property-placeholder location="classpath*:**/application.properties, classpath*:**/jdbc.properties"/>
     <!--<import resource="classpath*:**/log4j.xml, classpath*:**/log4j.tld"/>-->
 </beans>

@@ -25,5 +25,6 @@ public class Launcher {
         org.misha.sort.Main.main(newStringNull);
         CounterLauncher.main(newStringNull);
         BeanManipulator.main(newStringNull);
+        org.misha.singletons.Launcher.main(newStringNull);
     }
 }

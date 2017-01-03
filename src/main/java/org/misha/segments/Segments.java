@@ -10,7 +10,7 @@ import java.util.TreeMap;
  * author: misha
  * date: 5/1/16
  * time: 7:40 PM
- *
+ * <p>
  * there is one-to-one correspondence
  * between set of segments and set of
  * its left bounds by condition at {@link org.misha.segments.Segment}
@@ -20,6 +20,10 @@ public final class Segments implements Iterable<Map.Entry<Integer, Segment>> {
 
     public Segments() {
         lefts = new TreeMap<Integer, Segment>(reverser());
+    }
+
+    private static Reverser reverser() {
+        return new Reverser();
     }
 
     public void add(final Segment s) {
@@ -39,11 +43,7 @@ public final class Segments implements Iterable<Map.Entry<Integer, Segment>> {
         return lefts.entrySet().iterator();
     }
 
-    private static Reverser reverser() {
-        return new Reverser();
-    }
-
-    private static class Reverser implements Comparator<Integer>, Serializable{
+    private static class Reverser implements Comparator<Integer>, Serializable {
         private static final long serialVersionUID = -8890598769647883458L;
 
         @Override

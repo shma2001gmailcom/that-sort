@@ -50,7 +50,7 @@ public class Node1 implements Iterable<Node11> {
                 }
             }
         }
-        if(list == null) {
+        if (list == null) {
             return node11s.list == null;
         }
         return !(node10 != null ? !node10.equals(node11s.node10) : node11s.node10 != null);

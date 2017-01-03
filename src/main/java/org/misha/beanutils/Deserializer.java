@@ -22,20 +22,27 @@ import static org.apache.commons.io.FileUtils.readFileToString;
  * time: 10:15 AM
  */
 public class Deserializer {
-    private final Tree<Data> tree;
-    private final String pakkkage;
     private static Map<String, Type> map = new HashMap<String, Type>() {
         private static final long serialVersionUID = -8685406720026834192L;
 
         {
-        put("Integer", Type.INTEGER);
-        put("String", Type.STRING);
-        put("Date", Type.DATE);
-    }};
+            put("Integer", Type.INTEGER);
+            put("String", Type.STRING);
+            put("Date", Type.DATE);
+        }
+    };
+    private final Tree<Data> tree;
+    private final String pakkkage;
 
     public Deserializer(String p) {
         tree = createTree();
         pakkkage = p;
+    }
+
+    public static void main(String... args) throws Exception {//todo ms: enums haven't been deserealised(
+        System.out.println(new Describer("org.misha.beanutils.beans").describe(
+                new Deserializer("org.misha.beanutils.beans")
+                        .unmarshall(readFileToString(new File("src/test/resources/table"))), 0));
     }
 
     private Object deserealize(Node<Data> node) throws Exception {
@@ -68,7 +75,7 @@ public class Deserializer {
                     }
                 }
             }
-        }  else {
+        } else {
             object = createLeaf(node.getContent().getValue(), node.getContent().getType());
         }
         return object;
@@ -123,10 +130,5 @@ public class Deserializer {
             result.add(node.getContent().getType());
         }
         return result;
-    }
-
-    public static void main(String... args) throws Exception {//todo ms: enums haven't been deserealised(
-        System.out.println(new Describer("org.misha.beanutils.beans").describe(new Deserializer("org.misha.beanutils.beans")
-                .unmarshall(readFileToString(new File("src/test/resources/table"))), 0));
     }
 }

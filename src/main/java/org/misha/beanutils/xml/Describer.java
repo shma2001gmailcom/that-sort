@@ -21,6 +21,15 @@ public class Describer {
         beansPackage = s;
     }
 
+    private static Object fieldValue(Object bean, Field field) {
+        try {
+            return field.get(bean);
+        } catch (IllegalAccessException ignored) {
+            log.error(ignored.getMessage());
+        }
+        return null;
+    }
+
     public String describe(Object bean, int depth) throws ReflectiveOperationException {
         StringBuilder sb = new StringBuilder(tab(depth));
         sb = sb.append(getSimpleName(bean)).append("[\n");
@@ -58,9 +67,8 @@ public class Describer {
         return sb.toString().replaceAll("\\n\\n", "\n");
     }
 
-    private StringBuilder forArray(int depth,
-                                   StringBuilder sb,
-                                   Object[] value
+    private StringBuilder forArray(
+            int depth, StringBuilder sb, Object[] value
     ) throws ReflectiveOperationException {
         List collection = Arrays.asList(value);
         for (Iterator it = collection.iterator(); it.hasNext(); ) {
@@ -71,9 +79,8 @@ public class Describer {
         return sb;
     }
 
-    private StringBuilder forEnum(Enum bean,
-                                  StringBuilder sb,
-                                  Enum value
+    private StringBuilder forEnum(
+            Enum bean, StringBuilder sb, Enum value
     ) {
         if (bean.name().equals(value.name())) {
             sb = sb.delete(sb.length() - 2, sb.length()).append(": ").append(value.name()).append('\n');
@@ -81,9 +88,8 @@ public class Describer {
         return sb;
     }
 
-    private StringBuilder forCollection(int depth,
-                                        StringBuilder sb,
-                                        Collection value
+    private StringBuilder forCollection(
+            int depth, StringBuilder sb, Collection value
     ) throws ReflectiveOperationException {
         for (Iterator it = value.iterator(); it.hasNext(); ) {
             Object element = it.next();
@@ -103,14 +109,5 @@ public class Describer {
             sb = sb.append("-");
         }
         return sb.toString();
-    }
-
-    private static Object fieldValue(Object bean, Field field) {
-        try {
-            return field.get(bean);
-        } catch (IllegalAccessException ignored) {
-            log.error(ignored.getMessage());
-        }
-        return null;
     }
 }

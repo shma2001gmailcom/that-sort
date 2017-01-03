@@ -83,7 +83,7 @@ public final class NodeImpl<T> implements Node<T> {
 
     @Override
     public final String toString() {
-        return "Node("+content.toString()+")";
+        return "Node(" + content.toString() + ")";
     }
 
     @Override

@@ -26,13 +26,6 @@ public final class Serializer {
     private Serializer() {
     }
 
-    static {
-        classes.add(String.class);
-        classes.add(BigDecimal.class);
-        classes.add(Boolean.class);
-        classes.add(GregorianCalendar.class);
-    }
-
     public static String serialize(final Object bean) {
         return XML_HEADER + describe(bean);
     }
@@ -119,6 +112,13 @@ public final class Serializer {
 
     private Root createActual() {
         return Root.RootMaker.makeRoot();
+    }
+
+    static {
+        classes.add(String.class);
+        classes.add(BigDecimal.class);
+        classes.add(Boolean.class);
+        classes.add(GregorianCalendar.class);
     }
 }
 

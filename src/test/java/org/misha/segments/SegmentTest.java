@@ -48,7 +48,7 @@ public class SegmentTest {
     @Before
     public void setUp() throws IOException {
         Matcher matcher = compile(SEGMENT).matcher(read(SEGMENTS));
-        while(matcher.find()) {
+        while (matcher.find()) {
             final String data = matcher.group();
             final String[] parts = split(data, ", ");
             final int leftBound = Integer.parseInt(removeStart(parts[0], "["));
@@ -58,8 +58,6 @@ public class SegmentTest {
             segments.add(segment);
         }
     }
-
-
 
     @Test
     public void testSitsIn() throws Exception {

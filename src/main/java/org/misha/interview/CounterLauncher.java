@@ -10,12 +10,12 @@ import java.util.concurrent.atomic.AtomicLong;
  * time: 11:13 AM
  */
 public class CounterLauncher {
-    private static final Logger log  = Logger.getLogger(CounterLauncher.class);
+    private static final Logger log = Logger.getLogger(CounterLauncher.class);
 
     public static void main(String... args) {
         final Counter counter = new MyCounter(new AtomicLong(0L));
-        for(int i = 0; i < 20; ++i) {
-           new Thread(new Worker(counter)).start();
+        for (int i = 0; i < 20; ++i) {
+            new Thread(new Worker(counter)).start();
         }
         log.debug(counter.currentValue());
     }

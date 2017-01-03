@@ -29,6 +29,6 @@ public class Data {
 
     @Override
     public String toString() {
-        return "type: "+ type + (value != null ? " value: " + value: EMPTY);
+        return "type: " + type + (value != null ? " value: " + value : EMPTY);
     }
 }

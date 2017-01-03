@@ -6,24 +6,21 @@ package org.misha.executors;
 
 import org.apache.log4j.Logger;
 import org.springframework.core.task.TaskExecutor;
-import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 
 import javax.inject.Inject;
 
 public class PrinterExecutor {
+    private static final int INT = 6;
     private static final Logger log = Logger.getLogger(PrinterExecutor.class);
-    public static final int INT = 6;
+    private final TaskExecutor taskExecutor;
 
     @Inject
-    private TaskExecutor taskExecutor;
-
-    public PrinterExecutor(ThreadPoolTaskExecutor taskExecutor) {
+    public PrinterExecutor(TaskExecutor taskExecutor) {
         this.taskExecutor = taskExecutor;
+
     }
 
-
-
-    public void printMessages() {
+    void printMessages() {
         for (int i = 0; i < INT; i++) {
             taskExecutor.execute(new MessagePrinterTask("Message" + i));
         }
@@ -32,7 +29,7 @@ public class PrinterExecutor {
     private static class MessagePrinterTask implements Runnable {
         private String message;
 
-        public MessagePrinterTask(String message) {
+        MessagePrinterTask(String message) {
             this.message = message;
         }
 
