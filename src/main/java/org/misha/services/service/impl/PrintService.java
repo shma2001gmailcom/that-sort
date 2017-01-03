@@ -13,10 +13,9 @@ import org.misha.services.service.Service;
  */
 
 @SuppressWarnings("UnusedDeclaration")//used through reflection
-public final class PrintService implements Service<PrintResult> {
+final class PrintService implements Service<PrintResult> {
     private static final Logger log = Logger.getLogger(PrintService.class);
 
-    @SuppressWarnings("UseOfSystemOutOrSystemErr")
     @Override
     public PrintResult serve(final Data data) {
         log.info("print service is running.");
