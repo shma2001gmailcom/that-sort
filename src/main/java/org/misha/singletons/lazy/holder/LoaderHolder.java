@@ -1,10 +1,10 @@
 package org.misha.singletons.lazy.holder;
 
-import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.Logger;
 import org.misha.singletons.LoaderInterface;
 
 import static java.lang.Thread.currentThread;
+import static org.apache.commons.lang3.StringUtils.EMPTY;
 
 /**
  * author: misha
@@ -21,7 +21,7 @@ public class LoaderHolder {
         private static final LoaderInterface INSTANCE = create();
 
         private static LoaderInterface create() {
-            return new Loader(StringUtils.EMPTY, currentThread().getContextClassLoader());
+            return new Loader(EMPTY, currentThread().getContextClassLoader());
         }
     }
 

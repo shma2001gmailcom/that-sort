@@ -1,11 +1,11 @@
 package org.misha.singletons.lazy.doublecheck.immutable;
 
-import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.Logger;
 import org.misha.singletons.FinalValue;
 import org.misha.singletons.LoaderInterface;
 
 import static java.lang.Thread.currentThread;
+import static org.apache.commons.lang3.StringUtils.EMPTY;
 
 /**
  * author: misha
@@ -21,7 +21,7 @@ public class FinalValueSingleton {
             synchronized (this) {
                 if (loaderValue == null) {
                     loaderValue = new FinalValue<LoaderInterface>(
-                            new Loader(StringUtils.EMPTY, currentThread().getContextClassLoader()));
+                            new Loader(EMPTY, currentThread().getContextClassLoader()));
                 }
                 local = loaderValue;
             }

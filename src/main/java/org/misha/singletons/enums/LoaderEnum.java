@@ -1,8 +1,9 @@
 package org.misha.singletons.enums;
 
-import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.Logger;
 import org.misha.singletons.LoaderInterface;
+
+import static org.apache.commons.lang3.StringUtils.EMPTY;
 
 /**
  * author: misha
@@ -10,6 +11,7 @@ import org.misha.singletons.LoaderInterface;
  * time: 5:56 PM
  */
 public enum LoaderEnum {
+
     LOADER;
 
     private final LoaderInterface loader;
@@ -23,7 +25,7 @@ public enum LoaderEnum {
     }
 
     private LoaderInterface create() {
-        return new Loader(StringUtils.EMPTY, this.getClass().getClassLoader().getParent());
+        return new Loader(EMPTY, this.getClass().getClassLoader().getParent());
     }
 
     private static class Loader implements LoaderInterface {

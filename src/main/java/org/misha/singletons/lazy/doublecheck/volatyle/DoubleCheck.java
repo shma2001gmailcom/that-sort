@@ -1,8 +1,9 @@
 package org.misha.singletons.lazy.doublecheck.volatyle;
 
-import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.Logger;
 import org.misha.singletons.LoaderInterface;
+
+import static org.apache.commons.lang3.StringUtils.EMPTY;
 
 /**
  * author: misha
@@ -10,15 +11,15 @@ import org.misha.singletons.LoaderInterface;
  * time: 5:12 PM
  */
 public class DoubleCheck {
-    private static volatile LoaderInterface helper;
+    private static volatile LoaderInterface loader;
 
     public LoaderInterface getLoader() {
-        LoaderInterface result = helper;
+        LoaderInterface result = loader;
         if (result == null) {
             synchronized (this) {
-                result = helper;
+                result = loader;
                 if (result == null) {
-                    helper = result = new Loader(StringUtils.EMPTY, this.getClass().getClassLoader());
+                    loader = result = new Loader(EMPTY, this.getClass().getClassLoader());
                 }
             }
         }
