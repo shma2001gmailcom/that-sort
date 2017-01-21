@@ -13,11 +13,11 @@ import org.misha.singletons.lazy.holder.LoaderHolder;
 public class Launcher {
 
     public static void main(String[] args) {
-        for (final LoaderInterface loader : new LoaderInterface[]{new FinalValueSingleton().getLoader(),
-                                                                  new DoubleCheck().getLoader(),
-                                                                  LoaderHolder.getLoader(),
-                                                                  LoaderEnum.LOADER.getLoader()
-        }) {
+        LoaderInterface[] loaders =
+                {new FinalValueSingleton().getLoader(), new DoubleCheck().getLoader(), LoaderHolder.getLoader(),
+                 LoaderEnum.LOADER.getLoader()
+                };
+        for (final LoaderInterface loader : loaders) {
             loader.printLoaders();
         }
     }
