@@ -39,7 +39,7 @@ class App {
         return errors;
     }
 
-    private synchronized int[] waitForResult(int[] data) {
+    private int[] waitForResult(int[] data) {
         int dataLength = data.length;
         CountDownLatch latch = new CountDownLatch(dataLength);
         new Thread(Actor.getInstance(latch)).start();
@@ -47,11 +47,13 @@ class App {
             Thread t = new Thread(new UnitThread(number, latch, list));
             t.start();
         }
-        while (list.size() < dataLength) {
-            try {
-                wait(1);
-            } catch (InterruptedException e) {
-                Thread.currentThread().interrupt();
+        synchronized (this) {
+            while (list.size() < dataLength) {
+                try {
+                    wait(1);
+                } catch (InterruptedException e) {
+                    Thread.currentThread().interrupt();
+                }
             }
         }
         int[] result = new int[dataLength];

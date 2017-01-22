@@ -32,7 +32,7 @@ public class Describer {
 
     public String describe(Object bean, int depth) throws ReflectiveOperationException {
         StringBuilder sb = new StringBuilder(tab(depth));
-        sb = sb.append(getSimpleName(bean)).append("[\n");
+        sb.append(getSimpleName(bean)).append("[\n");
         for (Field field : bean.getClass().getDeclaredFields()) {
             if (field.getName().contains("$")) {
                 return sb.append("").toString();
@@ -48,19 +48,19 @@ public class Describer {
                 if (value instanceof Enum) {
                     sb = forEnum((Enum) bean, sb, (Enum) value);
                 } else {
-                    sb = sb.append(describe(value, depth));
+                    sb.append(describe(value, depth));
                 }
             } else if (value instanceof Collection) {
-                sb = sb.append(tab(depth)).append(value.getClass().getSimpleName()).append("{\n");
+                sb.append(tab(depth)).append(value.getClass().getSimpleName()).append("{\n");
                 sb = forCollection(depth, sb, (Collection) value);
-                sb = sb.append(tab(depth)).append("}\n");
+                sb.append(tab(depth)).append("}\n");
             } else if (value instanceof Object[]) {
-                sb = sb.append(tab(depth)).append(value.getClass().getSimpleName()).append("{\n");
+                sb.append(tab(depth)).append(value.getClass().getSimpleName()).append("{\n");
                 sb = forArray(depth, sb, (Object[]) value);
-                sb = sb.append(tab(depth)).append("}\n");
+                sb.append(tab(depth)).append("}\n");
             } else {
-                sb = sb.append(tab(depth)).append(getSimpleName(value)).append(": ").append(value).append("\n")
-                       .append(tab(depth - 1)).append("]\n");
+                sb.append(tab(depth)).append(getSimpleName(value)).append(": ").append(value).append("\n")
+                  .append(tab(depth - 1)).append("]\n");
             }
             --depth;
         }
@@ -83,7 +83,7 @@ public class Describer {
             Enum bean, StringBuilder sb, Enum value
     ) {
         if (bean.name().equals(value.name())) {
-            sb = sb.delete(sb.length() - 2, sb.length()).append(": ").append(value.name()).append('\n');
+            sb.delete(sb.length() - 2, sb.length()).append(": ").append(value.name()).append('\n');
         }
         return sb;
     }
@@ -106,7 +106,7 @@ public class Describer {
     private String tab(int length) {
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < 2 * length; ++i) {
-            sb = sb.append("-");
+            sb.append("-");
         }
         return sb.toString();
     }

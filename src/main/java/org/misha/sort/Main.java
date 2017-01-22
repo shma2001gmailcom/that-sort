@@ -9,7 +9,7 @@ import java.util.Random;
  */
 public class Main {
     public static void main(String[] args) {
-        int[] data = new int[5000];
+        int[] data = new int[1000];
         int length = data.length;
         for (int i = 0; i < length; ++i) {
             data[i] = 1 + new Random().nextInt(100);

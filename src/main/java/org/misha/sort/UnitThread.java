@@ -21,9 +21,9 @@ class UnitThread implements Runnable {
     @Override
     public void run() {
         try {
-            Thread.sleep(350L * integer);
+            Thread.sleep(500L * integer);
+            System.err.print('.');
             synchronized (this) {
-                System.err.print('.');
                 list.add(integer);
             }
             latch.countDown();
