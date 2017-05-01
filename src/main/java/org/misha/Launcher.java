@@ -18,7 +18,7 @@ public class Launcher {
         Interview.main(newStringNull);
         Csv.main(newStringNull);
         Merge.main(newStringNull);
-        org.misha.proxy.Main.main(newStringNull);
+        org.misha.proxy.proxyjdk.Main.main(newStringNull);
         org.misha.runtime.annotation.Main.main(newStringNull);
         org.misha.semaphore.Main.main(newStringNull);
         org.misha.services.Launcher.main(newStringNull);

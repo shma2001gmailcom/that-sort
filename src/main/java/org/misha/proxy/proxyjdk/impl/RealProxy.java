@@ -1,13 +1,13 @@
-package org.misha.proxy.impl;
+package org.misha.proxy.proxyjdk.impl;
 
 import org.apache.log4j.Logger;
-import org.misha.proxy.MyObject;
+import org.misha.proxy.proxyjdk.MyObject;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
-import static org.misha.proxy.impl.ProxyService.getMyObject;
+import static org.misha.proxy.proxyjdk.impl.ProxyService.getMyObject;
 
 /**
  * Author: mshevelin
@@ -25,19 +25,19 @@ public final class RealProxy implements MyObject {
 
     @Override
     public void printCount() {
-        log.info("proxy add-on:-------------------before count");
+        log.info("proxyjdk add-on:-------------------before count");
         proxy.printCount();
-        log.info("proxy add-on:-------------------after count");
+        log.info("proxyjdk add-on:-------------------after count");
     }
 
     @Override
     public void printName(final int times) {
         if (times > 1) {//wrapping rule
-            log.info("proxy add-on:-------------------before name");
+            log.info("proxyjdk add-on:-------------------before name");
             proxy.printName(times);
-            log.info("proxy add-on:-------------------after name");
+            log.info("proxyjdk add-on:-------------------after name");
         } else {
-            log.info("proxy add-on: need more times");
+            log.info("proxyjdk add-on: need more times");
         }
     }
 
@@ -46,7 +46,8 @@ public final class RealProxy implements MyObject {
             return (MyObject) Proxy.newProxyInstance(MyObject.class.getClassLoader(),//loader
                                                      new Class<?>[]{MyObject.class},//interfaces
                                                      new RealInvocationHandler(
-                                                             getMyObject("org.misha.proxy.impl.RealObject", times,
+                                                             getMyObject("org.misha.proxy.proxyjdk.impl.RealObject",
+                                                                         times,
                                                                          name
                                                              ))//handler
             );

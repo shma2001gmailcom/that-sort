@@ -1,6 +1,6 @@
-package org.misha.proxy;
+package org.misha.proxy.proxyjdk;
 
-import org.misha.proxy.impl.ProxyService;
+import org.misha.proxy.proxyjdk.impl.ProxyService;
 
 /**
  * Author: mshevelin

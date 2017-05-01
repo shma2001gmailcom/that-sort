@@ -1,4 +1,4 @@
-package org.misha.proxy;
+package org.misha.proxy.proxyjdk;
 
 /**
  * Author: mshevelin
@@ -6,7 +6,7 @@ package org.misha.proxy;
  * Time: 4:26 PM
  */
 
-public class Main {
+public final class Main {
 
     public static void main(final String... args) {
         final MyObject t = MyObject.Factory.getInstance(1, "nnnn");

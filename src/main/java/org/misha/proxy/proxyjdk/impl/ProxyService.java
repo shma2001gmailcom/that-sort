@@ -1,7 +1,7 @@
-package org.misha.proxy.impl;
+package org.misha.proxy.proxyjdk.impl;
 
 import org.apache.log4j.Logger;
-import org.misha.proxy.MyObject;
+import org.misha.proxy.proxyjdk.MyObject;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
@@ -13,7 +13,7 @@ import java.lang.reflect.InvocationTargetException;
  */
 
 public class ProxyService {
-    private static final String proxyPackage = "org.misha.proxy.impl.";//todo: configure or inject
+    private static final String proxyPackage = "org.misha.proxy.proxyjdk.impl.";//todo: configure or inject
     private static final String proxyName = "RealProxy";//todo: configure or inject
     private static final Logger log = Logger.getLogger(ProxyService.class);
 
@@ -21,7 +21,7 @@ public class ProxyService {
         try {
             return getMyObject(proxyPackage + proxyName, count, name);
         } catch (Exception e) {
-            log.info(e.getMessage() + " Can't find proxy. Shutting down.");
+            log.info(e.getMessage() + " Can't find proxyjdk. Shutting down.");
             System.exit(-1);
         }
         return null;
@@ -37,6 +37,6 @@ public class ProxyService {
             constructor.setAccessible(true);
             return (MyObject) constructor.newInstance(count, objName);
         }
-        throw new IllegalStateException(c.getName() + "is not a correct proxy");
+        throw new IllegalStateException(c.getName() + "is not a correct proxyjdk");
     }
 }

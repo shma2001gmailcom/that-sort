@@ -1,7 +1,7 @@
-package org.misha.proxy.impl;
+package org.misha.proxy.proxybycglib.impl;
 
 import org.apache.log4j.Logger;
-import org.misha.proxy.MyObject;
+import org.misha.proxy.proxyjdk.MyObject;
 
 /**
  * Author: mshevelin
@@ -9,12 +9,12 @@ import org.misha.proxy.MyObject;
  * Time: 4:07 PM
  */
 @SuppressWarnings("unused class")
-public final class RealObject implements MyObject {
+public class RealObject implements MyObject {
     private static final Logger log = Logger.getLogger(RealObject.class);
     private final int count;
     private final String name;
 
-    private RealObject(final Integer times, final String name) {
+    RealObject(final Integer times, final String name) {
         count = times;
         this.name = name;
     }
