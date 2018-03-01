@@ -7,14 +7,14 @@ import org.apache.log4j.Logger;
  * Date: 9/17/14
  * Time: 5:36 PM
  */
-//    int a = 1234, b = 5678,  c = 15263748
-//    int merge (int a, int b) {
+//    long a = 1234, b = 5678,  c = 15263748
+//    long merge (long a, long b) {
 //    }
 public class Merge {
     private static final Logger log = Logger.getLogger(Merge.class);
 
-    private static int[] code(int a) {
-        final int[] digits = new int[digitCount(a)];
+    private static long[] code(long a) {
+        final long[] digits = new long[digitCount(a)];
         int i = 0;
         while (a > 0) {
             digits[i++] = a % 10;
@@ -23,7 +23,7 @@ public class Merge {
         return digits;
     }
 
-    private static int digitCount(int a) {
+    private static int digitCount(long a) {
         int count = 0;
         while (a > 0) {
             a /= 10;
@@ -32,20 +32,20 @@ public class Merge {
         return count;
     }
 
-    private static int merge(final int a, final int b) {
-        int result = 0;
-        int length = code(a).length;
+    private static long merge(final long a, final long b) {
+        long result = 0;
+        final long length = code(a).length;
         for (int i = 0; i < length; result = doMerge(a, b, result, i++));
         return result;
     }
 
-    private static int doMerge(int a, int b, int result, int i) {
-        result += code(a)[i] * (int) Math.pow(10, 2 * i + 1);
-        result += code(b)[i] * (int) Math.pow(10, 2 * i);
+    private static long doMerge(final long a, final long b, long result, final int i) {
+        result += code(a)[i] * (long) Math.pow(10, 2 * i + 1);
+        result += code(b)[i] * (long) Math.pow(10, 2 * i);
         return result;
     }
 
     public static void main(final String[] args) {
-        log.info(merge(1357, 2468));
+        log.info(merge(97531, 86420));
     }
 }
