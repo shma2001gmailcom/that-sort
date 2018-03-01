@@ -1,7 +1,6 @@
 package org.misha.state.player;
 
 import org.apache.log4j.Logger;
-import org.misha.state.player.Player;
 import org.misha.state.player.songs.PlayList;
 import org.misha.state.player.songs.Song;
 
