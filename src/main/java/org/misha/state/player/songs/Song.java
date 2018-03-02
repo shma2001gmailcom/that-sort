@@ -6,7 +6,7 @@ package org.misha.state.player.songs;
  * date: 3/1/18
  */
 public abstract class Song {
-    private String name;
+   protected String name;
     
     public String getName() {
         return name;

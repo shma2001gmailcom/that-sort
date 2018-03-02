@@ -22,8 +22,8 @@ class Actor implements Runnable {
     public void run() {
         try {
             latch.await();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
+        } catch (final InterruptedException e) {
+            Thread.currentThread().interrupt();
         }
     }
 }

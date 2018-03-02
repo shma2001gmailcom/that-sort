@@ -3,6 +3,7 @@ package org.misha.beanutils.tree.impl;
 import org.misha.beanutils.tree.Node;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by misha. Date: 05.11.11 Time: 11:43
@@ -35,7 +36,7 @@ public final class NodeImpl<T> implements Node<T> {
     }
 
     @Override
-    public final ArrayList<Node<T>> getChildren() {
+    public final List<Node<T>> getChildren() {
         return children;
     }
 

@@ -15,17 +15,17 @@ public class CombinerImpl extends Combiner<String, Integer> {
     }
 
     @Override
-    protected void onExistentKey(String key, Integer integer, Map<String, Integer> map) {
+    protected void onExistentKey(final String key, final Integer integer, final Map<String, Integer> map) {
         map.put(key, map.get(key) + integer);
     }
 
     @Override
-    protected void onMissedKey(String key, Integer integer, Map<String, Integer> map) {
+    protected void onMissedKey(final String key, final Integer integer, final Map<String, Integer> map) {
         map.put(key, integer);
     }
 
     @Override
-    protected String keyForElement(Integer integer) {
+    protected String keyForElement(final Integer integer) {
         return String.valueOf(integer);
     }
 }

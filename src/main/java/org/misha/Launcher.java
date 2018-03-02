@@ -4,6 +4,7 @@ import org.misha.beanutils.BeanManipulator;
 import org.misha.interview.CounterLauncher;
 import org.misha.interview.Interview;
 import org.misha.merge.Merge;
+import org.misha.state.PlayerLauncher;
 import org.misha.threads.latch.Csv;
 
 /**
@@ -12,7 +13,7 @@ import org.misha.threads.latch.Csv;
  */
 public class Launcher {
 
-    public static void main(String... args) throws ReflectiveOperationException, InterruptedException {
+    public static void main(String... args) throws Exception {
         String[] newStringNull = new String[]{null};
         org.misha.threads.executors.Launcher.main(newStringNull);
         Interview.main(newStringNull);
@@ -26,5 +27,6 @@ public class Launcher {
         CounterLauncher.main(newStringNull);
         BeanManipulator.main(newStringNull);
         org.misha.threads.singletons.Launcher.main(newStringNull);
+        PlayerLauncher.main(newStringNull);
     }
 }

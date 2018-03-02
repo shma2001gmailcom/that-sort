@@ -11,21 +11,19 @@ class UnitThread implements Runnable {
     private final int integer;
     private final CountDownLatch latch;
     private final List<Integer> list;
-
+    
     UnitThread(final int i, final CountDownLatch cdl, final List<Integer> l) {
         integer = i;
         latch = cdl;
         list = l;
     }
-
+    
     @Override
     public void run() {
         try {
-            Thread.sleep(500L * integer);
+            Thread.sleep(160L * integer);
             System.err.print('.');
-            synchronized (this) {
-                list.add(integer);
-            }
+            list.add(integer);
             latch.countDown();
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();

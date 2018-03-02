@@ -17,7 +17,7 @@ public class Player {
     private Song currentSong;
     final View view;
     
-    Player() {
+    public Player() {
         this.state = new ReadyState(this);
         view = new View(new Button() {
     
@@ -25,7 +25,7 @@ public class Player {
             void onClick() {
                 Player.this.clickLock();
             }
-        },new Button() {
+        }, new Button() {
             @Override
             void onClick() {
                 Player.this.clickPlay();
@@ -71,10 +71,6 @@ public class Player {
         currentSong.play();
     }
     
-    void stopPlayback() {
-        log.debug("stopPlayback");
-    }
-    
     public void nextSong() {
         log.debug("nextSong");
         currentSong = playList.next();
@@ -90,12 +86,16 @@ public class Player {
         return state;
     }
     
-    void setPlayList(PlayList playList) {
+    public void setPlayList(PlayList playList) {
         this.playList = playList;
         currentSong = playList.get(0);
     }
     
     public Song currentSong() {
         return currentSong;
+    }
+    
+    public void stopPlayback() {
+        state.clickLock();
     }
 }

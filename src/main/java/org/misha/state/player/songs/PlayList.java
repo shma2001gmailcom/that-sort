@@ -11,6 +11,14 @@ public class PlayList {
     private final List<Song> songs = new ArrayList<Song>();
     private int current = 0;
     
+    public static  PlayList playList(final String ... names) {
+        PlayList playList = new PlayList();
+        for (String name : names) {
+            playList.put(new ConcreteSong(name));
+        }
+        return playList;
+    }
+    
     public Song get(int i) {
         int index = i % songs.size();
         this.current = index;

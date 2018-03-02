@@ -1,6 +1,6 @@
 #!/bin/sh
 
-M2_HOME='/opt/apache-maven-3.2.2/'
+M2_HOME='/usr/share/maven'
 export M2_HOME
 mvn=${M2_HOME}/bin/mvn
 cd ../

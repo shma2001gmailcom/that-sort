@@ -1,5 +1,6 @@
 package org.misha.combine;
 
+import javax.annotation.Nonnull;
 import java.util.*;
 
 import static com.google.common.base.Preconditions.checkArgument;
@@ -9,26 +10,26 @@ import static com.google.common.base.Preconditions.checkArgument;
  * date: 2/11/18
  * time: 11:51 AM
  */
-public abstract class Combiner<Key, Element> implements Iterable<Element> {
-    private final List<Element> collection;
-    private final List<Element> combined = new ArrayList<Element>();
+public abstract class Combiner<K, E> implements Iterable<E> {
+    private final List<E> collection;
+    private final List<E> combined = new ArrayList<E>();
     private boolean hasBeenCombined = false;
 
-    public Combiner(final List<Element> collection) {
+    Combiner(final List<E> collection) {
         this.collection = collection;
     }
 
-    protected abstract void onExistentKey(Key key, Element element, Map<Key, Element> map);
+    protected abstract void onExistentKey(K key, E element, Map<K, E> map);
 
-    protected abstract void onMissedKey(Key key, Element element, Map<Key, Element> map);
+    protected abstract void onMissedKey(K key, E element, Map<K, E> map);
 
-    protected abstract Key keyForElement(Element element);
+    protected abstract K keyForElement(E element);
 
-    protected void combine() {
+    void combine() {
         checkArgument(!hasBeenCombined);
-        final Map<Key, Element> map = new HashMap<Key, Element>();
-        for (final Element element : collection) {
-            final Key key = keyForElement(element);
+        final Map<K, E> map = new HashMap<K, E>();
+        for (final E element : collection) {
+            final K key = keyForElement(element);
             if (map.containsKey(key)) {
                 onExistentKey(key, element, map);
             } else {
@@ -39,8 +40,9 @@ public abstract class Combiner<Key, Element> implements Iterable<Element> {
         hasBeenCombined = true;
     }
 
+    @Nonnull
     @Override
-    public Iterator<Element> iterator() {
+    public Iterator<E> iterator() {
         checkArgument(hasBeenCombined);
         return combined.iterator();
     }
