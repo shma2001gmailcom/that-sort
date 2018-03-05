@@ -13,7 +13,7 @@ import java.util.TreeMap;
  * <p>
  * there is one-to-one correspondence
  * between set of segments and set of
- * its left bounds by condition at {@link org.misha.segments.Segment}
+ * their left bounds by condition at {@link org.misha.segments.Segment}
  */
 public final class Segments implements Iterable<Map.Entry<Integer, Segment>> {
     private final TreeMap<Integer, Segment> lefts;
