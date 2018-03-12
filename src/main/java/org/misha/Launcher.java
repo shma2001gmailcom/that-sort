@@ -28,5 +28,6 @@ public class Launcher {
         BeanManipulator.main(newStringNull);
         org.misha.threads.singletons.Launcher.main(newStringNull);
         PlayerLauncher.main(newStringNull);
+        org.misha.heterogenius.Main.main(newStringNull);
     }
 }
