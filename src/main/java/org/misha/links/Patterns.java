@@ -4,7 +4,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 final class Patterns {
-
+    
     public static final Pattern EMAIL_ADDRESS = Pattern.compile(
             "[a-zA-Z0-9+._%\\-\\+]{1,256}" + "@" + "[a-zA-Z0-9][a-zA-Z0-9\\-]{0,64}" + "(" + "\\." + "[a-zA-Z0-9][a-zA-Z0-9\\-]{0,25}" + ")+");
     /**
@@ -48,13 +48,13 @@ final class Patterns {
     private static final String GTLD = "[" + GOOD_GTLD_CHAR + "]{2,63}";
     private static final String HOST_NAME = "(" + IRI + "\\.)+" + GTLD;
     public static final Pattern DOMAIN_NAME = Pattern.compile("(" + HOST_NAME + "|" + IP_ADDRESS + ")");
-
+    
     /**
      * Do not create this static utility class.
      */
     private Patterns() {
     }
-
+    
     /**
      * Convenience method to take all of the non-null matching groups in a
      * regex Matcher and return them as a concatenated string.
@@ -75,7 +75,7 @@ final class Patterns {
         }
         return b.toString();
     }
-
+    
     /**
      * Convenience method to return only the digits and plus signs
      * in the matching string.

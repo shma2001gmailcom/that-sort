@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.atomic.AtomicInteger;
 
 import static java.lang.System.arraycopy;
 import static java.lang.System.err;
@@ -12,10 +13,12 @@ import static java.util.Arrays.copyOf;
 class App {
     private final List<Integer> list;
     private final int[] data;
+    private volatile AtomicInteger errorCount;
 
     App(int[] data) {
         this.data = data;
-        list = new ArrayList<Integer>();
+        list = new ArrayList<>();
+        errorCount = new AtomicInteger(0);
     }
 
     void sort() {
@@ -24,7 +27,9 @@ class App {
         arraycopy(data, 0, result, 0, length);
         result = waitForResult(copyOf(data, length));
         err.println(Arrays.toString(result));
-        err.println("error count: " + getErrors(length, result));
+        final int errors = getErrors(length, result);
+        err.println("error count: " + errors);
+        errorCount.set(errors);
     }
 
     private int getErrors(int length, int[] result) {
@@ -61,5 +66,9 @@ class App {
             result[i] = list.get(i);
         }
         return result;
+    }
+    
+    int getErrorCount() {
+        return errorCount.get();
     }
 }

@@ -5,11 +5,11 @@ package org.misha.threads.waitnotify;
  * date: 5/13/17
  * time: 3:31 PM
  */
-public class WaitBase {
+class WaitBase {
     private final Object mutex = new Object();
     private boolean wasSignal = false;
 
-    public void doWait() {
+    void doWait() {
         synchronized (mutex) {
             while (!wasSignal) {
                 try {
@@ -22,10 +22,10 @@ public class WaitBase {
         }
     }
 
-    public void doNotify() {
+    void doNotify() {
         synchronized (mutex) {
             wasSignal = true;
-            mutex.notify();
+            mutex.notifyAll();
         }
     }
 }

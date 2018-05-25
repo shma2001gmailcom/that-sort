@@ -18,12 +18,11 @@ public enum LoaderEnum {
 
     LoaderEnum() {
         loader = create();
-        ClassLoader loader = this.getClass().getClassLoader();
-        while (loader != null) {
-            Logger.getLogger(LoaderEnum.class).debug(loader.getClass().getSimpleName());
-            loader = loader.getParent();
+        ClassLoader classLoader = this.getClass().getClassLoader();
+        while (classLoader != null) {
+            Logger.getLogger(LoaderEnum.class).debug(classLoader.getClass().getSimpleName());
+            classLoader = classLoader.getParent();
         }
-
     }
 
     public LoaderInterface getLoader() {
@@ -52,7 +51,7 @@ public enum LoaderEnum {
         public void printLoaders() {
             ClassLoader loader = this.classloader;
             while (loader != null) {
-                Logger.getLogger(Loader.class).info(loader.getClass().getSimpleName());
+               log.info(loader.getClass().getSimpleName());
                 loader = loader.getParent();
             }
         }

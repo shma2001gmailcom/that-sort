@@ -17,8 +17,7 @@ class Fibo {
             return n < 1 ? 0 : 1;
         }
         int y = 1;
-        for (int i = 0, x = 1, t; i < n - 2; ++i, t = y, y += x, x = t) {
-        }
+        for (int i = 0, x = 1, t; i < n - 2; ++i, t = y, y += x, x = t) ;
         return y;
     }
 

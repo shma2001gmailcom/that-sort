@@ -22,8 +22,10 @@ public class Interceptor implements MethodInterceptor {
         this.service = text;
     }
 
-    public Object intercept(
-            final Object target, final Method method, final Object[] args, final MethodProxy proxy
+    public Object intercept(final Object target,
+                            final Method method,
+                            final Object[] args,
+                            final MethodProxy proxy
     ) throws Throwable {
         log.debug(service + " before " + method.getName());
         Merge.main(new String[]{});
