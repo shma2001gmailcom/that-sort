@@ -18,21 +18,18 @@ public class BlockingQueueWaitNotify<T> {
 
     public static void main(final String[] args) {
         final BlockingQueueWaitNotify<Integer> queue = new BlockingQueueWaitNotify<Integer>(50);
-        final Runnable thread1 = new Runnable() {
-            @Override
-            public void run() {
-                for (; ; ) {
-                    try {
-                        queue.add(1);
-                        System.err.println(queue.size() + " 1 added");
-                        queue.add(3);
-                        System.err.println(queue.size() + " 3 added");
-                        if (queue.size() == 50) {
-                            Thread.currentThread().interrupt();
-                        }
-                    } catch (InterruptedException e) {
-                        System.exit(0);
+        final Runnable thread1 = () -> {
+            for (; ; ) {
+                try {
+                    queue.add(1);
+                    System.err.println(queue.size() + " 1 added");
+                    queue.add(3);
+                    System.err.println(queue.size() + " 3 added");
+                    if (queue.size() == 50) {
+                        Thread.currentThread().interrupt();
                     }
+                } catch (InterruptedException e) {
+                    System.exit(0);
                 }
             }
         };
