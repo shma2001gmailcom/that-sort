@@ -33,7 +33,7 @@ public final class Main {
             }
         };
         final org.misha.threads.semaphore.Linker<Integer> linker =
-                new org.misha.threads.semaphore.Linker<Integer>(producer, consumer);
+                new org.misha.threads.semaphore.Linker<>(producer, consumer);
         linker.link();
     }
 }

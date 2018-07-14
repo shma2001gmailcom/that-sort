@@ -21,6 +21,6 @@ class Lock {
 
     synchronized void unlock() {
         locked = false;
-        notify();
+        notifyAll();
     }
 }

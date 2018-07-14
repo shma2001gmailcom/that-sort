@@ -41,7 +41,7 @@ final class SearchService implements Service<SearchResult> {
     @Override
     public SearchResult serve(final Data data) {
         log.info("search service is running.\n");
-        final List<String> results = new ArrayList<String>();
+        final List<String> results = new ArrayList<>();
         final File file = new File("./");
         search(file, results, ((SearchData) data).getCriteria());
         return new SearchResult(results.toString());

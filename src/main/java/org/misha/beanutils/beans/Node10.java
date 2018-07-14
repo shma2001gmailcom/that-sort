@@ -1,5 +1,6 @@
 package org.misha.beanutils.beans;
 
+import javax.annotation.Nonnull;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -10,9 +11,10 @@ import java.util.List;
  * time: 10:02 AM
  */
 public class Node10 implements Iterable<Node100> {
-    private List<Node100> list = new ArrayList<Node100>();
+    private List<Node100> list = new ArrayList<>();
 
     @Override
+    @Nonnull
     public Iterator<Node100> iterator() {
         return list.iterator();
     }

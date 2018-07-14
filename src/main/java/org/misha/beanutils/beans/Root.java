@@ -16,7 +16,7 @@ public class Root {
         return node0;
     }
 
-    public void setNode0(Node0 node0) {
+    void setNode0(Node0 node0) {
         this.node0 = node0;
     }
 
@@ -24,7 +24,7 @@ public class Root {
         return node1;
     }
 
-    public void setNode1(Node1 node1) {
+    void setNode1(Node1 node1) {
         this.node1 = node1;
     }
 
@@ -58,7 +58,10 @@ public class Root {
         return result;
     }
 
-    public static class RootMaker {
+    public final static class RootMaker {
+
+        private RootMaker() {
+        }
 
         public static Root makeRoot() {
             Root root = new Root();

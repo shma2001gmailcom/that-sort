@@ -17,7 +17,7 @@ import static java.text.MessageFormat.format;
  */
 class Slot implements Runnable {
     private final CountDownLatch latch;
-    private final List<String> slotCache = new ArrayList<String>();
+    private final List<String> slotCache = new ArrayList<>();
     private final List<String> cache;
     private final int from;
     private final int to;
@@ -46,23 +46,13 @@ class Slot implements Runnable {
 
     private void doSlot() {
         final File file = new File(format("./answer/{0}-{1}", from, to));
-        Writer writer = null;
-        try {
-            writer = new FileWriter(file, false);
+        try (final Writer writer = new FileWriter(file, false)) {
             for (final String record : slotCache) {
                 writer.write(record + "\n");
                 writer.flush();
             }
         } catch (final IOException ignored) {
-            //e.printStackTrace();
-        } finally {
-            if (writer != null) {
-                try {
-                    writer.close();
-                } catch (IOException e) {
-                    Csv.log.error(e);
-                }
-            }
+            //
         }
     }
 

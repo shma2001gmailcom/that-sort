@@ -26,9 +26,9 @@ public class RealObject implements MyObject {
 
     @Override
     public void printName(final int times) {
-        int count = 0;
-        while (count < times) {
-            count++;
+        int c = 0;
+        while (c < times) {
+            c++;
             log.info(name);
         }
     }

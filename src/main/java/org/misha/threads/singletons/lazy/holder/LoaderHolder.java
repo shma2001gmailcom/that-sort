@@ -11,7 +11,10 @@ import static org.apache.commons.lang3.StringUtils.EMPTY;
  * date: 1/21/17
  * time: 5:41 PM
  */
-public class LoaderHolder {
+public final class LoaderHolder {
+
+    private LoaderHolder() {
+    }
 
     public static LoaderInterface getLoader() {
         return Holder.INSTANCE;

@@ -9,35 +9,25 @@ import java.util.Random;
  */
 public class Main {
     public static void main(String... args) {
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                new WaitBase() {
+        new Thread(() -> new WaitBase() {
 
-                    public void print() {
-                        for (; ; ) {
-                            if (new Random().nextInt() % 2 != 0) {
-                                doWait();
-                            }
-                            System.err.println("50");
-                            doNotify();
-                        }
+            void print() {
+                for (; ; ) {
+                    if (new Random().nextInt() % 2 != 0) {
+                        doWait();
                     }
-                }.print();
+                    System.err.println("50");
+                    doNotify();
+                }
             }
-        }).start();
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                new WaitBase() {
+        }.print()).start();
+        new Thread(() -> new WaitBase() {
 
-                    public void print() {
-                        for (; ; ) {
-                            System.err.println("10");
-                        }
-                    }
-                }.print();
+            void print() {
+                for (; ; ) {
+                    System.err.println("10");
+                }
             }
-        });
+        }.print());
     }
 }

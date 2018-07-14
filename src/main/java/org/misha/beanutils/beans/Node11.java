@@ -25,10 +25,7 @@ public class Node11 {
             return false;
         }
         Node11 node11 = (Node11) o;
-        if (n11 != null ? !n11.equals(node11.n11) : node11.n11 != null) {
-            return false;
-        }
-        return true;
+        return n11 != null ? n11.equals(node11.n11) : node11.n11 == null;
     }
 
     @Override

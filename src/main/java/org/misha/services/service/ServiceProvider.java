@@ -20,7 +20,7 @@ import static java.text.MessageFormat.format;
 final class ServiceProvider {
     private static final String servicesPackage = "org.misha.services.service.impl";
     private static final char DOT = '.';
-    private static final List<Service> services = new ArrayList<Service>();
+    private static final List<Service> services = new ArrayList<>();
     private static final Logger log = Logger.getLogger(ServiceProvider.class);
     private static final String FATAL_ERROR = "Finding or instantiating services are impossible. Shutting down.";
     private static final String SERVICE_NOT_FOUND = "can''t find service for data type: ''{0}";

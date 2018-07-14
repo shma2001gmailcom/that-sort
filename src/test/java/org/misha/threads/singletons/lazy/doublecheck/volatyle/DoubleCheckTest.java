@@ -15,13 +15,7 @@ public class DoubleCheckTest {
     public void check() {
         final LoaderInterface loader = new DoubleCheck().getLoader();
         for (int i = 0; i < 1000; ++i) {
-            new Thread(new Runnable() {
-
-                @Override
-                public void run() {
-                    assertTrue(loader == new DoubleCheck().getLoader());
-                }
-            }).start();
+            new Thread(() -> assertTrue(loader == new DoubleCheck().getLoader())).start();
         }
     }
 }

@@ -35,7 +35,7 @@ public final class LockedState extends State {
     
     @Override
     public boolean equals(final Object o) {
-        return o != null && o instanceof LockedState;
+        return o instanceof LockedState;
     }
     
     @Override

@@ -9,7 +9,7 @@ import java.util.List;
  * time: 8:58 PM
  */
 public class Node02 {
-    private List<NodeEnum> list = new ArrayList<NodeEnum>();
+    private List<NodeEnum> list = new ArrayList<>();
 
     public void add(NodeEnum nodeEnum) {
         list.add(nodeEnum);

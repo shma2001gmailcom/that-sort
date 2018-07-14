@@ -2,7 +2,6 @@ package org.misha.beanutils;
 
 import org.misha.beanutils.beans.Root;
 
-import javax.xml.bind.JAXBException;
 import java.lang.reflect.Field;
 import java.math.BigDecimal;
 import java.util.Calendar;
@@ -106,7 +105,7 @@ public final class Serializer {
         return c.getTime().toString().replaceAll("00:00:00", EMPTY);
     }
 
-    public static void main(String... args) throws JAXBException, ReflectiveOperationException {
+    public static void main(String... args) {
         System.out.println(serialize(new Serializer().createActual()));
     }
 

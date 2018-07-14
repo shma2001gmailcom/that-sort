@@ -9,7 +9,7 @@ import java.math.BigInteger;
  */
 class Fibo {
     static BigInteger bigInt(long val) {
-        return new BigInteger(String.valueOf(val));
+        return BigInteger.valueOf(val);
     }
 
     int calc(int n) {

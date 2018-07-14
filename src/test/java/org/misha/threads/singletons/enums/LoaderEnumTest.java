@@ -16,13 +16,7 @@ public class LoaderEnumTest {
     public void check() {
         final LoaderInterface loader = LoaderEnum.LOADER.getLoader();
         for (int i = 0; i < 1000; ++i) {
-            new Thread(new Runnable() {
-
-                @Override
-                public void run() {
-                    assertTrue(loader == LoaderEnum.LOADER.getLoader());
-                }
-            }).start();
+            new Thread(() -> assertTrue(loader == LoaderEnum.LOADER.getLoader())).start();
         }
     }
 }

@@ -35,7 +35,7 @@ public final class PlayingState extends State {
     
     @Override
     public boolean equals(final Object o) {
-        return o != null && o instanceof PlayingState;
+        return o instanceof PlayingState;
     }
     
     @Override

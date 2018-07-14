@@ -8,7 +8,7 @@ import java.util.List;
  * date: 3/1/18
  */
 public class PlayList {
-    private final List<Song> songs = new ArrayList<Song>();
+    private final List<Song> songs = new ArrayList<>();
     private int current = 0;
     
     public static  PlayList playList(final String ... names) {

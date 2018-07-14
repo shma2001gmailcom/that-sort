@@ -12,7 +12,7 @@ public class Node01 {
         return string01;
     }
 
-    public void setString01(String string01) {
+    void setString01(String string01) {
         this.string01 = string01;
     }
 
@@ -25,10 +25,7 @@ public class Node01 {
             return false;
         }
         Node01 node01 = (Node01) o;
-        if (string01 != null ? !string01.equals(node01.string01) : node01.string01 != null) {
-            return false;
-        }
-        return true;
+        return string01 != null ? string01.equals(node01.string01) : node01.string01 == null;
     }
 
     @Override

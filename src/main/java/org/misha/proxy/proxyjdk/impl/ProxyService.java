@@ -13,13 +13,16 @@ import java.lang.reflect.InvocationTargetException;
  */
 
 public class ProxyService {
-    private static final String proxyPackage = "org.misha.proxy.proxyjdk.impl.";//todo: configure or inject
-    private static final String proxyName = "RealProxy";//todo: configure or inject
+    private static final String PROXY_PACKAGE = "org.misha.proxy.proxyjdk.impl.";//todo: configure or inject
+    private static final String REAL_PROXY = "RealProxy";//todo: configure or inject
     private static final Logger log = Logger.getLogger(ProxyService.class);
+
+    private ProxyService() {
+    }
 
     public static MyObject getProxy(final int count, final String name) {
         try {
-            return getMyObject(proxyPackage + proxyName, count, name);
+            return getMyObject(PROXY_PACKAGE + REAL_PROXY, count, name);
         } catch (Exception e) {
             log.info(e.getMessage() + " Can't find proxyjdk. Shutting down.");
             System.exit(-1);

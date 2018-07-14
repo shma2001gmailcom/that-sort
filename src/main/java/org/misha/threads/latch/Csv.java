@@ -54,10 +54,9 @@ public final class Csv {
     }
 
     private List<String> initCache() {
-        final Scanner sc = getScanner();
         int count = 0;
-        final List<String> cache = new ArrayList<String>();
-        try {
+        final List<String> cache = new ArrayList<>();
+        try (Scanner sc = getScanner()) {
             while (sc.hasNextLine()) {
                 ++count;
                 final String row = sc.nextLine();
@@ -65,16 +64,12 @@ public final class Csv {
                     continue;
                 }
                 final String parsed = parseRow(row);
-                if (parsed != null) {
                     cache.add(parsed);
-                }
             }
             rowCount = count;
         } catch (final IllegalArgumentException e) {
             log.error(e);
             throw new RuntimeException(e);
-        } finally {
-            sc.close();
         }
         return cache;
     }

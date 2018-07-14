@@ -16,13 +16,7 @@ public class LoaderHolderTest {
     public void check() {
         final LoaderInterface loader = LoaderHolder.getLoader();
         for (int i = 0; i < 1000; ++i) {
-            new Thread(new Runnable() {
-
-                @Override
-                public void run() {
-                    assertTrue(loader == LoaderHolder.getLoader());
-                }
-            }).start();
+            new Thread(() -> assertTrue(loader == LoaderHolder.getLoader())).start();
         }
     }
 }

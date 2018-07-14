@@ -23,7 +23,7 @@ public abstract class Producer<T> implements Runnable {
                 queue.add(toAdd);
                 System.err.println(toAdd + " added, size=" + queue.size());
             } catch (InterruptedException e) {
-                throw new RuntimeException(e);
+                Thread.currentThread().interrupt();
             }
         }
     }

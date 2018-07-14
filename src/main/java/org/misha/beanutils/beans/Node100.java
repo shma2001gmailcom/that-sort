@@ -25,10 +25,7 @@ public class Node100 {
             return false;
         }
         Node100 node100 = (Node100) o;
-        if (s != null ? !s.equals(node100.s) : node100.s != null) {
-            return false;
-        }
-        return true;
+        return s != null ? s.equals(node100.s) : node100.s == null;
     }
 
     @Override

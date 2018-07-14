@@ -23,7 +23,7 @@ public abstract class Consumer<T> implements Runnable {
                 consume(removed);
                 System.err.println("size=" + queue.size() + " removed=" + removed);
             } catch (final InterruptedException e) {
-                throw new RuntimeException(e);
+                Thread.currentThread().interrupt();
             }
         }
     }

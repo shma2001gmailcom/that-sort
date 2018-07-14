@@ -14,7 +14,7 @@ public class Node0 {
         return node00;
     }
 
-    public void setNode00(Node00 node00) {
+    void setNode00(Node00 node00) {
         this.node00 = node00;
     }
 
@@ -22,7 +22,7 @@ public class Node0 {
         return node01;
     }
 
-    public void setNode01(Node01 node01) {
+    void setNode01(Node01 node01) {
         this.node01 = node01;
     }
 
@@ -30,7 +30,7 @@ public class Node0 {
         return node02;
     }
 
-    public void setNode02(Node02 node02) {
+    void setNode02(Node02 node02) {
         this.node02 = node02;
     }
 
@@ -43,16 +43,9 @@ public class Node0 {
             return false;
         }
         Node0 node0 = (Node0) o;
-        if (node00 != null ? !node00.equals(node0.node00) : node0.node00 != null) {
-            return false;
-        }
-        if (node01 != null ? !node01.equals(node0.node01) : node0.node01 != null) {
-            return false;
-        }
-        if (node02 != null ? !node02.equals(node0.node02) : node0.node02 != null) {
-            return false;
-        }
-        return true;
+        return (node00 != null ? node00.equals(node0.node00) : node0.node00 == null) && (node01 != null ? node01
+                .equals(node0.node01) : node0.node01 == null) && (node02 != null ? node02.equals(node0.node02)
+                                                                                 : node0.node02 == null);
     }
 
     @Override

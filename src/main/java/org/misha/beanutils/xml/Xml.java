@@ -27,7 +27,7 @@ public final class Xml {
     private static final Logger log = Logger.getLogger(Xml.class);
     private static final String CLOSE = "</(%s)>";
     private static final Pattern OPEN_PATTERN = compile("<([a-zA-Z0-9]+)>");
-    private final Map<Segment, Node<Data>> nodeBySegment = new HashMap<Segment, Node<Data>>();
+    private final Map<Segment, Node<Data>> nodeBySegment = new HashMap<>();
     private final Segments segments = new Segments();
 
     /**
@@ -47,7 +47,7 @@ public final class Xml {
                 segments.add(segment);
             }
         }
-        return new TreeImpl<Data>(makeNodes());
+        return new TreeImpl<>(makeNodes());
     }
 
     private String cutRange(String data, Segment segment) {
@@ -67,7 +67,7 @@ public final class Xml {
         } else {
             log.debug(type);
         }
-        return new NodeImpl<Data>(data);
+        return new NodeImpl<>(data);
     }
 
     private Node<Data> makeNodes() {

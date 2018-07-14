@@ -19,6 +19,7 @@ public final class RealProxy implements MyObject {
     private static final Logger log = Logger.getLogger(RealProxy.class);
     private final MyObject proxy;
 
+    @SuppressWarnings("unused")
     private RealProxy(final Integer times, final String name) {
         proxy = createProxy(times, name);
     }

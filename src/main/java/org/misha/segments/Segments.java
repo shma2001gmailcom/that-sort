@@ -19,7 +19,7 @@ public final class Segments implements Iterable<Map.Entry<Integer, Segment>> {
     private final TreeMap<Integer, Segment> lefts;
 
     public Segments() {
-        lefts = new TreeMap<Integer, Segment>(reverser());
+        lefts = new TreeMap<>(reverser());
     }
 
     private static Reverser reverser() {

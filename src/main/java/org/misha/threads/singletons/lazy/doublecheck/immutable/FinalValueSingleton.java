@@ -20,7 +20,7 @@ public class FinalValueSingleton {
         if (local == null) {
             synchronized (this) {
                 if (loaderValue == null) {
-                    loaderValue = new FinalValue<LoaderInterface>(
+                    loaderValue = new FinalValue<>(
                             new Loader(EMPTY, currentThread().getContextClassLoader()));
                 }
                 local = loaderValue;

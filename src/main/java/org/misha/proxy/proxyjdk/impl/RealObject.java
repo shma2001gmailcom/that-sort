@@ -14,6 +14,7 @@ public final class RealObject implements MyObject {
     private final int count;
     private final String name;
 
+    @SuppressWarnings("unused")
     private RealObject(final Integer times, final String name) {
         count = times;
         this.name = name;
@@ -26,9 +27,9 @@ public final class RealObject implements MyObject {
 
     @Override
     public void printName(final int times) {
-        int count = 0;
-        while (count < times) {
-            count++;
+        int c = 0;
+        while (c < times) {
+            c++;
             log.info(name);
         }
     }

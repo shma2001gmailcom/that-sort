@@ -19,7 +19,7 @@ public final class NodeImpl<T> implements Node<T> {
 
     public NodeImpl(T c) {
         depth = 0;
-        children = new ArrayList<Node<T>>();
+        children = new ArrayList<>();
         parent = null;
         content = c;
         name = "Node(" + c.toString() + ")";
@@ -89,7 +89,7 @@ public final class NodeImpl<T> implements Node<T> {
 
     @Override
     public NodeImpl<T> copy() {
-        NodeImpl<T> result = new NodeImpl<T>(this.content);
+        NodeImpl<T> result = new NodeImpl<>(this.content);
         if (isLeaf()) {
             return result;
         }

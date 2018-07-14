@@ -13,8 +13,12 @@ public interface MyObject {//make abstract
 
     void printName(int times);
 
-    public static final class Factory {
-        public static MyObject getInstance(final int count, final String name) {
+    final class Factory {
+
+        private Factory() {
+        }
+
+        static MyObject getInstance(final int count, final String name) {
             return ProxyService.getProxy(count, name);
         }
     }
