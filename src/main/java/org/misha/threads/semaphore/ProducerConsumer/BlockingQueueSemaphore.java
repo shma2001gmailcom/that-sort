@@ -46,7 +46,7 @@ public final class BlockingQueueSemaphore<T> {
     }
 
     public T remove() throws InterruptedException {
-        T result = null;
+        T result;
         try {
             item.acquire();
             synchronized (this) {
