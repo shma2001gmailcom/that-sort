@@ -20,11 +20,33 @@ public class User {
         return age;
     }
 
+    public User modifyName(String name) {
+        return new User(age, name, gender);
+    }
+
+    public User modifyGender(Gender gender) {
+        return new User(age, name, gender);
+    }
+
+    public User modifyAge(int age) {
+        return new User(age, name, gender);
+    }
+
+
     public String getName() {
         return name;
     }
 
     public Gender getGender() {
         return gender;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "age=" + age +
+                ", name='" + name + '\'' +
+                ", gender=" + gender +
+                '}';
     }
 }

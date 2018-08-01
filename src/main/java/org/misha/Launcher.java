@@ -13,7 +13,7 @@ import org.misha.threads.latch.Csv;
  */
 public class Launcher {
 
-    public static void main(String... args) throws Exception {
+    public static void main(String... args) throws Throwable {
         String[] newStringNull = new String[]{null};
         org.misha.threads.executors.Launcher.main(newStringNull);
         Interview.main(newStringNull);
