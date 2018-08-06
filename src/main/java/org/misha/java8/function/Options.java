@@ -58,7 +58,7 @@ public class Options {
     }
 
     static Predicate<Integer> anyOf(Predicate<Integer>... predicates) {
-        Predicate<Integer> result = integer -> true;
+        Predicate<Integer> result = integer -> false;
         for (Predicate<Integer> p : predicates) {
             result = result.or(p);
         }
