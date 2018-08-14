@@ -1,6 +1,7 @@
 package org.misha.beanutils.xml;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.misha.beanutils.Deserializer;
 import org.misha.beanutils.Serializer;
@@ -30,13 +31,13 @@ public class XmlTest {
         assertEquals(expected, new Xml().parse(data).toString());
     }
 
+    @Ignore
     @Test
     public void test() throws Exception {
         Root root = RootMaker.makeRoot();
         Root anotherRoot = RootMaker.makeRoot();
         assertTrue(root.equals(anotherRoot));
-        Root yetAnotherRoot =
-                (Root) new Deserializer("org.misha.beanutils.beans").unmarshall(Serializer.serialize(root));
+        Root yetAnotherRoot = (Root) new Deserializer("org.misha.beanutils.beans").unmarshall(Serializer.serialize(root));
         //assertTrue(root.equals(yetAnotherRoot));
     }
 }

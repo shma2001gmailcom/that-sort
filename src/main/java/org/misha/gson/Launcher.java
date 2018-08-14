@@ -4,10 +4,14 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
+import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Logger;
-import org.misha.beanutils.beans.Root;
 
-import java.util.Map;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.*;
+
+import static java.lang.Thread.currentThread;
 
 /**
  * author: misha
@@ -17,14 +21,35 @@ import java.util.Map;
 public class Launcher {
     private static final Logger log = Logger.getLogger(Launcher.class);
 
-    public static void main(String... args) {
-        final Gson gson = new GsonBuilder().serializeNulls().setFieldNamingStrategy(
-                f -> f.getType().getCanonicalName() + " " + f.getName()).create();
-        final Root root = Root.RootMaker.makeRoot();
-        final String s = gson.toJson(root);
-        assert gson.toJson(gson.fromJson(new JsonParser().parse(s), Root.class)).equals(s) : "strings are not equal";
-        assert gson.fromJson(new JsonParser().parse(s), Root.class).equals(root) : "objects are not equal";
-        JsonSpy.parse(new JsonParser().parse(s), 0);
+    public static void main(String... args) throws IOException {
+        final Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        Add add = new Add();
+        add.setType("ADD");
+        add.setValues(new HashMap<String, String>() {
+            private static final long serialVersionUID = 6936852021651723823L;
+
+            {
+                put("one", "1");
+            }
+        });
+        System.out.println(gson.toJson(add, Add.class));
+        String jsonPatch = readJsonFile("patch-example.json");
+        JsonParser jsonParser = new JsonParser();
+        JsonElement patchRoot = jsonParser.parse(jsonPatch);
+        Set<JsonElement> foundAdd = new HashSet<>();
+        JsonSpy.findByName(patchRoot, "add", foundAdd);
+        Add add1 = foundAdd.stream().findFirst().map(e -> gson.fromJson(e, Add.class)).get();
+        Set<JsonElement> foundOp = new HashSet<>();
+        JsonSpy.findByName(patchRoot, "_op", foundOp);
+        Op op = foundOp.stream().findFirst().map(e -> gson.fromJson(e, Op.class)).get();
+        Set<JsonElement> foundPatch = new HashSet<>();
+        JsonSpy.findByName(patchRoot, "patch", foundPatch);
+        Patch patch = foundPatch.stream().findFirst().map(e -> gson.fromJson(e, Patch.class)).get();
+    }
+
+    private static String readJsonFile(String name) throws IOException {
+        InputStream in = currentThread().getContextClassLoader().getResourceAsStream(name);
+        return IOUtils.toString(in);
     }
 
     static class JsonSpy {
@@ -39,20 +64,122 @@ public class Launcher {
             if (element.isJsonObject()) {
                 ++depth;
                 for (final Map.Entry<String, JsonElement> e : element.getAsJsonObject().entrySet()) {
-                    log.debug(sb.toString() + e.getKey() + "=" + e.getValue());
+                    log.debug(sb.toString() + e.getKey());
                     parse(e.getValue(), depth);
                 }
-            } else if (element.isJsonArray()) {
+            }
+            if (element.isJsonArray()) {
                 ++depth;
                 for (final JsonElement e : element.getAsJsonArray()) {
                     log.debug(sb.toString() + e);
                     parse(e, depth);
                 }
-            } else if (element.isJsonPrimitive()) {
+            }
+            if (element.isJsonPrimitive()) {
                 log.debug(sb.toString() + element.getAsJsonPrimitive());
-            } else {
+            }
+            if (element.isJsonNull()) {
                 log.debug(sb + "null");
             }
+        }
+
+        static void findByName(JsonElement given, String name, Collection<JsonElement> found) {
+            if (given.isJsonObject()) {
+                for (final Map.Entry<String, JsonElement> e : given.getAsJsonObject().entrySet()) {
+                    if (e.getKey().equals(name)) {
+                        found.add(e.getValue());
+                    }
+                    findByName(e.getValue(), name, found);
+                }
+            }
+        }
+    }
+
+    static class Add {
+        protected String type;
+        protected Map<String, String> values;
+
+        public String getType() {
+            return type;
+        }
+
+        public void setType(String type) {
+            this.type = type;
+        }
+
+        public Map<String, String> getValues() {
+            return values;
+        }
+
+        public void setValues(Map<String, String> values) {
+            this.values = values;
+        }
+    }
+
+    static class Op {
+        private Add add;
+        private SetAttrs setAttrs;
+        private Satellites satellites;
+
+        public Add getAdd() {
+            return add;
+        }
+
+        public void setAdd(Add add) {
+            this.add = add;
+        }
+
+        public SetAttrs getSetAttrs() {
+            return setAttrs;
+        }
+
+        public void setSetAttrs(SetAttrs setAttrs) {
+            this.setAttrs = setAttrs;
+        }
+    }
+
+    private static class SetAttrs {
+        protected String type;
+        protected Map<String, String> values;
+
+        public String getType() {
+            return type;
+        }
+
+        public void setType(String type) {
+            this.type = type;
+        }
+
+        public Map<String, String> getValues() {
+            return values;
+        }
+
+        public void setValues(Map<String, String> values) {
+            this.values = values;
+        }
+    }
+
+    private static class Satellites {
+        private Map<String, Op> satellites;
+
+        public Map<String, Op> getSatellites() {
+            return satellites;
+        }
+
+        public void setSatellites(Map<String, Op> satellites) {
+            this.satellites = satellites;
+        }
+    }
+
+    private static class Patch {
+        private Map<String, Op> items;
+
+        public Map<String, Op> getItems() {
+            return items;
+        }
+
+        public void setItems(Map<String, Op> items) {
+            this.items = items;
         }
     }
 }

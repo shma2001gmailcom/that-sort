@@ -144,7 +144,12 @@
                                 <copy todir="target/config" overwrite="true">
                                     <fileset dir="src/main/resources/">
                                         <include name="*.properties"/>
-                                        <!--<include name="*.xml"/>-->
+                                        <include name="*.xml"/>
+                                    </fileset>
+                                </copy>
+                                <copy todir="target/classes" overwrite="true">
+                                    <fileset dir="src/main/resources/">
+                                        <include name="*.json"/>
                                     </fileset>
                                 </copy>
                             </tasks>

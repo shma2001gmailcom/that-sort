@@ -1,0 +1,51 @@
+{
+  "patch": {
+    "items": {
+      "1": {
+        "_op": {
+          "add": {
+            "type": "add",
+            "values": {
+              "id": "1"
+            }
+          },
+          "satellites": {
+            "1": {
+              "_op": {
+                "add": {
+                  "type": "ADD",
+                  "values": {
+                    "one": "1"
+                  }
+                }
+              }
+            },
+            "2": {
+              "_op": {
+                "add": {
+                  "type": "REMOVE",
+                  "values": {
+                    "id": "4"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "2": {
+        "_op": {
+          "add": {
+            "type": "add",
+            "values": {
+              "id": "3"
+            }
+          }
+        }
+      }
+    }
+  },
+  "className": {
+    "name": "extended.TemplateService"
+  }
+}
