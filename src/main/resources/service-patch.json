@@ -2,7 +2,14 @@
   "patch": {
     "/": {
       "1": {
-        "_op": {},
+        "_op": {
+          "SET_ATTRS": {
+            "type": "SET_ATTRS",
+            "values": {
+              "templateServiceToProductLinkTypeName ": "bisness"
+            }
+          }
+        },
         "satelliteProductServiceKeyIdentifierList": {
           "2": {
             "_op": {
