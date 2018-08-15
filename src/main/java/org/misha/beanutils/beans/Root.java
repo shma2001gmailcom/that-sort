@@ -1,6 +1,12 @@
 package org.misha.beanutils.beans;
 
+import org.apache.commons.lang3.builder.EqualsBuilder;
+import org.apache.commons.lang3.builder.HashCodeBuilder;
+
 import java.util.Date;
+
+import static org.misha.beanutils.beans.NodeEnum.ONE;
+import static org.misha.beanutils.beans.NodeEnum.TWO;
 
 /**
  * author: misha
@@ -11,6 +17,7 @@ public class Root {
     private Node0 node0;
     private Node1 node1;
     private Date date;
+    private Node0[] node0s;
 
     public Node0 getNode0() {
         return node0;
@@ -36,6 +43,14 @@ public class Root {
         this.date = date;
     }
 
+    public Node0[] getNode0s() {
+        return node0s;
+    }
+
+    public void setNode0s(Node0[] node0s) {
+        this.node0s = node0s;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) {
@@ -45,26 +60,23 @@ public class Root {
             return false;
         }
         Root root = (Root) o;
-        return !(date != null ? !date.equals(root.date) : root.date != null) && !(node0 != null ? !node0
-                .equals(root.node0) : root.node0 != null) && !(node1 != null ? !node1.equals(root.node1)
-                                                                             : root.node1 != null);
+        return new EqualsBuilder().append(node0, root.node0).append(node1, root.node1).append(date, root.date)
+                                  .append(node0s, root.node0s).isEquals();
     }
 
     @Override
     public int hashCode() {
-        int result = node0 != null ? node0.hashCode() : 0;
-        result = 31 * result + (node1 != null ? node1.hashCode() : 0);
-        result = 31 * result + (date != null ? date.hashCode() : 0);
-        return result;
+        return new HashCodeBuilder(17, 37).append(node0).append(node1).append(date).append(node0s).toHashCode();
     }
 
-    public final static class RootMaker {
+    public static class RootMaker {
 
         private RootMaker() {
         }
 
         public static Root makeRoot() {
             Root root = new Root();
+            root.setNode0s(new Node0[]{new Node0(), new Node0()});
             Node0 node0 = new Node0();
             Node00 node00 = new Node00();
             node00.setInteger00(0);
@@ -72,6 +84,10 @@ public class Root {
             Node01 node01 = new Node01();
             node01.setString01("string01");
             node0.setNode01(node01);
+            Node02 node02 = new Node02();
+            node02.add(ONE);
+            node02.add(TWO);
+            node0.setNode02(node02);
             root.setNode0(node0);
             Node1 node1 = new Node1();
             Node10 node10 = new Node10();
