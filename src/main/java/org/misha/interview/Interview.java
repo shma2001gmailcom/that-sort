@@ -37,7 +37,11 @@ public class Interview {
         private String string = "Green";
 
         public A() {
-            log.info("string: \"" + getString() + "\", length: " + getString().length());
+            try {
+                log.info("string: \"" + getString() + "\", length: " + getString().length());
+            } catch (NullPointerException e) {
+
+            }
         }
 
         public String getString() {
