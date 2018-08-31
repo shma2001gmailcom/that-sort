@@ -12,7 +12,7 @@ import static com.google.common.base.Preconditions.checkArgument;
  */
 public abstract class Combiner<K, E> implements Iterable<E> {
     private final List<E> collection;
-    private final List<E> combined = new ArrayList<E>();
+    private final List<E> combined = new ArrayList<>();
     private boolean hasBeenCombined = false;
 
     Combiner(final List<E> collection) {
@@ -27,7 +27,7 @@ public abstract class Combiner<K, E> implements Iterable<E> {
 
     void combine() {
         checkArgument(!hasBeenCombined);
-        final Map<K, E> map = new HashMap<K, E>();
+        final Map<K, E> map = new HashMap<>();
         for (final E element : collection) {
             final K key = keyForElement(element);
             if (map.containsKey(key)) {
