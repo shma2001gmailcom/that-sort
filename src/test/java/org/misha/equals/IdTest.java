@@ -17,7 +17,6 @@ public class IdTest {
     private final Id c00 = new Id("c", null, null);
     private final Id cCp = new Id("c", "C", "p");
 
-
     @Test
     public void testEquals() {
         Set<List<Id>> pow2 = Sets.cartesianProduct(
@@ -25,8 +24,10 @@ public class IdTest {
                 ImmutableSet.of(c0p, cc0, c0P, ccp, c00, cCp));
         pow2.forEach(input -> {
             System.out.println(input);
-            assertTrue((!input.get(0).equals(input.get(1))
-                    || (input.get(0).hashCode() == input.get(1).hashCode() && input.get(1).equals(input.get(0)))));
+            assertTrue(new Premise(input.get(0).equals(input.get(1))).implies(input.get(0).hashCode() == input.get(1)
+                                                                                                              .hashCode() && input
+                    .get(1)
+                    .equals(input.get(0))));
         });
         Set<List<Id>> pow3 = Sets.cartesianProduct(
                 ImmutableSet.of(c0p, cc0, c0P, ccp, c00, cCp),
@@ -34,8 +35,20 @@ public class IdTest {
                 ImmutableSet.of(c0p, cc0, c0P, ccp, c00, cCp));
         pow3.forEach(input -> {
             System.out.println(input);
-            assertTrue((!(input.get(0).equals(input.get(1)) && input.get(1).equals(input.get(2)))
-                    || (input.get(0).equals(input.get(2)))));
+            assertTrue((new Premise((input.get(0).equals(input.get(1)) && input.get(1).equals(input.get(2)))).implies(
+                    input.get(0).equals(input.get(2)))));
         });
+    }
+
+    private static class Premise {
+        private final boolean premise;
+
+        private Premise(final boolean premise) {
+            this.premise = premise;
+        }
+
+        boolean implies(final boolean conclusion) {
+            return !premise || conclusion;
+        }
     }
 }
