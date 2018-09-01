@@ -9,7 +9,7 @@ public class Id {
     private final String category;
     private final String product;
 
-    public Id(@Nonnull final String code, @Nullable final String category, @Nullable final String product) {
+    Id(@Nonnull final String code, @Nullable final String category, @Nullable final String product) {
         this.code = code;
         this.category = category;
         this.product = product;
