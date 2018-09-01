@@ -7,7 +7,7 @@ import org.junit.Test;
 import java.util.List;
 import java.util.Set;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertTrue;
 
 public class IdTest {
     private final Id c0p = new Id("c", null, "p");
@@ -19,7 +19,7 @@ public class IdTest {
 
 
     @Test
-    public void testEquals() throws Exception {
+    public void testEquals() {
         Set<List<Id>> pow2 = Sets.cartesianProduct(
                 ImmutableSet.of(c0p, cc0, c0P, ccp, c00, cCp),
                 ImmutableSet.of(c0p, cc0, c0P, ccp, c00, cCp));

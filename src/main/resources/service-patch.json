@@ -1,0 +1,49 @@
+{
+  "patch": {
+    "/": {
+      "1": {
+        "_op": {
+          "SET_ATTRS": {
+            "type": "SET_ATTRS",
+            "values": {
+              "templateServiceToProductLinkTypeName ": "bisness"
+            }
+          }
+        },
+        "satelliteProductServiceKeyIdentifierList": {
+          "2": {
+            "_op": {
+              "ADD": {
+                "type": "ADD",
+                "values": {
+                  "id": "2"
+                }
+              }
+            }
+          },
+          "3": {
+            "_op": {
+              "ADD": {
+                "type": "REMOVE",
+                "values": {
+                  "id": "3"
+                }
+              }
+            }
+          }
+        }
+      },
+      "2": {
+        "_op": {
+          "SET_ATTRS": {
+            "type": "SET_ATTRS",
+            "values": {
+              "templateServiceToProductLinkTypeName ": "sputnik"
+            }
+          }
+        }
+      }
+    }
+  },
+  "className": "extended.TemplateService"
+}
