@@ -1,7 +1,5 @@
 package org.misha.equals;
 
-import org.apache.commons.lang3.builder.ToStringBuilder;
-
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 import java.util.Objects;
@@ -23,13 +21,13 @@ public class Id {
         if (o == null || getClass() != o.getClass()) return false;
         final Id id = (Id) o;
         return Objects.equals(code, id.code) &&
-                (("1".equals(category) && Objects.equals(category, id.category)) ||
+                (("1".equals(category) && "1".equals(id.category)) ||
                 product != null && product.equals(id.product));
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(code);
+        return Objects.hash(code, product);
     }
 
     @Override
