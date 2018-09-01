@@ -19,7 +19,7 @@ public class IdTest {
 
     @Test
     public void testEquals() {
-        Set<List<Id>> pow2 = Sets.cartesianProduct(
+        Set<List<Object>> pow2 = Sets.cartesianProduct(
                 ImmutableSet.of(c0p, cc0, c0P, ccp, c00, cCp),
                 ImmutableSet.of(c0p, cc0, c0P, ccp, c00, cCp));
         pow2.forEach(input -> {
@@ -29,7 +29,7 @@ public class IdTest {
                     .get(1)
                     .equals(input.get(0))));
         });
-        Set<List<Id>> pow3 = Sets.cartesianProduct(
+        Set<List<Object>> pow3 = Sets.cartesianProduct(
                 ImmutableSet.of(c0p, cc0, c0P, ccp, c00, cCp),
                 ImmutableSet.of(c0p, cc0, c0P, ccp, c00, cCp),
                 ImmutableSet.of(c0p, cc0, c0P, ccp, c00, cCp));
