@@ -35,7 +35,7 @@ public class IdTest {
         pow3.forEach(input -> {
             System.out.println(input);
             assertTrue((!(input.get(0).equals(input.get(1)) && input.get(1).equals(input.get(2)))
-                    || (input.get(0).hashCode() == input.get(2).hashCode())));
+                    || (input.get(0).equals(input.get(2)))));
         });
     }
 }
