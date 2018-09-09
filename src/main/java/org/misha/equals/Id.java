@@ -20,9 +20,14 @@ public class Id {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         final Id id = (Id) o;
-        return Objects.equals(code, id.code) &&
-                (("1".equals(category) && "1".equals(id.category)) ||
-                product != null && product.equals(id.product));
+        if (Objects.equals(code, id.code)) {
+            if (("1".equals(category) && "1".equals(id.category))) {
+                return true;
+            } else  {
+                return product != null && product.equals(id.product);
+            }
+        }
+        return false;
     }
 
     @Override
