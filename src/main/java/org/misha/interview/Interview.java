@@ -16,11 +16,7 @@ public class Interview {
         String b = "b";
         a = a.concat(b);
         log.info(a + "c" + "\n=============================");
-        try {
-            B bb = new B();
-        } catch (Throwable x) {
-            log.info("Main exception: " + x + " A.string has not been initialized yet.");
-        }
+        B bb = new B();
     }
 
     static class base {
@@ -29,7 +25,9 @@ public class Interview {
         }
     }
 
-    static class derived extends base {
+    private static class derived extends base {
+
+        @Override
         public String method1() {
             return "derived";
         }
@@ -39,9 +37,11 @@ public class Interview {
         private String string = "Green";
 
         public A() {
-            log.info("string: \"" + getString() +
-                             "\", length: " + getString().length()
-            );
+            try {
+                log.info("string: \"" + getString() + "\", length: " + getString().length());
+            } catch (NullPointerException e) {
+
+            }
         }
 
         public String getString() {
@@ -56,10 +56,12 @@ public class Interview {
     static class B extends A {
         private String string = "Red";
 
+        @Override
         public String getString() {
             return string;
         }
 
+        @Override
         public void setString(String string) {
             this.string = string;
         }

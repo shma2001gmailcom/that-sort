@@ -5,7 +5,6 @@ package org.misha.beanutils.beans;
  * date: 4/18/16
  * time: 8:56 PM
  */
-public enum NodeEnum {
-    ONE,
-    TWO
+enum NodeEnum {
+    ONE, TWO
 }

@@ -23,11 +23,11 @@ import static org.apache.commons.lang3.StringUtils.substring;
  * date: 4/30/16
  * time: 12:04 PM
  */
-public class Xml {
+public final class Xml {
     private static final Logger log = Logger.getLogger(Xml.class);
     private static final String CLOSE = "</(%s)>";
     private static final Pattern OPEN_PATTERN = compile("<([a-zA-Z0-9]+)>");
-    private final Map<Segment, Node<Data>> nodeBySegment = new HashMap<Segment, Node<Data>>();
+    private final Map<Segment, Node<Data>> nodeBySegment = new HashMap<>();
     private final Segments segments = new Segments();
 
     /**
@@ -39,16 +39,23 @@ public class Xml {
     public Tree<Data> parse(final String xml) {
         final Matcher openMatcher = OPEN_PATTERN.matcher(xml);
         while (openMatcher.find()) {
-            final String type = openMatcher.group(1);
+            final String type = readType(openMatcher);
             final Matcher closeMatcher = compile(format(CLOSE, type)).matcher(xml);
             if (closeMatcher.find(openMatcher.end())) {
                 final Segment segment = new Segment(openMatcher.end(), closeMatcher.start());
-                final Node<Data> node = makeNode(type, substring(xml, segment.left(), segment.right()));
-                nodeBySegment.put(segment, node);
+                nodeBySegment.put(segment, makeNode(type, cutRange(xml, segment)));
                 segments.add(segment);
             }
         }
-        return new TreeImpl<Data>(makeNodes());
+        return new TreeImpl<>(makeNodes());
+    }
+
+    private String cutRange(String data, Segment segment) {
+        return substring(data, segment.left(), segment.right());
+    }
+
+    private String readType(Matcher openMatcher) {
+        return openMatcher.group(1);
     }
 
     private NodeImpl<Data> makeNode(final String type, final String mince) {
@@ -60,7 +67,7 @@ public class Xml {
         } else {
             log.debug(type);
         }
-        return new NodeImpl<Data>(data);
+        return new NodeImpl<>(data);
     }
 
     private Node<Data> makeNodes() {

@@ -1,5 +1,6 @@
 package org.misha.segments;
 
+import java.io.Serializable;
 import java.util.Comparator;
 import java.util.Iterator;
 import java.util.Map;
@@ -9,19 +10,27 @@ import java.util.TreeMap;
  * author: misha
  * date: 5/1/16
  * time: 7:40 PM
+ * <p>
+ * there is one-to-one correspondence
+ * between set of segments and set of
+ * their left bounds by condition at {@link org.misha.segments.Segment}
  */
-public class Segments implements Iterable<Map.Entry<Integer, Segment>> {
+public final class Segments implements Iterable<Map.Entry<Integer, Segment>> {
     private final TreeMap<Integer, Segment> lefts;
 
     public Segments() {
-        lefts = new TreeMap<Integer, Segment>(reverser());
+        lefts = new TreeMap<>(reverser());
+    }
+
+    private static Reverser reverser() {
+        return new Reverser();
     }
 
     public void add(final Segment s) {
         lefts.put(s.left(), s);
     }
 
-    public Segment nexLeft(final Segment s) {
+    Segment nexLeft(final Segment s) {
         if (s == null) {
             return null;
         }
@@ -34,11 +43,8 @@ public class Segments implements Iterable<Map.Entry<Integer, Segment>> {
         return lefts.entrySet().iterator();
     }
 
-    private static Reverser reverser() {
-        return new Reverser();
-    }
-
-    private static class Reverser implements Comparator<Integer> {
+    private static class Reverser implements Comparator<Integer>, Serializable {
+        private static final long serialVersionUID = -8890598769647883458L;
 
         @Override
         public int compare(final Integer i, final Integer j) {

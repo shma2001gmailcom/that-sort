@@ -10,8 +10,8 @@ import java.util.regex.Matcher;
 
 import static java.util.regex.Pattern.compile;
 import static org.apache.commons.lang3.StringUtils.*;
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
-import static org.junit.Assert.assertTrue;
 import static org.misha.beanutils.xml.Reader.read;
 
 /**
@@ -41,14 +41,14 @@ public class SegmentTest {
     private static final int STRING_AT_SECOND_NODE11_AT_LIST_AT_NODE1 = 18;
     private static final int DATE = 19;
     private static final String SEGMENTS = "src/test/resources/segments";
-    private static final String SEGMENT = "(\\[[0-9]+, [0-9]+\\])";
+    private static final String SEGMENT = "(\\[[0-9]+, [0-9]+])";
     private Segments segments = new Segments();
-    private List<Segment> segmentList = new ArrayList<Segment>();
+    private List<Segment> segmentList = new ArrayList<>();
 
     @Before
     public void setUp() throws IOException {
         Matcher matcher = compile(SEGMENT).matcher(read(SEGMENTS));
-        while(matcher.find()) {
+        while (matcher.find()) {
             final String data = matcher.group();
             final String[] parts = split(data, ", ");
             final int leftBound = Integer.parseInt(removeStart(parts[0], "["));
@@ -59,10 +59,8 @@ public class SegmentTest {
         }
     }
 
-
-
     @Test
-    public void testSitsIn() throws Exception {
+    public void testSitsIn() {
         assertParent(NODE0, ROOT);
         assertParent(NODE1, ROOT);
         assertParent(DATE, ROOT);
@@ -86,6 +84,6 @@ public class SegmentTest {
     }
 
     private void assertParent(int child, int parent) {
-        assertTrue(segmentList.get(child).parent(segments).equals(segmentList.get(parent)));
+        assertEquals(segmentList.get(child).parent(segments), segmentList.get(parent));
     }
 }

@@ -10,9 +10,9 @@ import java.util.LinkedList;
  * @param <T> a type of queue nodes content
  */
 final class Queue<T> {
-    private final LinkedList<Node<T>> list = new LinkedList<Node<T>>();
+    private final LinkedList<Node<T>> list = new LinkedList<>();
 
-    public Node<T> pop() {
+    Node<T> pop() {
         final Node<T> node = list.pop();
         if (!node.isLeaf()) {
             list.addAll(node.getChildren());
@@ -20,7 +20,7 @@ final class Queue<T> {
         return node;
     }
 
-    public void add(final Node<T> n) {
+    void push(final Node<T> n) {
         list.add(n);
     }
 
