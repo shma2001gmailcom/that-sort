@@ -14,4 +14,12 @@ public class ForkJoinSearchTest {
                 "c"::equals
         ).size());
     }
+
+    @Test
+    public void testSearch0() {
+        assertEquals(0, new ForkJoinSearch<>().search(
+                newArrayList(),
+                "c"::equals
+        ).size());
+    }
 }

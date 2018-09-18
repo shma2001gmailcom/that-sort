@@ -19,6 +19,7 @@ class ForkJoinSearchTask<T> extends RecursiveAction {
 
     @Override
     public void compute() {
+        if (toSearch.isEmpty()) return;
         if (toSearch.size() == 1) {
             final T value = toSearch.get(0);
             if (value != null && criteria.test(value)) {
