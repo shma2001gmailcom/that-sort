@@ -12,8 +12,8 @@ class Chocolate {
         }
         final double[] negatedPreImage = Trans.negate(new Trans(n).timesToReversed(a));
         int opCount = 0;
-        for (final double aX : Trans.plus(constMin(arr.length, -min(negatedPreImage)), negatedPreImage)) {
-            opCount += opCount(aX);
+        for (final double d : Trans.plus(constMin(arr.length, -min(negatedPreImage)), negatedPreImage)) {
+            opCount += opCount(d);
         }
         return opCount;
     }
