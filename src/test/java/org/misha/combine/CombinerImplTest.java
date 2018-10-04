@@ -15,6 +15,21 @@ import java.util.Random;
 public class CombinerImplTest {
     private static final Logger log = Logger.getLogger(CombinerImplTest.class);
 
+
+    @Test(expected = IllegalArgumentException.class)
+    public void checkExceptions() {
+        List<Integer> list = new ArrayList<>();
+        for (int i = 0; i < 20; ++i) {
+            list.add(new Random().nextInt(20));
+        }
+        Combiner<String, Integer> c = new CombinerImpl(list);
+        for (Integer i : c) {
+            log.debug(i);
+        }
+        c.combine();
+        c.combine();
+    }
+
     @Test
     public void testCombiner() {
         List<Integer> list = new ArrayList<>();

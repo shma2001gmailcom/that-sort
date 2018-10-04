@@ -26,7 +26,7 @@ public abstract class Combiner<K, E> implements Iterable<E> {
     protected abstract K keyForElement(E element);
 
     void combine() {
-        checkArgument(!hasBeenCombined);
+        checkArgument(!hasBeenCombined, "Already has been combined once.");
         final Map<K, E> map = new HashMap<>();
         for (final E element : collection) {
             final K key = keyForElement(element);
