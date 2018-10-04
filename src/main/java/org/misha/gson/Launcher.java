@@ -97,7 +97,7 @@ public class Launcher {
 
     static class Add {
         protected String type;
-        protected Map<String, String> values;
+        Map<String, String> values;
 
         public String getType() {
             return type;
@@ -111,7 +111,7 @@ public class Launcher {
             return values;
         }
 
-        public void setValues(Map<String, String> values) {
+        void setValues(Map<String, String> values) {
             this.values = values;
         }
     }
@@ -140,7 +140,7 @@ public class Launcher {
 
     private static class SetAttrs {
         protected String type;
-        protected Map<String, String> values;
+        Map<String, String> values;
 
         public String getType() {
             return type;

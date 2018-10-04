@@ -28,6 +28,6 @@ public class Main {
                     System.err.println("10");
                 }
             }
-        }.print());
+        }.print()).start();
     }
 }
