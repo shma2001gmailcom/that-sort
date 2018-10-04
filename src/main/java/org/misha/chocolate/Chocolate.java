@@ -53,11 +53,11 @@ class Chocolate {
             return result;
         }
 
-        static double[] plus(double[] l, double[] r) {
-            final int length = l.length;
+        static double[] plus(double[] left, double[] right) {
+            final int length = left.length;
             double[] arr = new double[length];
             for (int i = 0; i < length; i++) {
-                arr[i] = l[i] + r[i];
+                arr[i] = left[i] + right[i];
             }
             return arr;
         }
