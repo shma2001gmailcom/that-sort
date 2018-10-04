@@ -9,14 +9,16 @@ import java.util.Random;
  */
 public class Main {
     public static void main(String... args) {
+
         new Thread(() -> new WaitBase() {
 
             void print() {
-                for (; ; ) {
-                    if (new Random().nextInt() % 2 != 0) {
+                for (;;) {
+                    int value;
+                    if ((value = new Random().nextInt()) % 2 != 0) {
                         doWait();
                     }
-                    System.err.println("50");
+                    System.err.println(value);
                     doNotify();
                 }
             }
@@ -24,7 +26,7 @@ public class Main {
         new Thread(() -> new WaitBase() {
 
             void print() {
-                for (; ; ) {
+                for (;;) {
                     System.err.println("10");
                 }
             }

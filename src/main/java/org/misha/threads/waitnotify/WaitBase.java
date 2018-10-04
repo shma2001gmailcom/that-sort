@@ -7,7 +7,7 @@ package org.misha.threads.waitnotify;
  */
 class WaitBase {
     private final Object mutex = new Object();
-    private boolean wasSignal = false;
+    private volatile boolean wasSignal = false;
 
     void doWait() {
         synchronized (mutex) {
