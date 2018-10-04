@@ -1,11 +1,18 @@
 package org.misha.segments;
 
+import java.text.MessageFormat;
+
 /**
  * author: misha
  * date: 5/1/16
  * time: 7:14 PM
+ * <p>
+ * represents a segment of integers
+ * among some amount of another such segments.
+ * the condition is: there aren't two different
+ * segments having common left or right bound. {@link org.misha.segments.Segments}
  */
-public class Segment {
+public final class Segment {
     private final int startIndex;
     private final int endIndex;
 
@@ -14,11 +21,11 @@ public class Segment {
         endIndex = end;
     }
 
-    public boolean sitsIn(final Segment segment) {
+    private boolean sitsIn(final Segment segment) {
         return segment != null && (startIndex > segment.startIndex && endIndex < segment.endIndex);
     }
 
-    public Segment parent(Segments segments) {
+    public Segment parent(final Segments segments) {
         Segment segment = this;
         while (!this.sitsIn(segment)) {
             segment = segments.nexLeft(segment);
@@ -39,7 +46,7 @@ public class Segment {
 
     @Override
     public String toString() {
-        return "[" + startIndex + ", " + endIndex + "]";
+        return MessageFormat.format("[{0}, {1}]", startIndex, endIndex);
     }
 
     @Override
@@ -56,8 +63,6 @@ public class Segment {
 
     @Override
     public int hashCode() {
-        int result = startIndex;
-        result = 31 * result + endIndex;
-        return result;
+        return startIndex * 31 + endIndex;
     }
 }

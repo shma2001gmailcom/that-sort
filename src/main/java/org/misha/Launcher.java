@@ -1,31 +1,33 @@
 package org.misha;
 
-import org.misha.beanutils.BeansManipulator;
+import org.misha.beanutils.BeanManipulator;
 import org.misha.interview.CounterLauncher;
 import org.misha.interview.Interview;
-import org.misha.latch.rewrite.Csv;
 import org.misha.merge.Merge;
-
-import java.lang.reflect.InvocationTargetException;
+import org.misha.state.PlayerLauncher;
+import org.misha.threads.latch.Csv;
 
 /**
  * author: misha
  * date: 2/27/16 8:54 PM.
  */
 public class Launcher {
-    public static void main(String... args) throws InvocationTargetException, IllegalAccessException,
-                                                   InterruptedException, NoSuchMethodException {
+
+    public static void main(String... args) throws Throwable {
         String[] newStringNull = new String[]{null};
-        org.misha.executors.Launcher.main(newStringNull);
+        org.misha.threads.executors.Launcher.main(newStringNull);
         Interview.main(newStringNull);
         Csv.main(newStringNull);
         Merge.main(newStringNull);
-        org.misha.proxy.Main.main(newStringNull);
+        org.misha.proxy.proxyjdk.Main.main(newStringNull);
         org.misha.runtime.annotation.Main.main(newStringNull);
-        org.misha.semaphore.Main.main(newStringNull);
+        org.misha.threads.semaphore.Main.main(newStringNull);
         org.misha.services.Launcher.main(newStringNull);
-        org.misha.sort.App.main(newStringNull);
+        org.misha.sort.Main.main(newStringNull);
         CounterLauncher.main(newStringNull);
-        BeansManipulator.main(newStringNull);
+        BeanManipulator.main(newStringNull);
+        org.misha.threads.singletons.Launcher.main(newStringNull);
+        PlayerLauncher.main(newStringNull);
+        org.misha.heterogenius.Main.main(newStringNull);
     }
 }

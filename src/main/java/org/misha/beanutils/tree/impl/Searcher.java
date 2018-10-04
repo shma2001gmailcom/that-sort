@@ -2,6 +2,7 @@ package org.misha.beanutils.tree.impl;
 
 import org.misha.beanutils.tree.Node;
 
+import javax.annotation.Nonnull;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
@@ -11,16 +12,16 @@ import java.util.Set;
  */
 public abstract class Searcher<T> implements Iterable<Node<T>> {
     private final Node<T> root;
-    private final Set<Node<T>> results = new HashSet<Node<T>>();
+    private final Set<Node<T>> results = new HashSet<>();
 
-    public Searcher(final Node<T> tree) {
+    protected Searcher(final Node<T> tree) {
         root = tree;
     }
 
     public void search() {
         Node<T> node;
-        Queue<T> queue = new Queue<T>();
-        queue.add(root);
+        Queue<T> queue = new Queue<>();
+        queue.push(root);
         while (!queue.isEmpty()) {
             node = queue.pop();
             if (isSuitable(node)) {
@@ -29,6 +30,8 @@ public abstract class Searcher<T> implements Iterable<Node<T>> {
         }
     }
 
+    @Nonnull
+    @Override
     public Iterator<Node<T>> iterator() {
         return results.iterator();
     }

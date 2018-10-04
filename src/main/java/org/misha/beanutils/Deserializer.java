@@ -4,6 +4,7 @@ import org.misha.beanutils.beans.Type;
 import org.misha.beanutils.tree.Node;
 import org.misha.beanutils.tree.Tree;
 import org.misha.beanutils.tree.impl.Searcher;
+import org.misha.beanutils.xml.Describer;
 import org.misha.beanutils.xml.Xml;
 
 import java.io.File;
@@ -21,39 +22,49 @@ import static org.apache.commons.io.FileUtils.readFileToString;
  * time: 10:15 AM
  */
 public class Deserializer {
+    private static Map<String, Type> map = new HashMap<String, Type>() {
+        private static final long serialVersionUID = -8685406720026834192L;
+
+        {
+            put("Integer", Type.INTEGER);
+            put("String", Type.STRING);
+            put("Date", Type.DATE);
+        }
+    };
     private final Tree<Data> tree;
     private final String pakkkage;
-    private static Map<String, Type> map = new HashMap<String, Type>() {{
-        put("Integer", Type.INTEGER);
-        put("String", Type.STRING);
-        put("Date", Type.DATE);
-    }};
 
     public Deserializer(String p) {
         tree = createTree();
         pakkkage = p;
     }
 
+    public static void main(String... args) throws Exception {//todo ms: enums haven't been deserealised(
+        System.out.println(new Describer("org.misha.beanutils.beans").describe(
+                new Deserializer("org.misha.beanutils.beans")
+                        .unmarshall(readFileToString(new File("src/test/resources/table"))), 0));
+    }
+
     private Object deserealize(Node<Data> node) throws Exception {
         Object object = null;
-        Data content = node.getContent();
-        String type = content.getType();
+        final Data content = node.getContent();
+        final String type = content.getType();
         if (classNames().contains(type)) {
             if (map.containsKey(type)) {
                 object = createLeaf(content.getValue(), type);
-            } else if ("List".equals(type)) {
-                List<Object> list = new ArrayList<Object>();
+            } else if ("List".equalsIgnoreCase(type)) {
+                final List<Object> list = new ArrayList<>();
                 for (Node<Data> child : node.getChildren()) {
                     list.add(deserealize(child));
                     object = list;
                 }
             } else {
-                String className = pakkkage + "." + type;
+                final String className = pakkkage + "." + type;
                 object = createBean(className);
                 if (object != null) {
                     for (Field field : object.getClass().getDeclaredFields()) {
                         if (field != null) {
-                            Collection<Node<Data>> children = node.getChildren();
+                            final Collection<Node<Data>> children = node.getChildren();
                             for (Node<Data> child : children) {
                                 if (field.getType().toString().contains(child.getContent().getType())) {
                                     field.setAccessible(true);
@@ -64,7 +75,7 @@ public class Deserializer {
                     }
                 }
             }
-        }  else {
+        } else {
             object = createLeaf(node.getContent().getValue(), node.getContent().getType());
         }
         return object;
@@ -92,7 +103,7 @@ public class Deserializer {
         return null;
     }
 
-    public Object unmarchall(String xml) throws Exception {
+    public Object unmarshall(String xml) throws Exception {
         return deserealize(new Xml().parse(xml).root());
     }
 
@@ -100,12 +111,13 @@ public class Deserializer {
         try {
             return getClass().getClassLoader().loadClass(type).newInstance();
         } catch (Exception e) {
+            e.printStackTrace();
             return null;
         }
     }
 
     private List<String> classNames() {
-        List<String> result = new ArrayList<String>();
+        List<String> result = new ArrayList<>();
         Searcher<Data> searcher = new Searcher<Data>(tree.root()) {
 
             @Override
@@ -118,10 +130,5 @@ public class Deserializer {
             result.add(node.getContent().getType());
         }
         return result;
-    }
-
-    public static void main(String... args) throws Exception {
-        new Deserializer("org.misha.beanutils.beans")
-                .unmarchall(readFileToString(new File("src/test/resources/table")));
     }
 }

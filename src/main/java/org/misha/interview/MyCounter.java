@@ -6,10 +6,10 @@ import java.util.concurrent.atomic.AtomicLong;
  * author: misha
  * date: 7/7/15 10:58 PM.
  */
-public class MyCounter implements Counter {
+class MyCounter implements Counter {
     private final AtomicLong value;
 
-    public MyCounter(final AtomicLong value) {
+    MyCounter(final AtomicLong value) {
         this.value = value;
     }
 

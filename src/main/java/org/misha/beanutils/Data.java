@@ -11,7 +11,6 @@ public class Data {
     private String type;
     private String value;
 
-
     public String getType() {
         return type;
     }
@@ -30,6 +29,6 @@ public class Data {
 
     @Override
     public String toString() {
-        return "type: "+ type + (value != null ? " value: " + value: EMPTY);
+        return "type: " + type + (value != null ? " value: " + value : EMPTY);
     }
 }

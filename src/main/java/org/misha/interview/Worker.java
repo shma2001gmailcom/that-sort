@@ -5,10 +5,10 @@ package org.misha.interview;
  * date: 3/16/16
  * time: 11:30 AM
  */
-public class Worker implements Runnable {
-    Counter counter;
+class Worker implements Runnable {
+    private final Counter counter;
 
-    public Worker(Counter c) {
+    Worker(Counter c) {
         counter = c;
     }
 

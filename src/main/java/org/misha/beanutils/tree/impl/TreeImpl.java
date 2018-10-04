@@ -25,14 +25,14 @@ public final class TreeImpl<T> implements Tree<T> {
 
     @Override
     public final String toString() {
-        StringBuffer sb = new StringBuffer();
+        StringBuilder sb = new StringBuilder();
         Node<T> node = root;
         if (!node.isLeaf()) {
             sb = sb.append(node.toString()).append("->[");
             Node<T> child;
             for (java.util.Iterator<Node<T>> it = node.getChildren().iterator(); it.hasNext(); ) {
                 child = it.next();
-                Tree<T> tree = new TreeImpl<T>(child);
+                Tree<T> tree = new TreeImpl<>(child);
                 sb.append(tree.toString());
                 if (it.hasNext()) {
                     sb = sb.append(", ");
