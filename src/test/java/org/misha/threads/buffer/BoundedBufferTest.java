@@ -1,25 +1,39 @@
 package org.misha.threads.buffer;
 
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.util.Random;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 
+import static org.junit.Assert.assertEquals;
+
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration(classes = {BufferConfig.class})
 public class BoundedBufferTest {
+    @Autowired
+    private BoundedBuffer<Integer> boundedBuffer;
+
+    @Autowired
+    @Qualifier("producers")
+    private ExecutorService producers;
+
+    @Autowired
+    @Qualifier("consumers")
+    private ExecutorService consumers;
 
     @Test
     public void put() throws ExecutionException, InterruptedException {
-        ExecutorService producers = Executors.newFixedThreadPool(1);
-        ExecutorService consumers = Executors.newFixedThreadPool(1);
-        BoundedBuffer<Integer> buffer = new BoundedBuffer<>(500);
         for (int i = 0; i < 100000; ++i) {
-            ProducerTask producerTask = new ProducerTask(new Producer(buffer));
-            ConsumerTask consumerTask = new ConsumerTask(new Consumer(buffer));
-            producers.submit(producerTask).get();
-            consumers.submit(consumerTask).get();
+            ProducerTask producerTask = new ProducerTask(new Producer(boundedBuffer));
+            ConsumerTask consumerTask = new ConsumerTask(new Consumer(boundedBuffer));
+            assertEquals(producers.submit(producerTask).get(), consumers.submit(consumerTask).get());
         }
     }
 
@@ -30,14 +44,16 @@ public class BoundedBufferTest {
             this.buffer = buffer;
         }
 
-        private void produce() {
+        private Integer produce() {
             try {
                 int v = new Random().nextInt();
                 buffer.put(v);
                 System.err.println("produced " + v);
+                return v;
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
             }
+            return null;
         }
     }
 
@@ -48,16 +64,19 @@ public class BoundedBufferTest {
             this.buffer = buffer;
         }
 
-        private void consume() {
+        private Integer consume() {
             try {
-                System.err.println("consumed " + buffer.take());
+                Integer taken = buffer.take();
+                System.err.println("consumed " + taken);
+                return taken;
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
             }
+            return null;
         }
     }
 
-    private static class ProducerTask implements Callable<Void> {
+    private static class ProducerTask implements Callable<Integer> {
         private final Producer producer;
 
         private ProducerTask(Producer producer) {
@@ -65,13 +84,12 @@ public class BoundedBufferTest {
         }
 
         @Override
-        public Void call() {
-            producer.produce();
-            return null;
+        public Integer call() {
+            return producer.produce();
         }
     }
 
-    private static class ConsumerTask implements Callable<Void> {
+    private static class ConsumerTask implements Callable<Integer> {
         private final Consumer consumer;
 
         private ConsumerTask(Consumer consumer) {
@@ -79,9 +97,8 @@ public class BoundedBufferTest {
         }
 
         @Override
-        public Void call() {
-            consumer.consume();
-            return null;
+        public Integer call() {
+            return consumer.consume();
         }
     }
 }
