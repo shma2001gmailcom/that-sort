@@ -18,16 +18,18 @@ public class BoundedBuffer<V> extends BaseBoundedBuffer<V> {
 
     // BLOCKS-UNTIL: not-full
     public synchronized void put(V v) throws InterruptedException {
-        while (isFull())
+        while (isFull()) {
             wait(1000);
+        }
         doPut(v);
         notifyAll();
     }
 
     // BLOCKS-UNTIL: not-empty
     public synchronized V take() throws InterruptedException {
-        while (isEmpty())
+        while (isEmpty()) {
             wait(1000);
+        }
         V v = doTake();
         notifyAll();
         return v;

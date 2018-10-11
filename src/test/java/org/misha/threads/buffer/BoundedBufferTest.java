@@ -12,16 +12,15 @@ public class BoundedBufferTest {
 
     @Test
     public void put() throws ExecutionException, InterruptedException {
-        ExecutorService producers = Executors.newFixedThreadPool(10);
-        ExecutorService consumers = Executors.newFixedThreadPool(3);
-        BoundedBuffer<Integer> buffer = new BoundedBuffer<>(3);
-        for (int i = 0; i < 10000; ++i) {
+        ExecutorService producers = Executors.newFixedThreadPool(1);
+        ExecutorService consumers = Executors.newFixedThreadPool(1);
+        BoundedBuffer<Integer> buffer = new BoundedBuffer<>(500);
+        for (int i = 0; i < 100000; ++i) {
             ProducerTask producerTask = new ProducerTask(new Producer(buffer));
             ConsumerTask consumerTask = new ConsumerTask(new Consumer(buffer));
             producers.submit(producerTask).get();
             consumers.submit(consumerTask).get();
         }
-
     }
 
     private static class Producer {
@@ -31,25 +30,25 @@ public class BoundedBufferTest {
             this.buffer = buffer;
         }
 
-        public void produce() {
+        private void produce() {
             try {
                 int v = new Random().nextInt();
                 buffer.put(v);
-                System.err.println("produced "+ v);
+                System.err.println("produced " + v);
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
             }
         }
     }
 
-    private static class  Consumer {
+    private static class Consumer {
         private final BoundedBuffer<Integer> buffer;
 
         private Consumer(BoundedBuffer<Integer> buffer) {
             this.buffer = buffer;
         }
 
-        public void consume() {
+        private void consume() {
             try {
                 System.err.println("consumed " + buffer.take());
             } catch (InterruptedException e) {
