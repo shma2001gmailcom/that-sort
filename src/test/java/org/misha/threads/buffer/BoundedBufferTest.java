@@ -11,6 +11,7 @@ import java.util.Random;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Future;
 
 import static org.junit.Assert.assertEquals;
 
@@ -30,10 +31,13 @@ public class BoundedBufferTest {
 
     @Test
     public void put() throws ExecutionException, InterruptedException {
+
         for (int i = 0; i < 100000; ++i) {
             ProducerTask producerTask = new ProducerTask(new Producer(boundedBuffer));
             ConsumerTask consumerTask = new ConsumerTask(new Consumer(boundedBuffer));
-            assertEquals(producers.submit(producerTask).get(), consumers.submit(consumerTask).get());
+            Future<Integer> producerFuture = producers.submit(producerTask);
+            Future<Integer> consumerFuture = consumers.submit(consumerTask);
+            assertEquals(producerFuture.get(), consumerFuture.get());
         }
     }
 

@@ -14,7 +14,7 @@ public class BufferConfig {
 
     @Bean
     public BoundedBuffer boundedBuffer() {
-        return new BoundedBuffer(5);
+        return new BoundedBuffer(1005);
     }
 
     @Bean
