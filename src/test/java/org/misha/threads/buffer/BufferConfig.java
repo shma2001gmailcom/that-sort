@@ -14,18 +14,18 @@ public class BufferConfig {
 
     @Bean
     public BoundedBuffer boundedBuffer() {
-        return new BoundedBuffer(1005);
+        return new BoundedBuffer(11);
     }
 
     @Bean
     @Qualifier("producers")
     ExecutorService produsers() {
-        return Executors.newFixedThreadPool(5);
+        return Executors.newFixedThreadPool(1);
     }
 
     @Bean
     @Qualifier("consumers")
     ExecutorService consumers() {
-        return Executors.newFixedThreadPool(5);
+        return Executors.newFixedThreadPool(1);
     }
 }

@@ -31,7 +31,7 @@ public class BoundedBufferTest {
 
     @Test
     public void put() throws ExecutionException, InterruptedException {
-        for (int i = 0; i < 100000; ++i) {
+        for (int i = 0; i < 100; ++i) {
             ProducerTask producerTask = new ProducerTask(new Producer(boundedBuffer));
             ConsumerTask consumerTask = new ConsumerTask(new Consumer(boundedBuffer));
             Future<Integer> producerFuture = producers.submit(producerTask);
