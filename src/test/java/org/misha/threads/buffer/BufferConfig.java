@@ -1,6 +1,5 @@
 package org.misha.threads.buffer;
 
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -14,18 +13,11 @@ public class BufferConfig {
 
     @Bean
     public BoundedBuffer boundedBuffer() {
-        return new BoundedBuffer(11);
+        return new BoundedBuffer(20);
     }
 
     @Bean
-    @Qualifier("producers")
-    ExecutorService produsers() {
-        return Executors.newFixedThreadPool(1);
-    }
-
-    @Bean
-    @Qualifier("consumers")
-    ExecutorService consumers() {
-        return Executors.newFixedThreadPool(1);
+    ExecutorService executor() {
+        return Executors.newFixedThreadPool(11);
     }
 }

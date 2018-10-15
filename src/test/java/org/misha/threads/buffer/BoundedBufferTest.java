@@ -3,7 +3,6 @@ package org.misha.threads.buffer;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
@@ -22,12 +21,7 @@ public class BoundedBufferTest {
     private BoundedBuffer<Integer> boundedBuffer;
 
     @Autowired
-    @Qualifier("producers")
-    private ExecutorService producers;
-
-    @Autowired
-    @Qualifier("consumers")
-    private ExecutorService consumers;
+    private ExecutorService executor;
 
     @Test
     public void put() throws ExecutionException, InterruptedException {
@@ -39,8 +33,8 @@ public class BoundedBufferTest {
                 }
             });
             ConsumerTask<Integer> consumerTask = new ConsumerTask<>(new Consumer<>(boundedBuffer));
-            Future<Integer> producerFuture = producers.submit(producerTask);
-            Future<Integer> consumerFuture = consumers.submit(consumerTask);
+            Future<Integer> consumerFuture = executor.submit(consumerTask);
+            Future<Integer> producerFuture = executor.submit(producerTask);
             assertEquals(producerFuture.get(), consumerFuture.get());
         }
     }
