@@ -25,17 +25,17 @@ public class BoundedBufferTest {
 
     @Test
     public void put() throws ExecutionException, InterruptedException {
+        ConsumerTask<Integer> consumerTask = new ConsumerTask<>(new Consumer<>(boundedBuffer));
+        ProducerTask<Integer> producerTask = new ProducerTask<>(new Producer<Integer>(boundedBuffer) {
+            @Override
+            protected Integer produceNext() {
+                return new Random().nextInt(200);
+            }
+        });
         for (int i = 0; i < 100; ++i) {
-            ProducerTask<Integer> producerTask = new ProducerTask<>(new Producer<Integer>(boundedBuffer) {
-                @Override
-                protected Integer produceNext() {
-                    return new Random().nextInt(200);
-                }
-            });
-            ConsumerTask<Integer> consumerTask = new ConsumerTask<>(new Consumer<>(boundedBuffer));
             Future<Integer> consumerFuture = executor.submit(consumerTask);
             Future<Integer> producerFuture = executor.submit(producerTask);
-            assertEquals(producerFuture.get(), consumerFuture.get());
+            assertEquals(consumerFuture.get(), producerFuture.get());
         }
     }
 
