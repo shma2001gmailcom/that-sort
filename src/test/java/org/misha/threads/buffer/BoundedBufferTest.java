@@ -32,24 +32,29 @@ public class BoundedBufferTest {
     @Test
     public void put() throws ExecutionException, InterruptedException {
         for (int i = 0; i < 100; ++i) {
-            ProducerTask producerTask = new ProducerTask(new Producer(boundedBuffer));
-            ConsumerTask consumerTask = new ConsumerTask(new Consumer(boundedBuffer));
+            ProducerTask<Integer> producerTask = new ProducerTask<>(new Producer<Integer>(boundedBuffer) {
+                @Override
+                protected Integer produceNext() {
+                    return new Random().nextInt(200);
+                }
+            });
+            ConsumerTask<Integer> consumerTask = new ConsumerTask<>(new Consumer<>(boundedBuffer));
             Future<Integer> producerFuture = producers.submit(producerTask);
             Future<Integer> consumerFuture = consumers.submit(consumerTask);
             assertEquals(producerFuture.get(), consumerFuture.get());
         }
     }
 
-    private static class Producer {
-        private final BoundedBuffer<Integer> buffer;
+    private static abstract class Producer<V> {
+        private final BoundedBuffer<V> buffer;
 
-        private Producer(BoundedBuffer<Integer> buffer) {
+        private Producer(BoundedBuffer<V> buffer) {
             this.buffer = buffer;
         }
 
-        private Integer produce() {
+        private V produce() {
             try {
-                int v = new Random().nextInt();
+                V v = produceNext();
                 buffer.put(v);
                 System.err.println("produced " + v);
                 return v;
@@ -58,18 +63,20 @@ public class BoundedBufferTest {
             }
             return null;
         }
+
+        protected abstract V produceNext();
     }
 
-    private static class Consumer {
-        private final BoundedBuffer<Integer> buffer;
+    private static class Consumer<V>{
+        private final BoundedBuffer<V> buffer;
 
-        private Consumer(BoundedBuffer<Integer> buffer) {
+        private Consumer(BoundedBuffer<V> buffer) {
             this.buffer = buffer;
         }
 
-        private Integer consume() {
+        private V consume() {
             try {
-                Integer taken = buffer.take();
+                V taken = buffer.take();
                 System.err.println("consumed " + taken);
                 return taken;
             } catch (InterruptedException e) {
@@ -79,28 +86,28 @@ public class BoundedBufferTest {
         }
     }
 
-    private static class ProducerTask implements Callable<Integer> {
-        private final Producer producer;
+    private static class ProducerTask<V> implements Callable<V> {
+        private final Producer<V> producer;
 
-        private ProducerTask(Producer producer) {
+        private ProducerTask(Producer<V> producer) {
             this.producer = producer;
         }
 
         @Override
-        public Integer call() {
+        public V call() {
             return producer.produce();
         }
     }
 
-    private static class ConsumerTask implements Callable<Integer> {
-        private final Consumer consumer;
+    private static class ConsumerTask<V> implements Callable<V> {
+        private final Consumer<V> consumer;
 
-        private ConsumerTask(Consumer consumer) {
+        private ConsumerTask(Consumer<V> consumer) {
             this.consumer = consumer;
         }
 
         @Override
-        public Integer call() {
+        public V call() {
             return consumer.consume();
         }
     }
