@@ -26,12 +26,8 @@ public class ChocolateTest {
         for (int i = 0; i < length; ++i) {
             final String part = parts[i];
             if (isNumeric(part)) {
-                try {
-                    int a = Integer.parseInt(part);
-                    arr[i] = a;
-                } catch (Exception e) {
-                    fail(part);
-                }
+                int a = Integer.parseInt(part);
+                arr[i] = a;
             }
         }
         assertEquals(200563, Chocolate.equalize(arr));
