@@ -7,6 +7,7 @@ import java.io.IOException;
 
 import static org.apache.commons.io.FileUtils.readFileToString;
 import static org.apache.commons.lang3.StringUtils.isNumeric;
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 
 public class ChocolateTest {
@@ -33,7 +34,6 @@ public class ChocolateTest {
                 }
             }
         }
-        System.out.println(Chocolate.equalize(arr));
-        //assertEquals(315342, Chocolate.equalize(arr));
+        assertEquals(200563, Chocolate.equalize(arr));
     }
 }
