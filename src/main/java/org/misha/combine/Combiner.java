@@ -12,10 +12,11 @@ import static com.google.common.base.Preconditions.checkArgument;
  */
 public abstract class Combiner<K, E> implements Iterable<E> {
     private final List<E> collection;
-    private final List<E> combined = new ArrayList<>();
+    private final List<E> combined;
     private boolean hasBeenCombined = false;
 
     Combiner(final List<E> collection) {
+        combined = new ArrayList<>();
         this.collection = collection;
     }
 
