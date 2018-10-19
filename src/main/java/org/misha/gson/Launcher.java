@@ -36,15 +36,17 @@ public class Launcher {
         String jsonPatch = readJsonFile("patch-example.json");
         JsonParser jsonParser = new JsonParser();
         JsonElement patchRoot = jsonParser.parse(jsonPatch);
+        JsonSpy.parse(patchRoot, 4 );
         Set<JsonElement> foundAdd = new HashSet<>();
         JsonSpy.findByName(patchRoot, "add", foundAdd);
-        Add add1 = foundAdd.stream().findFirst().map(e -> gson.fromJson(e, Add.class)).get();
+        Add add1 = foundAdd.stream().findFirst().map(e -> gson.fromJson(e, Add.class)).orElse(null);
         Set<JsonElement> foundOp = new HashSet<>();
         JsonSpy.findByName(patchRoot, "_op", foundOp);
-        Op op = foundOp.stream().findFirst().map(e -> gson.fromJson(e, Op.class)).get();
+        Op op = foundOp.stream().findFirst().map(e -> gson.fromJson(e, Op.class)).orElse(null);
         Set<JsonElement> foundPatch = new HashSet<>();
         JsonSpy.findByName(patchRoot, "patch", foundPatch);
-        Patch patch = foundPatch.stream().findFirst().map(e -> gson.fromJson(e, Patch.class)).get();
+        Patch patch = foundPatch.stream().findFirst().map(e -> gson.fromJson(e, Patch.class)).orElse(null);
+        System.out.println(patch);
     }
 
     private static String readJsonFile(String name) throws IOException {
@@ -59,7 +61,7 @@ public class Launcher {
         static void parse(final JsonElement element, int depth) {
             final StringBuilder sb = new StringBuilder();
             for (int i = 0; i < depth; ++i) {
-                sb.append(".");
+                sb.append("..");
             }
             if (element.isJsonObject()) {
                 ++depth;

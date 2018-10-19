@@ -48,7 +48,7 @@ public final class Serializer {
             return e.getDeclaringClass().getName() + ":" + e.name();
         }
         StringBuilder sb = new StringBuilder(LESS_THAN).append(bean.getClass().getSimpleName()).append(GREATER_THAN);
-        sb = describeFields(bean, sb);
+        describeFields(bean, sb);
         sb = closeTag(sb, bean.getClass().getSimpleName());
         return sb.toString();
     }
@@ -65,36 +65,35 @@ public final class Serializer {
         return sb.append(LESS_THAN).append(name).append(GREATER_THAN);
     }
 
-    private static StringBuilder describeFields(final Object bean, StringBuilder sb) {
+    private static void describeFields(final Object bean, StringBuilder sb) {
         for (Field field : bean.getClass().getDeclaredFields()) {
             field.setAccessible(true);
             Object value = null;
             try {
                 value = field.get(bean);
             } catch (IllegalAccessException e) {
-                sb = sb.append("<INACCESSIBLE FIELD/>");
+                sb.append("<INACCESSIBLE FIELD/>");
             }
             final String type = field.getType().getSimpleName();
             if (value != null) {
                 if (value instanceof Collection) {
-                    sb = sb.append("<List>");
+                    sb.append("<List>");
                     final Object[] objects = ((Collection) value).toArray();
                     for (Object o : objects) {
-                        sb = sb.append(describe(o));
+                       sb.append(describe(o));
                     }
-                    sb = sb.append("</List>");
+                    sb.append("</List>");
                 } else if (needToBeDrawnAsIs(value)) {
-                    sb = openTag(sb, type).append(valueForLeaf(value, type));
-                    sb = closeTag(sb, type);
+                    openTag(sb, type).append(valueForLeaf(value, type));
+                    closeTag(sb, type);
                 } else {
-                    sb = sb.append(describe(value));
+                    sb.append(describe(value));
                 }
             } else {
-                sb = openTag(sb, type).append("null");
-                sb = closeTag(sb, type);
+                openTag(sb, type).append("null");
+                closeTag(sb, type);
             }
         }
-        return sb;
     }
 
     private static boolean needToBeDrawnAsIs(final Object value) {
