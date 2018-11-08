@@ -7,6 +7,7 @@ export M2
 mvn=${M2}/mvn.cmd
 export JAVA_HOME=${java_home}
 cd ../
+
 ${mvn} clean install -X
 cd target
 java -jar that-sort.jar

@@ -193,7 +193,7 @@
                 <version>${surefire.version}</version>
                 <configuration>
                     <includes>
-                        <include>**/*Test*.java</include>
+                        <include></include>
                     </includes>
                 </configuration>
             </plugin>
