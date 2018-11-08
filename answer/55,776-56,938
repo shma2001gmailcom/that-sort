@@ -1,0 +1,1162 @@
+[2018-09-20 17:07:44,932]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], c], [[b, a], b]], [[[c, b], b], b]]]  parsed.
+[2018-09-20 17:07:44,932]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], c], [[b, a], b]], [[[c, b], b], c]]]  parsed.
+[2018-09-20 17:07:44,933]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], c], [[b, a], b]], [[[c, b], c], c]]]  parsed.
+[2018-09-20 17:07:44,933]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], a]], [[c, a], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,933]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], a]], [[c, b], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,933]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], a]], [[c, b], [c, a]]]]  parsed.
+[2018-09-20 17:07:44,933]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], a]], [[[b, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,933]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], a]], [[[b, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,933]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], a]], [[[b, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,933]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], a]], [[[b, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,933]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], a]], [[[b, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,934]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], a]], [[[b, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,934]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], a]], [[[c, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,934]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], a]], [[[c, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,934]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], a]], [[[c, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,934]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], a]], [[[c, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,935]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], a]], [[[c, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,935]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], a]], [[[c, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,935]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], a]], [[[c, b], b], b]]]  parsed.
+[2018-09-20 17:07:44,935]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], a]], [[[c, b], b], c]]]  parsed.
+[2018-09-20 17:07:44,935]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], a]], [[[c, b], c], c]]]  parsed.
+[2018-09-20 17:07:44,935]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], b]], [[c, a], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,935]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], b]], [[c, b], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,935]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], b]], [[c, b], [c, a]]]]  parsed.
+[2018-09-20 17:07:44,936]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], b]], [[[b, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,936]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], b]], [[[b, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,936]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], b]], [[[b, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,937]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], b]], [[[b, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,937]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], b]], [[[b, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,937]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], b]], [[[b, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,937]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], b]], [[[c, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,937]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], b]], [[[c, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,937]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], b]], [[[c, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,937]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], b]], [[[c, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,937]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], b]], [[[c, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,937]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], b]], [[[c, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,938]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], b]], [[[c, b], b], b]]]  parsed.
+[2018-09-20 17:07:44,938]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], b]], [[[c, b], b], c]]]  parsed.
+[2018-09-20 17:07:44,938]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], b]], [[[c, b], c], c]]]  parsed.
+[2018-09-20 17:07:44,938]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], c]], [[c, a], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,938]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], c]], [[c, b], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,938]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], c]], [[c, b], [c, a]]]]  parsed.
+[2018-09-20 17:07:44,938]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], c]], [[[b, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,938]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], c]], [[[b, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,938]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], c]], [[[b, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,938]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], c]], [[[b, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,938]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], c]], [[[b, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,938]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], c]], [[[b, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,938]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], c]], [[[c, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,938]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], c]], [[[c, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,939]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], c]], [[[c, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,939]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], c]], [[[c, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,939]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], c]], [[[c, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,939]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], c]], [[[c, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,939]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], c]], [[[c, b], b], b]]]  parsed.
+[2018-09-20 17:07:44,939]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], c]], [[[c, b], b], c]]]  parsed.
+[2018-09-20 17:07:44,939]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], c]], [[[c, b], c], c]]]  parsed.
+[2018-09-20 17:07:44,939]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], a]], [[c, a], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,939]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], a]], [[c, b], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,939]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], a]], [[c, b], [c, a]]]]  parsed.
+[2018-09-20 17:07:44,939]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], a]], [[[b, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,939]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], a]], [[[b, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,939]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], a]], [[[b, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,939]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], a]], [[[b, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,940]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], a]], [[[b, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,940]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], a]], [[[b, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,940]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], a]], [[[c, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,940]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], a]], [[[c, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,940]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], a]], [[[c, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,940]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], a]], [[[c, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,940]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], a]], [[[c, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,940]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], a]], [[[c, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,940]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], a]], [[[c, b], b], b]]]  parsed.
+[2018-09-20 17:07:44,941]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], a]], [[[c, b], b], c]]]  parsed.
+[2018-09-20 17:07:44,941]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], a]], [[[c, b], c], c]]]  parsed.
+[2018-09-20 17:07:44,941]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], b]], [[c, a], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,941]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], b]], [[c, b], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,941]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], b]], [[c, b], [c, a]]]]  parsed.
+[2018-09-20 17:07:44,941]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], b]], [[[b, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,941]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], b]], [[[b, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,941]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], b]], [[[b, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,941]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], b]], [[[b, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,941]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], b]], [[[b, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,942]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], b]], [[[b, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,942]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], b]], [[[c, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,942]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], b]], [[[c, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,942]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], b]], [[[c, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,942]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], b]], [[[c, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,942]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], b]], [[[c, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,942]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], b]], [[[c, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,942]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], b]], [[[c, b], b], b]]]  parsed.
+[2018-09-20 17:07:44,942]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], b]], [[[c, b], b], c]]]  parsed.
+[2018-09-20 17:07:44,943]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], b]], [[[c, b], c], c]]]  parsed.
+[2018-09-20 17:07:44,943]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], c]], [[c, a], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,943]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], c]], [[c, b], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,943]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], c]], [[c, b], [c, a]]]]  parsed.
+[2018-09-20 17:07:44,943]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], c]], [[[b, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,943]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], c]], [[[b, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,943]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], c]], [[[b, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,943]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], c]], [[[b, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,943]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], c]], [[[b, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,943]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], c]], [[[b, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,944]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], c]], [[[c, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,944]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], c]], [[[c, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,944]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], c]], [[[c, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,944]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], c]], [[[c, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,944]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], c]], [[[c, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,944]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], c]], [[[c, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,944]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], c]], [[[c, b], b], b]]]  parsed.
+[2018-09-20 17:07:44,944]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], c]], [[[c, b], b], c]]]  parsed.
+[2018-09-20 17:07:44,944]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], c]], [[[c, b], c], c]]]  parsed.
+[2018-09-20 17:07:44,944]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[c, a], a]], [[c, a], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,945]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[c, a], a]], [[c, b], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,945]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[c, a], a]], [[c, b], [c, a]]]]  parsed.
+[2018-09-20 17:07:44,945]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[c, a], a]], [[[b, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,945]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[c, a], a]], [[[b, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,945]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[c, a], a]], [[[b, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,945]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[c, a], a]], [[[b, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,945]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[c, a], a]], [[[b, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,945]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[c, a], a]], [[[b, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,946]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[c, a], a]], [[[c, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,946]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[c, a], a]], [[[c, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,946]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[c, a], a]], [[[c, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,946]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[c, a], a]], [[[c, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,946]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[c, a], a]], [[[c, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,946]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[c, a], a]], [[[c, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,946]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[c, a], a]], [[[c, b], b], b]]]  parsed.
+[2018-09-20 17:07:44,947]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[c, a], a]], [[[c, b], b], c]]]  parsed.
+[2018-09-20 17:07:44,947]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[c, a], a]], [[[c, b], c], c]]]  parsed.
+[2018-09-20 17:07:44,947]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], a]], [[c, a], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,947]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], a]], [[c, b], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,947]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], a]], [[c, b], [c, a]]]]  parsed.
+[2018-09-20 17:07:44,947]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], a]], [[[b, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,947]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], a]], [[[b, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,947]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], a]], [[[b, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,947]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], a]], [[[b, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,948]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], a]], [[[b, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,948]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], a]], [[[b, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,948]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], a]], [[[c, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,948]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], a]], [[[c, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,948]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], a]], [[[c, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,948]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], a]], [[[c, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,948]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], a]], [[[c, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,949]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], a]], [[[c, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,949]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], a]], [[[c, b], b], b]]]  parsed.
+[2018-09-20 17:07:44,949]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], a]], [[[c, b], b], c]]]  parsed.
+[2018-09-20 17:07:44,949]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], a]], [[[c, b], c], c]]]  parsed.
+[2018-09-20 17:07:44,949]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], b]], [[c, a], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,949]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], b]], [[c, b], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,949]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], b]], [[c, b], [c, a]]]]  parsed.
+[2018-09-20 17:07:44,949]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], b]], [[[b, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,950]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], b]], [[[b, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,950]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], b]], [[[b, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,950]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], b]], [[[b, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,950]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], b]], [[[b, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,950]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], b]], [[[b, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,950]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], b]], [[[c, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,950]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], b]], [[[c, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,950]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], b]], [[[c, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,950]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], b]], [[[c, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,951]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], b]], [[[c, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,951]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], b]], [[[c, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,951]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], b]], [[[c, b], b], b]]]  parsed.
+[2018-09-20 17:07:44,951]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], b]], [[[c, b], b], c]]]  parsed.
+[2018-09-20 17:07:44,951]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], b]], [[[c, b], c], c]]]  parsed.
+[2018-09-20 17:07:44,951]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], c]], [[c, a], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,951]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], c]], [[c, b], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,952]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], c]], [[c, b], [c, a]]]]  parsed.
+[2018-09-20 17:07:44,952]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], c]], [[[b, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,952]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], c]], [[[b, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,952]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], c]], [[[b, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,952]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], c]], [[[b, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,952]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], c]], [[[b, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,953]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], c]], [[[b, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,953]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], c]], [[[c, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,953]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], c]], [[[c, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,953]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], c]], [[[c, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,953]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], c]], [[[c, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,953]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], c]], [[[c, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,953]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], c]], [[[c, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,954]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], c]], [[[c, b], b], b]]]  parsed.
+[2018-09-20 17:07:44,954]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], c]], [[[c, b], b], c]]]  parsed.
+[2018-09-20 17:07:44,954]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], c]], [[[c, b], c], c]]]  parsed.
+[2018-09-20 17:07:44,954]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], a]], [[c, a], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,954]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], a]], [[c, b], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,954]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], a]], [[c, b], [c, a]]]]  parsed.
+[2018-09-20 17:07:44,954]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], a]], [[[b, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,954]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], a]], [[[b, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,954]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], a]], [[[b, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,955]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], a]], [[[b, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,955]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], a]], [[[b, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,955]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], a]], [[[b, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,955]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], a]], [[[c, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,955]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], a]], [[[c, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,955]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], a]], [[[c, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,955]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], a]], [[[c, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,955]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], a]], [[[c, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,955]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], a]], [[[c, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,956]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], a]], [[[c, b], b], b]]]  parsed.
+[2018-09-20 17:07:44,956]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], a]], [[[c, b], b], c]]]  parsed.
+[2018-09-20 17:07:44,956]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], a]], [[[c, b], c], c]]]  parsed.
+[2018-09-20 17:07:44,956]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], b]], [[c, a], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,956]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], b]], [[c, b], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,956]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], b]], [[c, b], [c, a]]]]  parsed.
+[2018-09-20 17:07:44,956]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], b]], [[[b, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,956]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], b]], [[[b, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,956]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], b]], [[[b, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,957]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], b]], [[[b, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,957]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], b]], [[[b, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,957]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], b]], [[[b, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,957]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], b]], [[[c, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,957]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], b]], [[[c, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,957]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], b]], [[[c, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,957]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], b]], [[[c, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,957]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], b]], [[[c, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,957]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], b]], [[[c, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,957]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], b]], [[[c, b], b], b]]]  parsed.
+[2018-09-20 17:07:44,958]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], b]], [[[c, b], b], c]]]  parsed.
+[2018-09-20 17:07:44,958]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], b]], [[[c, b], c], c]]]  parsed.
+[2018-09-20 17:07:44,958]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], a]], [[c, a], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,958]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], a]], [[c, b], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,958]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], a]], [[c, b], [c, a]]]]  parsed.
+[2018-09-20 17:07:44,958]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], a]], [[[b, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,958]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], a]], [[[b, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,958]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], a]], [[[b, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,958]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], a]], [[[b, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,958]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], a]], [[[b, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,958]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], a]], [[[b, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,959]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], a]], [[[c, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,959]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], a]], [[[c, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,959]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], a]], [[[c, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,959]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], a]], [[[c, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,959]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], a]], [[[c, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,959]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], a]], [[[c, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,959]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], a]], [[[c, b], b], b]]]  parsed.
+[2018-09-20 17:07:44,959]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], a]], [[[c, b], b], c]]]  parsed.
+[2018-09-20 17:07:44,959]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], a]], [[[c, b], c], c]]]  parsed.
+[2018-09-20 17:07:44,959]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], b]], [[c, a], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,959]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], b]], [[c, b], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,959]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], b]], [[c, b], [c, a]]]]  parsed.
+[2018-09-20 17:07:44,960]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], b]], [[[b, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,960]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], b]], [[[b, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,960]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], b]], [[[b, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,960]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], b]], [[[b, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,960]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], b]], [[[b, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,960]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], b]], [[[b, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,960]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], b]], [[[c, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,960]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], b]], [[[c, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,960]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], b]], [[[c, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,960]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], b]], [[[c, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,960]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], b]], [[[c, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,961]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], b]], [[[c, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,961]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], b]], [[[c, b], b], b]]]  parsed.
+[2018-09-20 17:07:44,961]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], b]], [[[c, b], b], c]]]  parsed.
+[2018-09-20 17:07:44,961]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], b]], [[[c, b], c], c]]]  parsed.
+[2018-09-20 17:07:44,961]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], c]], [[c, a], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,961]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], c]], [[c, b], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,961]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], c]], [[c, b], [c, a]]]]  parsed.
+[2018-09-20 17:07:44,961]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], c]], [[[b, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,961]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], c]], [[[b, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,961]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], c]], [[[b, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,961]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], c]], [[[b, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,962]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], c]], [[[b, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,962]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], c]], [[[b, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,962]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], c]], [[[c, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,962]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], c]], [[[c, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,962]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], c]], [[[c, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,962]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], c]], [[[c, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,962]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], c]], [[[c, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,962]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], c]], [[[c, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,962]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], c]], [[[c, b], b], b]]]  parsed.
+[2018-09-20 17:07:44,962]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], c]], [[[c, b], b], c]]]  parsed.
+[2018-09-20 17:07:44,962]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], c]], [[[c, b], c], c]]]  parsed.
+[2018-09-20 17:07:44,962]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], a]], [[c, a], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,962]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], a]], [[c, b], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,962]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], a]], [[c, b], [c, a]]]]  parsed.
+[2018-09-20 17:07:44,962]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], a]], [[[b, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,963]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], a]], [[[b, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,963]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], a]], [[[b, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,963]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], a]], [[[b, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,963]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], a]], [[[b, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,963]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], a]], [[[b, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,963]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], a]], [[[c, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,963]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], a]], [[[c, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,963]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], a]], [[[c, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,963]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], a]], [[[c, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,963]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], a]], [[[c, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,963]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], a]], [[[c, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,963]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], a]], [[[c, b], b], b]]]  parsed.
+[2018-09-20 17:07:44,963]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], a]], [[[c, b], b], c]]]  parsed.
+[2018-09-20 17:07:44,964]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], a]], [[[c, b], c], c]]]  parsed.
+[2018-09-20 17:07:44,964]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], b]], [[c, a], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,964]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], b]], [[c, b], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,964]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], b]], [[c, b], [c, a]]]]  parsed.
+[2018-09-20 17:07:44,964]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], b]], [[[b, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,964]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], b]], [[[b, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,964]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], b]], [[[b, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,964]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], b]], [[[b, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,964]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], b]], [[[b, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,964]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], b]], [[[b, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,964]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], b]], [[[c, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,964]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], b]], [[[c, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,964]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], b]], [[[c, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,964]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], b]], [[[c, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,964]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], b]], [[[c, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,964]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], b]], [[[c, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,964]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], b]], [[[c, b], b], b]]]  parsed.
+[2018-09-20 17:07:44,964]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], b]], [[[c, b], b], c]]]  parsed.
+[2018-09-20 17:07:44,964]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], b]], [[[c, b], c], c]]]  parsed.
+[2018-09-20 17:07:44,964]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], c]], [[c, a], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,964]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], c]], [[c, b], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,965]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], c]], [[c, b], [c, a]]]]  parsed.
+[2018-09-20 17:07:44,965]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], c]], [[[b, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,965]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], c]], [[[b, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,965]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], c]], [[[b, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,965]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], c]], [[[b, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,965]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], c]], [[[b, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,965]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], c]], [[[b, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,965]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], c]], [[[c, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,965]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], c]], [[[c, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,965]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], c]], [[[c, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,965]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], c]], [[[c, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,965]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], c]], [[[c, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,966]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], c]], [[[c, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,966]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], c]], [[[c, b], b], b]]]  parsed.
+[2018-09-20 17:07:44,966]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], c]], [[[c, b], b], c]]]  parsed.
+[2018-09-20 17:07:44,966]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], c]], [[[c, b], c], c]]]  parsed.
+[2018-09-20 17:07:44,966]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[b, a], a]], [[c, a], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,966]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[b, a], a]], [[c, b], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,966]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[b, a], a]], [[c, b], [c, a]]]]  parsed.
+[2018-09-20 17:07:44,967]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[b, a], a]], [[[b, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,967]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[b, a], a]], [[[b, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,967]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[b, a], a]], [[[b, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,967]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[b, a], a]], [[[b, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,967]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[b, a], a]], [[[b, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,967]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[b, a], a]], [[[b, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,967]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[b, a], a]], [[[c, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,967]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[b, a], a]], [[[c, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,967]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[b, a], a]], [[[c, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,967]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[b, a], a]], [[[c, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,967]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[b, a], a]], [[[c, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,967]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[b, a], a]], [[[c, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,967]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[b, a], a]], [[[c, b], b], b]]]  parsed.
+[2018-09-20 17:07:44,967]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[b, a], a]], [[[c, b], b], c]]]  parsed.
+[2018-09-20 17:07:44,967]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[b, a], a]], [[[c, b], c], c]]]  parsed.
+[2018-09-20 17:07:44,967]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[b, a], b]], [[c, a], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,967]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[b, a], b]], [[c, b], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,967]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[b, a], b]], [[c, b], [c, a]]]]  parsed.
+[2018-09-20 17:07:44,968]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[b, a], b]], [[[b, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,968]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[b, a], b]], [[[b, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,968]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[b, a], b]], [[[b, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,968]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[b, a], b]], [[[b, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,968]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[b, a], b]], [[[b, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,968]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[b, a], b]], [[[b, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,968]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[b, a], b]], [[[c, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,969]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[b, a], b]], [[[c, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,969]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[b, a], b]], [[[c, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,969]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[b, a], b]], [[[c, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,969]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[b, a], b]], [[[c, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,969]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[b, a], b]], [[[c, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,969]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[b, a], b]], [[[c, b], b], b]]]  parsed.
+[2018-09-20 17:07:44,969]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[b, a], b]], [[[c, b], b], c]]]  parsed.
+[2018-09-20 17:07:44,969]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[b, a], b]], [[[c, b], c], c]]]  parsed.
+[2018-09-20 17:07:44,969]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[b, a], c]], [[c, a], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,969]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[b, a], c]], [[c, b], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,969]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[b, a], c]], [[c, b], [c, a]]]]  parsed.
+[2018-09-20 17:07:44,969]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[b, a], c]], [[[b, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,970]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[b, a], c]], [[[b, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,970]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[b, a], c]], [[[b, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,970]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[b, a], c]], [[[b, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,971]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[b, a], c]], [[[b, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,971]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[b, a], c]], [[[b, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,971]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[b, a], c]], [[[c, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,971]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[b, a], c]], [[[c, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,971]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[b, a], c]], [[[c, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,971]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[b, a], c]], [[[c, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,971]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[b, a], c]], [[[c, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,972]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[b, a], c]], [[[c, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,972]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[b, a], c]], [[[c, b], b], b]]]  parsed.
+[2018-09-20 17:07:44,972]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[b, a], c]], [[[c, b], b], c]]]  parsed.
+[2018-09-20 17:07:44,972]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[b, a], c]], [[[c, b], c], c]]]  parsed.
+[2018-09-20 17:07:44,972]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, a], a]], [[c, a], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,972]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, a], a]], [[c, b], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,972]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, a], a]], [[c, b], [c, a]]]]  parsed.
+[2018-09-20 17:07:44,972]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, a], a]], [[[b, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,972]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, a], a]], [[[b, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,973]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, a], a]], [[[b, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,973]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, a], a]], [[[b, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,973]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, a], a]], [[[b, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,973]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, a], a]], [[[b, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,973]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, a], a]], [[[c, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,973]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, a], a]], [[[c, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,973]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, a], a]], [[[c, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,973]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, a], a]], [[[c, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,974]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, a], a]], [[[c, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,974]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, a], a]], [[[c, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,974]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, a], a]], [[[c, b], b], b]]]  parsed.
+[2018-09-20 17:07:44,974]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, a], a]], [[[c, b], b], c]]]  parsed.
+[2018-09-20 17:07:44,974]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, a], a]], [[[c, b], c], c]]]  parsed.
+[2018-09-20 17:07:44,974]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, a], b]], [[c, a], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,974]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, a], b]], [[c, b], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,974]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, a], b]], [[c, b], [c, a]]]]  parsed.
+[2018-09-20 17:07:44,974]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, a], b]], [[[b, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,974]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, a], b]], [[[b, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,974]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, a], b]], [[[b, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,974]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, a], b]], [[[b, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,974]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, a], b]], [[[b, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,975]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, a], b]], [[[b, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,975]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, a], b]], [[[c, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,975]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, a], b]], [[[c, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,975]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, a], b]], [[[c, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,975]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, a], b]], [[[c, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,975]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, a], b]], [[[c, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,975]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, a], b]], [[[c, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,975]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, a], b]], [[[c, b], b], b]]]  parsed.
+[2018-09-20 17:07:44,975]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, a], b]], [[[c, b], b], c]]]  parsed.
+[2018-09-20 17:07:44,975]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, a], b]], [[[c, b], c], c]]]  parsed.
+[2018-09-20 17:07:44,975]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, a], c]], [[c, a], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,975]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, a], c]], [[c, b], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,975]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, a], c]], [[c, b], [c, a]]]]  parsed.
+[2018-09-20 17:07:44,975]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, a], c]], [[[b, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,975]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, a], c]], [[[b, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,976]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, a], c]], [[[b, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,976]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, a], c]], [[[b, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,976]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, a], c]], [[[b, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,976]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, a], c]], [[[b, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,976]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, a], c]], [[[c, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,976]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, a], c]], [[[c, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,976]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, a], c]], [[[c, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,976]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, a], c]], [[[c, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,976]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, a], c]], [[[c, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,976]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, a], c]], [[[c, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,976]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, a], c]], [[[c, b], b], b]]]  parsed.
+[2018-09-20 17:07:44,976]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, a], c]], [[[c, b], b], c]]]  parsed.
+[2018-09-20 17:07:44,976]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, a], c]], [[[c, b], c], c]]]  parsed.
+[2018-09-20 17:07:44,976]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, b], b]], [[c, a], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,977]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, b], b]], [[c, b], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,977]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, b], b]], [[c, b], [c, a]]]]  parsed.
+[2018-09-20 17:07:44,977]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, b], b]], [[[b, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,977]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, b], b]], [[[b, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,977]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, b], b]], [[[b, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,977]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, b], b]], [[[b, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,977]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, b], b]], [[[b, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,977]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, b], b]], [[[b, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,977]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, b], b]], [[[c, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,977]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, b], b]], [[[c, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,977]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, b], b]], [[[c, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,978]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, b], b]], [[[c, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,978]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, b], b]], [[[c, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,978]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, b], b]], [[[c, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,978]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, b], b]], [[[c, b], b], b]]]  parsed.
+[2018-09-20 17:07:44,978]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, b], b]], [[[c, b], b], c]]]  parsed.
+[2018-09-20 17:07:44,978]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], c], [[c, b], b]], [[[c, b], c], c]]]  parsed.
+[2018-09-20 17:07:44,978]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [b, a]], [[c, a], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,978]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [b, a]], [[c, b], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,978]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [b, a]], [[c, b], [c, a]]]]  parsed.
+[2018-09-20 17:07:44,978]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [b, a]], [[[b, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,978]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [b, a]], [[[b, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,978]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [b, a]], [[[b, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,978]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [b, a]], [[[b, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,978]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [b, a]], [[[b, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,978]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [b, a]], [[[b, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,978]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [b, a]], [[[c, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,979]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [b, a]], [[[c, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,979]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [b, a]], [[[c, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,979]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [b, a]], [[[c, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,979]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [b, a]], [[[c, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,979]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [b, a]], [[[c, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,979]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [b, a]], [[[c, b], b], b]]]  parsed.
+[2018-09-20 17:07:44,979]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [b, a]], [[[c, b], b], c]]]  parsed.
+[2018-09-20 17:07:44,979]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [b, a]], [[[c, b], c], c]]]  parsed.
+[2018-09-20 17:07:44,979]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [c, a]], [[c, a], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,979]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [c, a]], [[c, b], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,979]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [c, a]], [[c, b], [c, a]]]]  parsed.
+[2018-09-20 17:07:44,979]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [c, a]], [[[b, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,979]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [c, a]], [[[b, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,979]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [c, a]], [[[b, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,979]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [c, a]], [[[b, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,979]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [c, a]], [[[b, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,979]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [c, a]], [[[b, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,980]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [c, a]], [[[c, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,980]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [c, a]], [[[c, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,980]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [c, a]], [[[c, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,980]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [c, a]], [[[c, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,980]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [c, a]], [[[c, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,981]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [c, a]], [[[c, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,981]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [c, a]], [[[c, b], b], b]]]  parsed.
+[2018-09-20 17:07:44,981]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [c, a]], [[[c, b], b], c]]]  parsed.
+[2018-09-20 17:07:44,981]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [c, a]], [[[c, b], c], c]]]  parsed.
+[2018-09-20 17:07:44,981]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [c, b]], [[c, a], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,981]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [c, b]], [[c, b], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,981]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [c, b]], [[c, b], [c, a]]]]  parsed.
+[2018-09-20 17:07:44,981]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [c, b]], [[[b, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,981]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [c, b]], [[[b, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,981]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [c, b]], [[[b, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,981]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [c, b]], [[[b, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,981]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [c, b]], [[[b, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,981]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [c, b]], [[[b, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,981]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [c, b]], [[[c, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,981]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [c, b]], [[[c, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,982]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [c, b]], [[[c, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,982]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [c, b]], [[[c, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,982]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [c, b]], [[[c, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,982]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [c, b]], [[[c, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,982]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [c, b]], [[[c, b], b], b]]]  parsed.
+[2018-09-20 17:07:44,982]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [c, b]], [[[c, b], b], c]]]  parsed.
+[2018-09-20 17:07:44,982]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [c, b]], [[[c, b], c], c]]]  parsed.
+[2018-09-20 17:07:44,982]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [b, a]], [[c, a], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,982]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [b, a]], [[c, b], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,982]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [b, a]], [[c, b], [c, a]]]]  parsed.
+[2018-09-20 17:07:44,982]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [b, a]], [[[b, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,982]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [b, a]], [[[b, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,982]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [b, a]], [[[b, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,982]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [b, a]], [[[b, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,982]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [b, a]], [[[b, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,983]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [b, a]], [[[b, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,983]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [b, a]], [[[c, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,983]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [b, a]], [[[c, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,983]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [b, a]], [[[c, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,983]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [b, a]], [[[c, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,983]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [b, a]], [[[c, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,983]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [b, a]], [[[c, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,983]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [b, a]], [[[c, b], b], b]]]  parsed.
+[2018-09-20 17:07:44,983]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [b, a]], [[[c, b], b], c]]]  parsed.
+[2018-09-20 17:07:44,983]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [b, a]], [[[c, b], c], c]]]  parsed.
+[2018-09-20 17:07:44,983]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [c, a]], [[c, a], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,983]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [c, a]], [[c, b], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,983]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [c, a]], [[c, b], [c, a]]]]  parsed.
+[2018-09-20 17:07:44,983]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [c, a]], [[[b, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,983]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [c, a]], [[[b, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,983]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [c, a]], [[[b, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,984]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [c, a]], [[[b, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,984]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [c, a]], [[[b, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,984]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [c, a]], [[[b, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,984]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [c, a]], [[[c, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,984]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [c, a]], [[[c, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,984]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [c, a]], [[[c, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,984]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [c, a]], [[[c, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,984]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [c, a]], [[[c, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,985]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [c, a]], [[[c, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,985]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [c, a]], [[[c, b], b], b]]]  parsed.
+[2018-09-20 17:07:44,985]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [c, a]], [[[c, b], b], c]]]  parsed.
+[2018-09-20 17:07:44,985]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [c, a]], [[[c, b], c], c]]]  parsed.
+[2018-09-20 17:07:44,985]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [c, b]], [[c, a], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,985]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [c, b]], [[c, b], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,985]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [c, b]], [[c, b], [c, a]]]]  parsed.
+[2018-09-20 17:07:44,985]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [c, b]], [[[b, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,985]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [c, b]], [[[b, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,986]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [c, b]], [[[b, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,986]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [c, b]], [[[b, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,986]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [c, b]], [[[b, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,986]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [c, b]], [[[b, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,986]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [c, b]], [[[c, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,986]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [c, b]], [[[c, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,986]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [c, b]], [[[c, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,986]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [c, b]], [[[c, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,986]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [c, b]], [[[c, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,986]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [c, b]], [[[c, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,986]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [c, b]], [[[c, b], b], b]]]  parsed.
+[2018-09-20 17:07:44,987]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [c, b]], [[[c, b], b], c]]]  parsed.
+[2018-09-20 17:07:44,987]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [c, b]], [[[c, b], c], c]]]  parsed.
+[2018-09-20 17:07:44,987]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [c, a]], [[c, a], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,987]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [c, a]], [[c, b], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,987]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [c, a]], [[c, b], [c, a]]]]  parsed.
+[2018-09-20 17:07:44,987]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [c, a]], [[[b, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,987]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [c, a]], [[[b, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,987]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [c, a]], [[[b, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,987]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [c, a]], [[[b, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,987]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [c, a]], [[[b, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,987]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [c, a]], [[[b, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,987]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [c, a]], [[[c, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,987]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [c, a]], [[[c, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,987]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [c, a]], [[[c, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,987]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [c, a]], [[[c, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,987]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [c, a]], [[[c, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,987]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [c, a]], [[[c, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,988]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [c, a]], [[[c, b], b], b]]]  parsed.
+[2018-09-20 17:07:44,988]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [c, a]], [[[c, b], b], c]]]  parsed.
+[2018-09-20 17:07:44,988]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [c, a]], [[[c, b], c], c]]]  parsed.
+[2018-09-20 17:07:44,988]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [c, b]], [[c, a], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,988]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [c, b]], [[c, b], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,988]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [c, b]], [[c, b], [c, a]]]]  parsed.
+[2018-09-20 17:07:44,988]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [c, b]], [[[b, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,988]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [c, b]], [[[b, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,988]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [c, b]], [[[b, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,988]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [c, b]], [[[b, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,988]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [c, b]], [[[b, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,989]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [c, b]], [[[b, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,989]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [c, b]], [[[c, a], a], a]]]  parsed.
+[2018-09-20 17:07:44,989]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [c, b]], [[[c, a], a], b]]]  parsed.
+[2018-09-20 17:07:44,989]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [c, b]], [[[c, a], a], c]]]  parsed.
+[2018-09-20 17:07:44,989]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [c, b]], [[[c, a], b], b]]]  parsed.
+[2018-09-20 17:07:44,989]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [c, b]], [[[c, a], b], c]]]  parsed.
+[2018-09-20 17:07:44,989]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [c, b]], [[[c, a], c], c]]]  parsed.
+[2018-09-20 17:07:44,989]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [c, b]], [[[c, b], b], b]]]  parsed.
+[2018-09-20 17:07:44,989]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [c, b]], [[[c, b], b], c]]]  parsed.
+[2018-09-20 17:07:44,989]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [c, b]], [[[c, b], c], c]]]  parsed.
+[2018-09-20 17:07:44,989]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [[b, a], a]], [[b, a], a]]]  parsed.
+[2018-09-20 17:07:44,989]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [[b, a], a]], [[b, a], b]]]  parsed.
+[2018-09-20 17:07:44,989]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [[b, a], a]], [[b, a], c]]]  parsed.
+[2018-09-20 17:07:44,989]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [[b, a], a]], [[c, a], a]]]  parsed.
+[2018-09-20 17:07:44,989]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [[b, a], a]], [[c, a], b]]]  parsed.
+[2018-09-20 17:07:44,990]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [[b, a], a]], [[c, a], c]]]  parsed.
+[2018-09-20 17:07:44,990]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [[b, a], a]], [[c, b], b]]]  parsed.
+[2018-09-20 17:07:44,990]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [[b, a], a]], [[c, b], c]]]  parsed.
+[2018-09-20 17:07:44,990]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [[b, a], b]], [[b, a], b]]]  parsed.
+[2018-09-20 17:07:44,990]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [[b, a], b]], [[b, a], c]]]  parsed.
+[2018-09-20 17:07:44,990]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [[b, a], b]], [[c, a], a]]]  parsed.
+[2018-09-20 17:07:44,990]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [[b, a], b]], [[c, a], b]]]  parsed.
+[2018-09-20 17:07:44,990]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [[b, a], b]], [[c, a], c]]]  parsed.
+[2018-09-20 17:07:44,990]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [[b, a], b]], [[c, b], b]]]  parsed.
+[2018-09-20 17:07:44,990]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [[b, a], b]], [[c, b], c]]]  parsed.
+[2018-09-20 17:07:44,990]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [[b, a], c]], [[b, a], c]]]  parsed.
+[2018-09-20 17:07:44,990]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [[b, a], c]], [[c, a], a]]]  parsed.
+[2018-09-20 17:07:44,990]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [[b, a], c]], [[c, a], b]]]  parsed.
+[2018-09-20 17:07:44,991]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [[b, a], c]], [[c, a], c]]]  parsed.
+[2018-09-20 17:07:44,991]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [[b, a], c]], [[c, b], b]]]  parsed.
+[2018-09-20 17:07:44,991]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [[b, a], c]], [[c, b], c]]]  parsed.
+[2018-09-20 17:07:44,991]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [[c, a], a]], [[c, a], a]]]  parsed.
+[2018-09-20 17:07:44,991]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [[c, a], a]], [[c, a], b]]]  parsed.
+[2018-09-20 17:07:44,991]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [[c, a], a]], [[c, a], c]]]  parsed.
+[2018-09-20 17:07:44,991]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [[c, a], a]], [[c, b], b]]]  parsed.
+[2018-09-20 17:07:44,991]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [[c, a], a]], [[c, b], c]]]  parsed.
+[2018-09-20 17:07:44,991]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [[c, a], b]], [[c, a], b]]]  parsed.
+[2018-09-20 17:07:44,991]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [[c, a], b]], [[c, a], c]]]  parsed.
+[2018-09-20 17:07:44,991]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [[c, a], b]], [[c, b], b]]]  parsed.
+[2018-09-20 17:07:44,991]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [[c, a], b]], [[c, b], c]]]  parsed.
+[2018-09-20 17:07:44,991]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [[c, a], c]], [[c, a], c]]]  parsed.
+[2018-09-20 17:07:44,991]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [[c, a], c]], [[c, b], b]]]  parsed.
+[2018-09-20 17:07:44,991]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [[c, a], c]], [[c, b], c]]]  parsed.
+[2018-09-20 17:07:44,992]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [[c, b], b]], [[c, b], b]]]  parsed.
+[2018-09-20 17:07:44,992]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [[c, b], b]], [[c, b], c]]]  parsed.
+[2018-09-20 17:07:44,992]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], [b, a]], [[c, b], c]], [[c, b], c]]]  parsed.
+[2018-09-20 17:07:44,992]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [[b, a], a]], [[b, a], a]]]  parsed.
+[2018-09-20 17:07:44,992]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [[b, a], a]], [[b, a], b]]]  parsed.
+[2018-09-20 17:07:44,992]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [[b, a], a]], [[b, a], c]]]  parsed.
+[2018-09-20 17:07:44,992]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [[b, a], a]], [[c, a], a]]]  parsed.
+[2018-09-20 17:07:44,992]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [[b, a], a]], [[c, a], b]]]  parsed.
+[2018-09-20 17:07:44,992]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [[b, a], a]], [[c, a], c]]]  parsed.
+[2018-09-20 17:07:44,992]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [[b, a], a]], [[c, b], b]]]  parsed.
+[2018-09-20 17:07:44,992]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [[b, a], a]], [[c, b], c]]]  parsed.
+[2018-09-20 17:07:44,992]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [[b, a], b]], [[b, a], b]]]  parsed.
+[2018-09-20 17:07:44,992]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [[b, a], b]], [[b, a], c]]]  parsed.
+[2018-09-20 17:07:44,992]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [[b, a], b]], [[c, a], a]]]  parsed.
+[2018-09-20 17:07:44,992]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [[b, a], b]], [[c, a], b]]]  parsed.
+[2018-09-20 17:07:44,992]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [[b, a], b]], [[c, a], c]]]  parsed.
+[2018-09-20 17:07:44,993]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [[b, a], b]], [[c, b], b]]]  parsed.
+[2018-09-20 17:07:44,993]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [[b, a], b]], [[c, b], c]]]  parsed.
+[2018-09-20 17:07:44,993]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [[b, a], c]], [[b, a], c]]]  parsed.
+[2018-09-20 17:07:44,993]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [[b, a], c]], [[c, a], a]]]  parsed.
+[2018-09-20 17:07:44,993]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [[b, a], c]], [[c, a], b]]]  parsed.
+[2018-09-20 17:07:44,993]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [[b, a], c]], [[c, a], c]]]  parsed.
+[2018-09-20 17:07:44,993]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [[b, a], c]], [[c, b], b]]]  parsed.
+[2018-09-20 17:07:44,993]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [[b, a], c]], [[c, b], c]]]  parsed.
+[2018-09-20 17:07:44,993]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [[c, a], a]], [[c, a], a]]]  parsed.
+[2018-09-20 17:07:44,993]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [[c, a], a]], [[c, a], b]]]  parsed.
+[2018-09-20 17:07:44,993]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [[c, a], a]], [[c, a], c]]]  parsed.
+[2018-09-20 17:07:44,993]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [[c, a], a]], [[c, b], b]]]  parsed.
+[2018-09-20 17:07:44,993]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [[c, a], a]], [[c, b], c]]]  parsed.
+[2018-09-20 17:07:44,993]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [[c, a], b]], [[c, a], b]]]  parsed.
+[2018-09-20 17:07:44,993]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [[c, a], b]], [[c, a], c]]]  parsed.
+[2018-09-20 17:07:44,994]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [[c, a], b]], [[c, b], b]]]  parsed.
+[2018-09-20 17:07:44,994]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [[c, a], b]], [[c, b], c]]]  parsed.
+[2018-09-20 17:07:44,994]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [[c, a], c]], [[c, a], c]]]  parsed.
+[2018-09-20 17:07:44,994]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [[c, a], c]], [[c, b], b]]]  parsed.
+[2018-09-20 17:07:44,994]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [[c, a], c]], [[c, b], c]]]  parsed.
+[2018-09-20 17:07:44,994]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [[c, b], b]], [[c, b], b]]]  parsed.
+[2018-09-20 17:07:44,994]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [[c, b], b]], [[c, b], c]]]  parsed.
+[2018-09-20 17:07:44,994]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [b, a]], [[c, b], c]], [[c, b], c]]]  parsed.
+[2018-09-20 17:07:44,994]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [[b, a], a]], [[b, a], a]]]  parsed.
+[2018-09-20 17:07:44,994]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [[b, a], a]], [[b, a], b]]]  parsed.
+[2018-09-20 17:07:44,994]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [[b, a], a]], [[b, a], c]]]  parsed.
+[2018-09-20 17:07:44,994]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [[b, a], a]], [[c, a], a]]]  parsed.
+[2018-09-20 17:07:44,994]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [[b, a], a]], [[c, a], b]]]  parsed.
+[2018-09-20 17:07:44,995]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [[b, a], a]], [[c, a], c]]]  parsed.
+[2018-09-20 17:07:44,995]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [[b, a], a]], [[c, b], b]]]  parsed.
+[2018-09-20 17:07:44,995]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [[b, a], a]], [[c, b], c]]]  parsed.
+[2018-09-20 17:07:44,995]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [[b, a], b]], [[b, a], b]]]  parsed.
+[2018-09-20 17:07:44,995]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [[b, a], b]], [[b, a], c]]]  parsed.
+[2018-09-20 17:07:44,995]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [[b, a], b]], [[c, a], a]]]  parsed.
+[2018-09-20 17:07:44,995]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [[b, a], b]], [[c, a], b]]]  parsed.
+[2018-09-20 17:07:44,995]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [[b, a], b]], [[c, a], c]]]  parsed.
+[2018-09-20 17:07:44,995]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [[b, a], b]], [[c, b], b]]]  parsed.
+[2018-09-20 17:07:44,995]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [[b, a], b]], [[c, b], c]]]  parsed.
+[2018-09-20 17:07:44,995]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [[b, a], c]], [[b, a], c]]]  parsed.
+[2018-09-20 17:07:44,995]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [[b, a], c]], [[c, a], a]]]  parsed.
+[2018-09-20 17:07:44,995]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [[b, a], c]], [[c, a], b]]]  parsed.
+[2018-09-20 17:07:44,995]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [[b, a], c]], [[c, a], c]]]  parsed.
+[2018-09-20 17:07:44,996]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [[b, a], c]], [[c, b], b]]]  parsed.
+[2018-09-20 17:07:44,996]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [[b, a], c]], [[c, b], c]]]  parsed.
+[2018-09-20 17:07:44,996]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [[c, a], a]], [[c, a], a]]]  parsed.
+[2018-09-20 17:07:44,996]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [[c, a], a]], [[c, a], b]]]  parsed.
+[2018-09-20 17:07:44,996]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [[c, a], a]], [[c, a], c]]]  parsed.
+[2018-09-20 17:07:44,996]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [[c, a], a]], [[c, b], b]]]  parsed.
+[2018-09-20 17:07:44,996]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [[c, a], a]], [[c, b], c]]]  parsed.
+[2018-09-20 17:07:44,996]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [[c, a], b]], [[c, a], b]]]  parsed.
+[2018-09-20 17:07:44,996]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [[c, a], b]], [[c, a], c]]]  parsed.
+[2018-09-20 17:07:44,996]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [[c, a], b]], [[c, b], b]]]  parsed.
+[2018-09-20 17:07:44,996]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [[c, a], b]], [[c, b], c]]]  parsed.
+[2018-09-20 17:07:44,996]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [[c, a], c]], [[c, a], c]]]  parsed.
+[2018-09-20 17:07:44,996]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [[c, a], c]], [[c, b], b]]]  parsed.
+[2018-09-20 17:07:44,997]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [[c, a], c]], [[c, b], c]]]  parsed.
+[2018-09-20 17:07:44,997]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [[c, b], b]], [[c, b], b]]]  parsed.
+[2018-09-20 17:07:44,997]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [[c, b], b]], [[c, b], c]]]  parsed.
+[2018-09-20 17:07:44,997]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], [c, a]], [[c, b], c]], [[c, b], c]]]  parsed.
+[2018-09-20 17:07:44,997]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], b], [[b, a], a]], [[[b, a], a], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,997]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], b], [[b, a], a]], [[[b, a], a], [c, a]]]]  parsed.
+[2018-09-20 17:07:44,997]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], b], [[b, a], a]], [[[b, a], a], [c, b]]]]  parsed.
+[2018-09-20 17:07:44,997]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], b], [[b, a], a]], [[[b, a], b], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,997]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], b], [[b, a], a]], [[[b, a], b], [c, a]]]]  parsed.
+[2018-09-20 17:07:44,997]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], b], [[b, a], a]], [[[b, a], b], [c, b]]]]  parsed.
+[2018-09-20 17:07:44,997]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], b], [[b, a], a]], [[[b, a], c], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,997]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], b], [[b, a], a]], [[[b, a], c], [c, a]]]]  parsed.
+[2018-09-20 17:07:44,997]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], b], [[b, a], a]], [[[b, a], c], [c, b]]]]  parsed.
+[2018-09-20 17:07:44,998]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], b], [[b, a], a]], [[[c, a], a], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,998]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], b], [[b, a], a]], [[[c, a], a], [c, a]]]]  parsed.
+[2018-09-20 17:07:44,998]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], b], [[b, a], a]], [[[c, a], a], [c, b]]]]  parsed.
+[2018-09-20 17:07:44,998]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], b], [[b, a], a]], [[[c, a], b], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,998]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], b], [[b, a], a]], [[[c, a], b], [c, a]]]]  parsed.
+[2018-09-20 17:07:44,998]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], b], [[b, a], a]], [[[c, a], b], [c, b]]]]  parsed.
+[2018-09-20 17:07:44,998]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], b], [[b, a], a]], [[[c, a], c], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,998]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], b], [[b, a], a]], [[[c, a], c], [c, a]]]]  parsed.
+[2018-09-20 17:07:44,998]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], b], [[b, a], a]], [[[c, a], c], [c, b]]]]  parsed.
+[2018-09-20 17:07:44,998]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], b], [[b, a], a]], [[[c, b], b], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,998]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], b], [[b, a], a]], [[[c, b], b], [c, a]]]]  parsed.
+[2018-09-20 17:07:44,998]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], b], [[b, a], a]], [[[c, b], b], [c, b]]]]  parsed.
+[2018-09-20 17:07:44,998]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], b], [[b, a], a]], [[[c, b], c], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,998]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], b], [[b, a], a]], [[[c, b], c], [c, a]]]]  parsed.
+[2018-09-20 17:07:44,998]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], b], [[b, a], a]], [[[c, b], c], [c, b]]]]  parsed.
+[2018-09-20 17:07:44,998]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], c], [[b, a], a]], [[[b, a], a], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,999]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], c], [[b, a], a]], [[[b, a], a], [c, a]]]]  parsed.
+[2018-09-20 17:07:44,999]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], c], [[b, a], a]], [[[b, a], a], [c, b]]]]  parsed.
+[2018-09-20 17:07:44,999]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], c], [[b, a], a]], [[[b, a], b], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,999]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], c], [[b, a], a]], [[[b, a], b], [c, a]]]]  parsed.
+[2018-09-20 17:07:44,999]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], c], [[b, a], a]], [[[b, a], b], [c, b]]]]  parsed.
+[2018-09-20 17:07:44,999]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], c], [[b, a], a]], [[[b, a], c], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,999]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], c], [[b, a], a]], [[[b, a], c], [c, a]]]]  parsed.
+[2018-09-20 17:07:44,999]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], c], [[b, a], a]], [[[b, a], c], [c, b]]]]  parsed.
+[2018-09-20 17:07:44,999]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], c], [[b, a], a]], [[[c, a], a], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,999]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], c], [[b, a], a]], [[[c, a], a], [c, a]]]]  parsed.
+[2018-09-20 17:07:44,999]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], c], [[b, a], a]], [[[c, a], a], [c, b]]]]  parsed.
+[2018-09-20 17:07:44,999]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], c], [[b, a], a]], [[[c, a], b], [b, a]]]]  parsed.
+[2018-09-20 17:07:44,999]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], c], [[b, a], a]], [[[c, a], b], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,000]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], c], [[b, a], a]], [[[c, a], b], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,000]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], c], [[b, a], a]], [[[c, a], c], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,000]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], c], [[b, a], a]], [[[c, a], c], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,000]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], c], [[b, a], a]], [[[c, a], c], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,000]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], c], [[b, a], a]], [[[c, b], b], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,000]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], c], [[b, a], a]], [[[c, b], b], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,000]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], c], [[b, a], a]], [[[c, b], b], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,000]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], c], [[b, a], a]], [[[c, b], c], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,000]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], c], [[b, a], a]], [[[c, b], c], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,000]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], c], [[b, a], a]], [[[c, b], c], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,000]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], c], [[b, a], b]], [[[b, a], a], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,001]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], c], [[b, a], b]], [[[b, a], a], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,001]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], c], [[b, a], b]], [[[b, a], a], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,001]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], c], [[b, a], b]], [[[b, a], b], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,001]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], c], [[b, a], b]], [[[b, a], b], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,001]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], c], [[b, a], b]], [[[b, a], b], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,001]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], c], [[b, a], b]], [[[b, a], c], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,001]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], c], [[b, a], b]], [[[b, a], c], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,001]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], c], [[b, a], b]], [[[b, a], c], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,001]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], c], [[b, a], b]], [[[c, a], a], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,001]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], c], [[b, a], b]], [[[c, a], a], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,001]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], c], [[b, a], b]], [[[c, a], a], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,001]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], c], [[b, a], b]], [[[c, a], b], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,001]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], c], [[b, a], b]], [[[c, a], b], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,001]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], c], [[b, a], b]], [[[c, a], b], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,001]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], c], [[b, a], b]], [[[c, a], c], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,002]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], c], [[b, a], b]], [[[c, a], c], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,002]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], c], [[b, a], b]], [[[c, a], c], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,002]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], c], [[b, a], b]], [[[c, b], b], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,002]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], c], [[b, a], b]], [[[c, b], b], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,002]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], c], [[b, a], b]], [[[c, b], b], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,002]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], c], [[b, a], b]], [[[c, b], c], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,002]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], c], [[b, a], b]], [[[c, b], c], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,002]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[b, a], c], [[b, a], b]], [[[c, b], c], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,002]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], a]], [[[b, a], a], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,002]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], a]], [[[b, a], a], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,003]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], a]], [[[b, a], a], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,003]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], a]], [[[b, a], b], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,003]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], a]], [[[b, a], b], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,003]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], a]], [[[b, a], b], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,003]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], a]], [[[b, a], c], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,003]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], a]], [[[b, a], c], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,003]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], a]], [[[b, a], c], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,003]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], a]], [[[c, a], a], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,003]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], a]], [[[c, a], a], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,003]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], a]], [[[c, a], a], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,003]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], a]], [[[c, a], b], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,003]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], a]], [[[c, a], b], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,003]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], a]], [[[c, a], b], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,004]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], a]], [[[c, a], c], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,004]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], a]], [[[c, a], c], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,004]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], a]], [[[c, a], c], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,004]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], a]], [[[c, b], b], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,004]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], a]], [[[c, b], b], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,004]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], a]], [[[c, b], b], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,004]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], a]], [[[c, b], c], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,004]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], a]], [[[c, b], c], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,004]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], a]], [[[c, b], c], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,004]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], b]], [[[b, a], a], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,004]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], b]], [[[b, a], a], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,004]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], b]], [[[b, a], a], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,004]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], b]], [[[b, a], b], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,005]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], b]], [[[b, a], b], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,005]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], b]], [[[b, a], b], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,005]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], b]], [[[b, a], c], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,005]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], b]], [[[b, a], c], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,005]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], b]], [[[b, a], c], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,005]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], b]], [[[c, a], a], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,005]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], b]], [[[c, a], a], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,005]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], b]], [[[c, a], a], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,005]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], b]], [[[c, a], b], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,005]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], b]], [[[c, a], b], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,005]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], b]], [[[c, a], b], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,005]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], b]], [[[c, a], c], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,005]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], b]], [[[c, a], c], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,005]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], b]], [[[c, a], c], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,005]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], b]], [[[c, b], b], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,006]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], b]], [[[c, b], b], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,006]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], b]], [[[c, b], b], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,006]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], b]], [[[c, b], c], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,006]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], b]], [[[c, b], c], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,006]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], b]], [[[c, b], c], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,006]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], c]], [[[b, a], a], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,006]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], c]], [[[b, a], a], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,006]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], c]], [[[b, a], a], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,006]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], c]], [[[b, a], b], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,006]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], c]], [[[b, a], b], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,006]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], c]], [[[b, a], b], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,006]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], c]], [[[b, a], c], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,006]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], c]], [[[b, a], c], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,007]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], c]], [[[b, a], c], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,007]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], c]], [[[c, a], a], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,007]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], c]], [[[c, a], a], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,007]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], c]], [[[c, a], a], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,007]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], c]], [[[c, a], b], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,007]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], c]], [[[c, a], b], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,007]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], c]], [[[c, a], b], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,007]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], c]], [[[c, a], c], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,007]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], c]], [[[c, a], c], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,007]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], c]], [[[c, a], c], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,007]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], c]], [[[c, b], b], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,007]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], c]], [[[c, b], b], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,007]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], c]], [[[c, b], b], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,007]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], c]], [[[c, b], c], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,008]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], c]], [[[c, b], c], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,008]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], a], [[b, a], c]], [[[c, b], c], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,008]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], a]], [[[b, a], a], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,008]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], a]], [[[b, a], a], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,008]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], a]], [[[b, a], a], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,008]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], a]], [[[b, a], b], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,008]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], a]], [[[b, a], b], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,008]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], a]], [[[b, a], b], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,008]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], a]], [[[b, a], c], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,008]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], a]], [[[b, a], c], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,008]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], a]], [[[b, a], c], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,009]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], a]], [[[c, a], a], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,009]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], a]], [[[c, a], a], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,009]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], a]], [[[c, a], a], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,009]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], a]], [[[c, a], b], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,009]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], a]], [[[c, a], b], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,009]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], a]], [[[c, a], b], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,009]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], a]], [[[c, a], c], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,009]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], a]], [[[c, a], c], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,009]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], a]], [[[c, a], c], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,009]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], a]], [[[c, b], b], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,009]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], a]], [[[c, b], b], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,009]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], a]], [[[c, b], b], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,009]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], a]], [[[c, b], c], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,009]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], a]], [[[c, b], c], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,009]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], a]], [[[c, b], c], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,010]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], b]], [[[b, a], a], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,010]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], b]], [[[b, a], a], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,010]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], b]], [[[b, a], a], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,010]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], b]], [[[b, a], b], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,010]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], b]], [[[b, a], b], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,010]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], b]], [[[b, a], b], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,010]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], b]], [[[b, a], c], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,010]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], b]], [[[b, a], c], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,010]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], b]], [[[b, a], c], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,010]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], b]], [[[c, a], a], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,010]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], b]], [[[c, a], a], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,010]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], b]], [[[c, a], a], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,011]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], b]], [[[c, a], b], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,011]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], b]], [[[c, a], b], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,011]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], b]], [[[c, a], b], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,011]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], b]], [[[c, a], c], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,011]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], b]], [[[c, a], c], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,011]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], b]], [[[c, a], c], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,011]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], b]], [[[c, b], b], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,011]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], b]], [[[c, b], b], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,011]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], b]], [[[c, b], b], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,011]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], b]], [[[c, b], c], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,011]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], b]], [[[c, b], c], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,011]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], b]], [[[c, b], c], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,011]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], c]], [[[b, a], a], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,011]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], c]], [[[b, a], a], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,011]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], c]], [[[b, a], a], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,012]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], c]], [[[b, a], b], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,012]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], c]], [[[b, a], b], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,012]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], c]], [[[b, a], b], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,012]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], c]], [[[b, a], c], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,012]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], c]], [[[b, a], c], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,012]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], c]], [[[b, a], c], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,012]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], c]], [[[c, a], a], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,012]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], c]], [[[c, a], a], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,013]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], c]], [[[c, a], a], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,013]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], c]], [[[c, a], b], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,013]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], c]], [[[c, a], b], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,013]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], c]], [[[c, a], b], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,013]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], c]], [[[c, a], c], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,013]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], c]], [[[c, a], c], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,013]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], c]], [[[c, a], c], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,013]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], c]], [[[c, b], b], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,013]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], c]], [[[c, b], b], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,013]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], c]], [[[c, b], b], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,013]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], c]], [[[c, b], c], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,013]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], c]], [[[c, b], c], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,013]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[b, a], c]], [[[c, b], c], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,014]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[c, a], a]], [[[b, a], a], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,014]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[c, a], a]], [[[b, a], a], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,014]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[c, a], a]], [[[b, a], a], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,014]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[c, a], a]], [[[b, a], b], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,014]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[c, a], a]], [[[b, a], b], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,014]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[c, a], a]], [[[b, a], b], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,014]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[c, a], a]], [[[b, a], c], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,014]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[c, a], a]], [[[b, a], c], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,014]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[c, a], a]], [[[b, a], c], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,014]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[c, a], a]], [[[c, a], a], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,014]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[c, a], a]], [[[c, a], a], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,014]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[c, a], a]], [[[c, a], a], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,014]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[c, a], a]], [[[c, a], b], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,014]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[c, a], a]], [[[c, a], b], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,014]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[c, a], a]], [[[c, a], b], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,015]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[c, a], a]], [[[c, a], c], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,015]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[c, a], a]], [[[c, a], c], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,015]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[c, a], a]], [[[c, a], c], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,015]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[c, a], a]], [[[c, b], b], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,015]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[c, a], a]], [[[c, b], b], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,015]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[c, a], a]], [[[c, b], b], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,015]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[c, a], a]], [[[c, b], c], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,015]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[c, a], a]], [[[c, b], c], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,015]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], b], [[c, a], a]], [[[c, b], c], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,015]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], a]], [[[b, a], a], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,015]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], a]], [[[b, a], a], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,015]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], a]], [[[b, a], a], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,015]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], a]], [[[b, a], b], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,015]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], a]], [[[b, a], b], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,015]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], a]], [[[b, a], b], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,016]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], a]], [[[b, a], c], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,016]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], a]], [[[b, a], c], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,016]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], a]], [[[b, a], c], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,016]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], a]], [[[c, a], a], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,016]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], a]], [[[c, a], a], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,016]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], a]], [[[c, a], a], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,016]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], a]], [[[c, a], b], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,016]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], a]], [[[c, a], b], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,016]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], a]], [[[c, a], b], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,016]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], a]], [[[c, a], c], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,016]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], a]], [[[c, a], c], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,016]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], a]], [[[c, a], c], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,016]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], a]], [[[c, b], b], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,017]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], a]], [[[c, b], b], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,017]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], a]], [[[c, b], b], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,017]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], a]], [[[c, b], c], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,017]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], a]], [[[c, b], c], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,017]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], a]], [[[c, b], c], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,017]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], b]], [[[b, a], a], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,017]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], b]], [[[b, a], a], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,017]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], b]], [[[b, a], a], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,017]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], b]], [[[b, a], b], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,017]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], b]], [[[b, a], b], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,017]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], b]], [[[b, a], b], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,017]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], b]], [[[b, a], c], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,018]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], b]], [[[b, a], c], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,018]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], b]], [[[b, a], c], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,018]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], b]], [[[c, a], a], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,018]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], b]], [[[c, a], a], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,018]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], b]], [[[c, a], a], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,018]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], b]], [[[c, a], b], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,018]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], b]], [[[c, a], b], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,018]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], b]], [[[c, a], b], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,018]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], b]], [[[c, a], c], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,019]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], b]], [[[c, a], c], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,019]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], b]], [[[c, a], c], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,019]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], b]], [[[c, b], b], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,019]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], b]], [[[c, b], b], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,019]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], b]], [[[c, b], b], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,019]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], b]], [[[c, b], c], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,019]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], b]], [[[c, b], c], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,019]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], b]], [[[c, b], c], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,019]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], c]], [[[b, a], a], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,019]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], c]], [[[b, a], a], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,019]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], c]], [[[b, a], a], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,020]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], c]], [[[b, a], b], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,020]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], c]], [[[b, a], b], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,020]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], c]], [[[b, a], b], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,020]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], c]], [[[b, a], c], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,020]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], c]], [[[b, a], c], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,020]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], c]], [[[b, a], c], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,020]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], c]], [[[c, a], a], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,020]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], c]], [[[c, a], a], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,020]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], c]], [[[c, a], a], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,020]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], c]], [[[c, a], b], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,020]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], c]], [[[c, a], b], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,020]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], c]], [[[c, a], b], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,020]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], c]], [[[c, a], c], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,020]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], c]], [[[c, a], c], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,021]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], c]], [[[c, a], c], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,021]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], c]], [[[c, b], b], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,021]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], c]], [[[c, b], b], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,021]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], c]], [[[c, b], b], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,021]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], c]], [[[c, b], c], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,021]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], c]], [[[c, b], c], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,021]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[b, a], c]], [[[c, b], c], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,021]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], a]], [[[b, a], a], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,021]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], a]], [[[b, a], a], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,021]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], a]], [[[b, a], a], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,021]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], a]], [[[b, a], b], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,021]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], a]], [[[b, a], b], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,022]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], a]], [[[b, a], b], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,022]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], a]], [[[b, a], c], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,022]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], a]], [[[b, a], c], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,022]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], a]], [[[b, a], c], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,022]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], a]], [[[c, a], a], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,022]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], a]], [[[c, a], a], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,022]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], a]], [[[c, a], a], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,022]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], a]], [[[c, a], b], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,022]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], a]], [[[c, a], b], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,022]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], a]], [[[c, a], b], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,022]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], a]], [[[c, a], c], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,022]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], a]], [[[c, a], c], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,022]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], a]], [[[c, a], c], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,022]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], a]], [[[c, b], b], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,022]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], a]], [[[c, b], b], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,023]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], a]], [[[c, b], b], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,023]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], a]], [[[c, b], c], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,023]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], a]], [[[c, b], c], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,023]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], a]], [[[c, b], c], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,023]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], b]], [[[b, a], a], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,023]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], b]], [[[b, a], a], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,023]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], b]], [[[b, a], a], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,023]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], b]], [[[b, a], b], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,023]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], b]], [[[b, a], b], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,023]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], b]], [[[b, a], b], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,023]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], b]], [[[b, a], c], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,023]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], b]], [[[b, a], c], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,023]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], b]], [[[b, a], c], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,023]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], b]], [[[c, a], a], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,023]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], b]], [[[c, a], a], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,024]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], b]], [[[c, a], a], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,024]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], b]], [[[c, a], b], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,024]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], b]], [[[c, a], b], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,024]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], b]], [[[c, a], b], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,024]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], b]], [[[c, a], c], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,024]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], b]], [[[c, a], c], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,024]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], b]], [[[c, a], c], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,024]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], b]], [[[c, b], b], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,024]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], b]], [[[c, b], b], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,024]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], b]], [[[c, b], b], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,024]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], b]], [[[c, b], c], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,024]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], b]], [[[c, b], c], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,024]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, a], c], [[c, a], b]], [[[c, b], c], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,024]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], a]], [[[b, a], a], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,025]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], a]], [[[b, a], a], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,025]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], a]], [[[b, a], a], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,025]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], a]], [[[b, a], b], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,025]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], a]], [[[b, a], b], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,025]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], a]], [[[b, a], b], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,025]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], a]], [[[b, a], c], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,025]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], a]], [[[b, a], c], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,025]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], a]], [[[b, a], c], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,025]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], a]], [[[c, a], a], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,025]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], a]], [[[c, a], a], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,025]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], a]], [[[c, a], a], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,025]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], a]], [[[c, a], b], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,025]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], a]], [[[c, a], b], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,040]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], a]], [[[c, a], b], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,040]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], a]], [[[c, a], c], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,040]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], a]], [[[c, a], c], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,040]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], a]], [[[c, a], c], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,041]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], a]], [[[c, b], b], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,041]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], a]], [[[c, b], b], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,041]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], a]], [[[c, b], b], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,041]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], a]], [[[c, b], c], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,041]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], a]], [[[c, b], c], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,041]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], a]], [[[c, b], c], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,041]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], b]], [[[b, a], a], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,041]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], b]], [[[b, a], a], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,041]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], b]], [[[b, a], a], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,041]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], b]], [[[b, a], b], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,042]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], b]], [[[b, a], b], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,042]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], b]], [[[b, a], b], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,042]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], b]], [[[b, a], c], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,042]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], b]], [[[b, a], c], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,042]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], b]], [[[b, a], c], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,042]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], b]], [[[c, a], a], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,042]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], b]], [[[c, a], a], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,042]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], b]], [[[c, a], a], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,042]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], b]], [[[c, a], b], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,042]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], b]], [[[c, a], b], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,042]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], b]], [[[c, a], b], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,043]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], b]], [[[c, a], c], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,055]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], b]], [[[c, a], c], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,056]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], b]], [[[c, a], c], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,056]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], b]], [[[c, b], b], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,056]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], b]], [[[c, b], b], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,056]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], b]], [[[c, b], b], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,056]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], b]], [[[c, b], c], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,056]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], b]], [[[c, b], c], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,056]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], b]], [[[c, b], c], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,056]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], c]], [[[b, a], a], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,056]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], c]], [[[b, a], a], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,056]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], c]], [[[b, a], a], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,056]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], c]], [[[b, a], b], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,057]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], c]], [[[b, a], b], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,057]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], c]], [[[b, a], b], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,057]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], c]], [[[b, a], c], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,057]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], c]], [[[b, a], c], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,057]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], c]], [[[b, a], c], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,057]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], c]], [[[c, a], a], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,057]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], c]], [[[c, a], a], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,057]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], c]], [[[c, a], a], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,057]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], c]], [[[c, a], b], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,057]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], c]], [[[c, a], b], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,057]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], c]], [[[c, a], b], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,057]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], c]], [[[c, a], c], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,057]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], c]], [[[c, a], c], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,057]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], c]], [[[c, a], c], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,071]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], c]], [[[c, b], b], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,071]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], c]], [[[c, b], b], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,071]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], c]], [[[c, b], b], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,071]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], c]], [[[c, b], c], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,071]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], c]], [[[c, b], c], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,071]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[b, a], c]], [[[c, b], c], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,071]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], a]], [[[b, a], a], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,071]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], a]], [[[b, a], a], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,072]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], a]], [[[b, a], a], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,072]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], a]], [[[b, a], b], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,072]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], a]], [[[b, a], b], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,072]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], a]], [[[b, a], b], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,072]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], a]], [[[b, a], c], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,072]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], a]], [[[b, a], c], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,072]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], a]], [[[b, a], c], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,072]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], a]], [[[c, a], a], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,072]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], a]], [[[c, a], a], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,072]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], a]], [[[c, a], a], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,072]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], a]], [[[c, a], b], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,072]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], a]], [[[c, a], b], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,073]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], a]], [[[c, a], b], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,073]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], a]], [[[c, a], c], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,073]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], a]], [[[c, a], c], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,073]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], a]], [[[c, a], c], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,073]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], a]], [[[c, b], b], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,073]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], a]], [[[c, b], b], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,073]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], a]], [[[c, b], b], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,073]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], a]], [[[c, b], c], [b, a]]]]  parsed.
+[2018-09-20 17:07:45,073]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], a]], [[[c, b], c], [c, a]]]]  parsed.
+[2018-09-20 17:07:45,073]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], a]], [[[c, b], c], [c, b]]]]  parsed.
+[2018-09-20 17:07:45,073]  DEBUG [org.misha.domain.algebra.lie.polynomial.monomial.MonomialSequence:72] [a, [[[[c, b], b], [[c, a], b]], [[[b, a], a], [b, a]]]]  parsed.
