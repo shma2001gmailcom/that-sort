@@ -13,7 +13,7 @@ class WaitBase {
         synchronized (mutex) {
             while (!wasSignal) {
                 try {
-                    mutex.wait();
+                    mutex.wait(10);
                 } catch (InterruptedException e) {
                     Thread.currentThread().interrupt();
                 }
