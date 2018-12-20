@@ -7,7 +7,7 @@ import java.util.List;
  * glues the whole item out of a head, a body and a tail which have common id.
  */
 class Fitter {
-    public List<Item> fit(List<Head> heads, List<Tail> tails, List<Body> bodies) {
+    private List<Item> fit(List<Head> heads, List<Tail> tails, List<Body> bodies) {
         List<Item> result = new ArrayList<>();
         for (Head head : heads) {
             for (Tail tail : tails) {
@@ -38,7 +38,7 @@ class Fitter {
 class Body {
     private final long id;
 
-    public Body(final long id) {
+    Body(final long id) {
         this.id = id;
     }
 
@@ -50,7 +50,7 @@ class Body {
 class Head {
     private final long id;
 
-    public Head(final long id) {
+    Head(final long id) {
         this.id = id;
     }
 
@@ -62,7 +62,7 @@ class Head {
 class Tail {
     private final long id;
 
-    public Tail(final long id) {
+    Tail(final long id) {
         this.id = id;
     }
 

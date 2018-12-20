@@ -24,8 +24,8 @@ public class Describer {
     private static Object fieldValue(Object bean, Field field) {
         try {
             return field.get(bean);
-        } catch (IllegalAccessException ignored) {
-            log.error(ignored.getMessage());
+        } catch (IllegalAccessException i) {
+            log.error(i.getMessage());
         }
         return null;
     }
