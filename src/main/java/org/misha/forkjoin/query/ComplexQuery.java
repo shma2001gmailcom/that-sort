@@ -25,16 +25,6 @@ public class ComplexQuery implements Query {
 
     @Override
     public Predicate<Object> evaluate() {
-        return queries.stream().map(Query::evaluate).reduce((left, right) -> {
-            switch (operation) {
-                case OR:
-                    return left.or(right);
-                case AND:
-                    return left.and(right);
-                case NOT:
-                    return left.negate();
-            }
-            return null;
-        }).orElse(null);
+        return queries.stream().map(Query::evaluate).reduce(operation::compute).orElse(null);
     }
 }

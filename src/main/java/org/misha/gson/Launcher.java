@@ -10,6 +10,8 @@ import org.apache.log4j.Logger;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.*;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 import static java.lang.Thread.currentThread;
 
@@ -59,26 +61,23 @@ public class Launcher {
         }
 
         static void parse(final JsonElement element, int depth) {
-            final StringBuilder sb = new StringBuilder();
-            for (int i = 0; i < depth; ++i) {
-                sb.append("..");
-            }
+            final String sb = IntStream.range(0, depth).mapToObj(i -> "..").collect(Collectors.joining());
             if (element.isJsonObject()) {
                 ++depth;
                 for (final Map.Entry<String, JsonElement> e : element.getAsJsonObject().entrySet()) {
-                    log.debug(sb.toString() + e.getKey());
+                    log.debug(sb + e.getKey());
                     parse(e.getValue(), depth);
                 }
             }
             if (element.isJsonArray()) {
                 ++depth;
                 for (final JsonElement e : element.getAsJsonArray()) {
-                    log.debug(sb.toString() + e);
+                    log.debug(sb + e);
                     parse(e, depth);
                 }
             }
             if (element.isJsonPrimitive()) {
-                log.debug(sb.toString() + element.getAsJsonPrimitive());
+                log.debug(sb + element.getAsJsonPrimitive());
             }
             if (element.isJsonNull()) {
                 log.debug(sb + "null");
@@ -87,12 +86,12 @@ public class Launcher {
 
         static void findByName(JsonElement given, String name, Collection<JsonElement> found) {
             if (given.isJsonObject()) {
-                for (final Map.Entry<String, JsonElement> e : given.getAsJsonObject().entrySet()) {
+                given.getAsJsonObject().entrySet().forEach(e -> {
                     if (e.getKey().equals(name)) {
                         found.add(e.getValue());
                     }
                     findByName(e.getValue(), name, found);
-                }
+                });
             }
         }
     }
