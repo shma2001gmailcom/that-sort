@@ -12,7 +12,6 @@ import org.misha.threads.latch.Csv;
  * date: 2/27/16 8:54 PM.
  */
 public class Launcher {
-
     public static void main(String... args) throws Throwable {
         String[] newStringNull = new String[]{null};
         org.misha.threads.executors.Launcher.main(newStringNull);

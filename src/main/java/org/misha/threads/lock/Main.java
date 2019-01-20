@@ -8,13 +8,11 @@ import java.util.Random;
  * time: 11:14 AM
  */
 class Main {
-
     public static void main(String... args) {
         final Counter shared = new Counter();
         for (short i = 0; i < 100; ++i) {
             final short finalI = i;
             new Thread(new Incrementer(shared) {
-
                 @Override
                 protected String prefix() {
                     return String.valueOf((char) finalI);
@@ -32,7 +30,7 @@ class Main {
 
         @Override
         public void run() {
-            for (; ; ) {
+            for (int i = 0; i < 1000 ; ++i) {
                 if (new Random().nextLong() % 1111395 == 1) {
                     int inc = shared.inc();
                     System.err.println(prefix() + " " + inc);

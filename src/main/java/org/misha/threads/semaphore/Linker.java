@@ -1,14 +1,13 @@
 package org.misha.threads.semaphore;
 
-import org.misha.threads.semaphore.ProducerConsumer.Consumer;
-import org.misha.threads.semaphore.ProducerConsumer.Producer;
+import org.misha.threads.semaphore.poducer.Consumer;
+import org.misha.threads.semaphore.poducer.Producer;
 
 /**
  * Author: mshevelin
  * Date: 2/3/15
  * Time: 10:13 AM
  */
-
 final class Linker<T> {
     private final Producer<T> producer;
     private final Consumer<T> consumer;

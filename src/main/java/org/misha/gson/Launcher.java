@@ -9,7 +9,11 @@ import org.apache.log4j.Logger;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.*;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 
 import static java.lang.Thread.currentThread;
 
@@ -45,6 +49,7 @@ public class Launcher {
         Set<JsonElement> foundPatch = new HashSet<>();
         JsonSpy.findByName(patchRoot, "patch", foundPatch);
         Patch patch = foundPatch.stream().findFirst().map(e -> gson.fromJson(e, Patch.class)).get();
+        System.out.println(patch);
     }
 
     private static String readJsonFile(String name) throws IOException {
@@ -114,6 +119,15 @@ public class Launcher {
         void setValues(Map<String, String> values) {
             this.values = values;
         }
+
+        @Override
+        public String toString() {
+            final StringBuffer sb = new StringBuffer("Add{");
+            sb.append("type='").append(type).append('\'');
+            sb.append(", values=").append(values);
+            sb.append('}');
+            return sb.toString();
+        }
     }
 
     static class Op {
@@ -131,6 +145,16 @@ public class Launcher {
 
         public SetAttrs getSetAttrs() {
             return setAttrs;
+        }
+
+        @Override
+        public String toString() {
+            final StringBuffer sb = new StringBuffer("Op{");
+            sb.append("add=").append(add);
+            sb.append(", setAttrs=").append(setAttrs);
+            sb.append(", satellites=").append(satellites);
+            sb.append('}');
+            return sb.toString();
         }
 
         public void setSetAttrs(SetAttrs setAttrs) {
@@ -157,6 +181,15 @@ public class Launcher {
         public void setValues(Map<String, String> values) {
             this.values = values;
         }
+
+        @Override
+        public String toString() {
+            final StringBuffer sb = new StringBuffer("SetAttrs{");
+            sb.append("type='").append(type).append('\'');
+            sb.append(", values=").append(values);
+            sb.append('}');
+            return sb.toString();
+        }
     }
 
     private static class Satellites {
@@ -169,6 +202,14 @@ public class Launcher {
         public void setSatellites(Map<String, Op> satellites) {
             this.satellites = satellites;
         }
+
+        @Override
+        public String toString() {
+            final StringBuffer sb = new StringBuffer("Satellites{");
+            sb.append("satellites=").append(satellites);
+            sb.append('}');
+            return sb.toString();
+        }
     }
 
     private static class Patch {
@@ -180,6 +221,14 @@ public class Launcher {
 
         public void setItems(Map<String, Op> items) {
             this.items = items;
+        }
+
+        @Override
+        public String toString() {
+            final StringBuffer sb = new StringBuffer("Patch{");
+            sb.append("items=").append(items);
+            sb.append('}');
+            return sb.toString();
         }
     }
 }

@@ -8,11 +8,10 @@ import java.util.List;
  * date: 1/31/15 2:46 PM.
  */
 public class BlockingQueueWaitNotify<T> {
-
     private final List<T> queue = new LinkedList<>();
     private int limit;
 
-    public BlockingQueueWaitNotify(final int limit) {
+    private BlockingQueueWaitNotify(final int limit) {
         this.limit = limit;
     }
 

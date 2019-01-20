@@ -67,7 +67,7 @@ class App {
         }
         return result;
     }
-    
+
     int getErrorCount() {
         return errorCount.get();
     }

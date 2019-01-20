@@ -7,7 +7,6 @@ import org.misha.services.model.Data;
  * Date: 10/8/14
  * Time: 3:30 PM
  */
-
 public final class SearchData implements Data<String> {
     private final String name;
     private final String criteria;

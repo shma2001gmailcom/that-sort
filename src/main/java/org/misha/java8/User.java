@@ -32,7 +32,6 @@ public class User {
         return new User(age, name, gender);
     }
 
-
     public String getName() {
         return name;
     }

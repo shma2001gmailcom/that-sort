@@ -12,7 +12,6 @@ import java.lang.reflect.Proxy;
  */
 @Named
 public class MyProxyService {
-
     private static Object createProxy(final Object proxied, final Class<?> someInterface) {
         return Proxy.newProxyInstance(MyInvocationHandler.class.getClassLoader(), new Class[]{someInterface},
                                       new MyInvocationHandler(proxied, UseProxy.class)

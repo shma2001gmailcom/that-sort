@@ -8,7 +8,6 @@ import org.misha.services.model.Result;
  * Date: 10/8/14
  * Time: 4:25 PM
  */
-
 public final class SearchResult implements Result<String> {
     private final String result;
 

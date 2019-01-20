@@ -11,7 +11,6 @@ import java.util.concurrent.Executors;
 @Configuration
 @ComponentScan(basePackages = {"org.misha.threads"})
 public class BufferConfig {
-
     @Bean
     public BoundedBuffer boundedBuffer() {
         return new BoundedBuffer(5);

@@ -10,7 +10,6 @@ import java.util.HashMap;
  */
 public enum Type {//todo ms: another types as double, calendar ...
     INTEGER(Integer.class), STRING(String.class), DATE(Date.class);
-
     private static HashMap<String, Type> map = new HashMap<String, Type>() {{
         put("Integer", INTEGER);
         put("String", STRING);

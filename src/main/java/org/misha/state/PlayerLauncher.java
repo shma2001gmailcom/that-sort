@@ -10,7 +10,6 @@ import static org.misha.state.player.songs.PlayList.playList;
  * date: 3/2/18
  */
 public class PlayerLauncher {
-    
     public static void main(String... args) {
         Player player = new Player();
         PlayList playList = playList("All you need is love", "Us and them");

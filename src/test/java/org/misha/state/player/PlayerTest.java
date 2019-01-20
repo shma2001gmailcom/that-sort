@@ -11,28 +11,28 @@ import static org.misha.state.player.MockPlayer.makePlayer;
  */
 public class PlayerTest {
     private Player player;
-    
+
     @Before
     public void before() {
         player = makePlayer();
     }
-    
+
     private void startPlayback() {
         player.view.playButton().onClick();
     }
-    
+
     private void stopPlayback() {
         player.view.lockButton().onClick();
     }
-    
+
     private void nextSong() {
         player.view.nextButton().onClick();
     }
-    
+
     private void previousSong() {
         player.view.prevButton().onClick();
     }
-    
+
     @Test
     public void testPlayer() {
         startPlayback();

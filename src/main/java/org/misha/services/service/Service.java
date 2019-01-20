@@ -9,7 +9,6 @@ import org.misha.services.model.Result;
  * Time: 3:27 PM
  */
 public interface Service<T extends Result> {
-
     T serve(Data data);
 
     boolean isSuitableFor(Class c);

@@ -9,7 +9,6 @@ import java.util.Map;
  * time: 12:11 PM
  */
 public class CombinerImpl extends Combiner<String, Integer> {
-
     CombinerImpl(List<Integer> collection) {
         super(collection);
     }

@@ -11,7 +11,6 @@ import org.misha.services.service.Service;
  * Date: 10/8/14
  * Time: 3:38 PM
  */
-
 @SuppressWarnings("UnusedDeclaration")//used through reflection
 final class PrintService implements Service<PrintResult> {
     private static final Logger log = Logger.getLogger(PrintService.class);

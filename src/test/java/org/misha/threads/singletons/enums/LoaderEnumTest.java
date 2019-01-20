@@ -11,7 +11,6 @@ import static org.junit.Assert.assertSame;
  * time: 6:01 PM
  */
 public class LoaderEnumTest {
-
     @Test
     public void check() {
         final LoaderInterface loader = LoaderEnum.LOADER.getLoader();

@@ -11,9 +11,7 @@ import static org.apache.commons.lang3.StringUtils.EMPTY;
  * time: 5:56 PM
  */
 public enum LoaderEnum {
-
     LOADER;
-
     private final LoaderInterface loader;
 
     LoaderEnum() {
@@ -51,7 +49,7 @@ public enum LoaderEnum {
         public void printLoaders() {
             ClassLoader loader = this.classloader;
             while (loader != null) {
-               log.info(loader.getClass().getSimpleName());
+                log.info(loader.getClass().getSimpleName());
                 loader = loader.getParent();
             }
         }

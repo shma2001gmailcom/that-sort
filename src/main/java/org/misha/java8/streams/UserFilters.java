@@ -8,7 +8,9 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import static org.misha.java8.Gender.*;
+import static org.misha.java8.Gender.FEMALE;
+import static org.misha.java8.Gender.MALE;
+import static org.misha.java8.Gender.UNKNOWN;
 
 /**
  * author: misha
@@ -16,7 +18,6 @@ import static org.misha.java8.Gender.*;
  * time: 11:27 PM
  */
 public class UserFilters {
-
     public static void main(String... args) {
         List<User> users =
                 Arrays.asList(new User(5, "John", MALE), new User(7, "Hannah", FEMALE), new User(95, "Zuv", MALE));

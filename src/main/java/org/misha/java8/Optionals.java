@@ -4,7 +4,6 @@ import java.util.Optional;
 import java.util.stream.IntStream;
 
 public class Optionals {
-
     public static void main(String... args) {
         Optionals optionals = new Optionals();
         optionals.tryIfPresent();
@@ -24,7 +23,6 @@ public class Optionals {
     }
 
     static class Modem {
-
         private Double price;
 
         Modem(Double price) {

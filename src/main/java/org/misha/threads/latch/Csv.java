@@ -21,7 +21,7 @@ import static java.text.MessageFormat.format;
  */
 public final class Csv {
     static final Logger log = Logger.getLogger(Csv.class);
-    private static final int totalSlots = 200;
+    private static final int TOTAL_SLOTS = 200;
     private final String filePath;
     private volatile int rowCount;
 
@@ -49,7 +49,7 @@ public final class Csv {
         final List<String> cache = initCache();
         final Thread insertThread = new Thread(BulkInsert.createBulkInsert(cache, waitForInsert));
         insertThread.start();
-        final Thread slotsThread = new Thread(Slots.createSlots(totalSlots, waitForInsert, rowCount, cache));
+        final Thread slotsThread = new Thread(Slots.createSlots(TOTAL_SLOTS, waitForInsert, rowCount, cache));
         slotsThread.start();
     }
 
@@ -64,7 +64,7 @@ public final class Csv {
                     continue;
                 }
                 final String parsed = parseRow(row);
-                    cache.add(parsed);
+                cache.add(parsed);
             }
             rowCount = count;
         } catch (final IllegalArgumentException e) {

@@ -11,7 +11,6 @@ import static org.junit.Assert.assertSame;
  * time: 5:46 PM
  */
 public class LoaderHolderTest {
-
     @Test
     public void check() {
         final LoaderInterface loader = LoaderHolder.getLoader();

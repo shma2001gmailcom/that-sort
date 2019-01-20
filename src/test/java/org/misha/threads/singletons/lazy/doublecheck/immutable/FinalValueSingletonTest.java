@@ -11,7 +11,6 @@ import static org.junit.Assert.assertSame;
  * time: 5:21 PM
  */
 public class FinalValueSingletonTest {
-
     @Test
     public void check() {
         final LoaderInterface loader = new FinalValueSingleton().getLoader();

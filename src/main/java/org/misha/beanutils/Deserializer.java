@@ -12,7 +12,11 @@ import java.io.IOException;
 import java.lang.reflect.Field;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 import static org.apache.commons.io.FileUtils.readFileToString;
 
@@ -119,7 +123,6 @@ public class Deserializer {
     private List<String> classNames() {
         List<String> result = new ArrayList<>();
         Searcher<Data> searcher = new Searcher<Data>(tree.root()) {
-
             @Override
             public boolean isSuitable(Node<Data> node) {
                 return true;

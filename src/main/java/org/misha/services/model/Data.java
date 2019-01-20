@@ -6,6 +6,5 @@ package org.misha.services.model;
  * Time: 3:26 PM
  */
 public interface Data<T> {
-
     T getData();
 }

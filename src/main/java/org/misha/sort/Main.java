@@ -10,7 +10,6 @@ import static java.lang.System.err;
  * time: 2:48 PM
  */
 public class Main {
-    
     public static void main(String[] args) {
         int[] data = new int[3000];
         int length = data.length;

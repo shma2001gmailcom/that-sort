@@ -44,8 +44,9 @@ class Slots implements Runnable {
             oneSlotThread.start();
         }
         if (residue > 0) {
-            final Thread residueSlotThread = new Thread(Slot.createSlot(cache, 1 + slotCount, residue, latch),
-                                                        format("doSlot#{0}", 1 + slotCount)
+            final Thread residueSlotThread = new Thread(
+                    Slot.createSlot(cache, 1 + slotCount, residue, latch),
+                    format("doSlot#{0}", 1 + slotCount)
             );
             residueSlotThread.start();
         }

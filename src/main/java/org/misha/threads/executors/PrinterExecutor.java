@@ -17,7 +17,6 @@ public class PrinterExecutor {
     @Inject
     public PrinterExecutor(TaskExecutor taskExecutor) {
         this.taskExecutor = taskExecutor;
-
     }
 
     void printMessages() {

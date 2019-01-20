@@ -11,7 +11,6 @@ import org.misha.threads.singletons.lazy.holder.LoaderHolder;
  * time: 4:27 PM
  */
 public class Launcher {
-
     public static void main(String[] args) {
         LoaderInterface[] loaders =
                 {new FinalValueSingleton().getLoader(), new DoubleCheck().getLoader(), LoaderHolder.getLoader(),

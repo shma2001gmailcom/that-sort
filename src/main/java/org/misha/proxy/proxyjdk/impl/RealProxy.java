@@ -44,13 +44,15 @@ public final class RealProxy implements MyObject {
 
     private MyObject createProxy(final int times, final String name) {
         try {
-            return (MyObject) Proxy.newProxyInstance(MyObject.class.getClassLoader(),//loader
-                                                     new Class<?>[]{MyObject.class},//interfaces
-                                                     new RealInvocationHandler(
-                                                             getMyObject("org.misha.proxy.proxyjdk.impl.RealObject",
-                                                                         times,
-                                                                         name
-                                                             ))//handler
+            return (MyObject) Proxy.newProxyInstance(
+                    MyObject.class.getClassLoader(),//loader
+                    new Class<?>[]{MyObject.class},//interfaces
+                    new RealInvocationHandler(
+                            getMyObject(
+                                    "org.misha.proxy.proxyjdk.impl.RealObject",
+                                    times,
+                                    name
+                            ))//handler
             );
         } catch (Exception e) {
             throw new IllegalStateException("unable instantiate");

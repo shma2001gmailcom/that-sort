@@ -10,7 +10,6 @@ import org.misha.beanutils.tree.Tree;
  *
  * @param <T> a type of nodes content
  */
-
 public final class TreeImpl<T> implements Tree<T> {
     private final Node<T> root;
 

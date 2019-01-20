@@ -15,7 +15,6 @@ import java.util.List;
  * Date: 10/8/14
  * Time: 3:34 PM
  */
-
 @SuppressWarnings("UnusedDeclaration")//used through reflection
 final class SearchService implements Service<SearchResult> {
     private static final Logger log = Logger.getLogger(SearchService.class);

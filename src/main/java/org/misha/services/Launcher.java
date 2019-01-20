@@ -5,7 +5,6 @@ package org.misha.services;
  * Date: 10/8/14
  * Time: 3:40 PM
  */
-
 public final class Launcher {
     private Launcher() {
     }

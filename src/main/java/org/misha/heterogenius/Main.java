@@ -7,10 +7,9 @@ import static org.junit.Assert.assertTrue;
  * date: 3/5/18
  */
 public class Main {
-    
     public static void main(String... args) throws IllegalAccessException, InstantiationException {
         HeterogeneousContainer container = new HeterogeneousContainer();
-        container.put("string", String.class,"String");
+        container.put("string", String.class, "String");
         container.put("0", Long.class, 0L);
         container.put("HeterogeneousContainer", HeterogeneousContainer.class, new HeterogeneousContainer());
         container.put("HeterogeneousContainer1", HeterogeneousContainer.class, new HeterogeneousContainer());

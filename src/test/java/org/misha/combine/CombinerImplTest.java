@@ -15,7 +15,6 @@ import java.util.Random;
 public class CombinerImplTest {
     private static final Logger log = Logger.getLogger(CombinerImplTest.class);
 
-
     @Test(expected = IllegalArgumentException.class)
     public void checkExceptions() {
         List<Integer> list = new ArrayList<>();

@@ -6,6 +6,5 @@ package org.misha.beanutils.tree;
  * @param <T> the type of nodes content
  */
 public interface Tree<T> {
-
     Node<T> root();
 }

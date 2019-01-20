@@ -43,13 +43,13 @@ public class Merge {
         }
         return result;
     }
-    
+
     private static long doMerge(final long a, final long b, long result, final int i) {
         result += code(a)[i] * pow(1_0, 2 * (long) i + 1);
         result += code(b)[i] * pow(10, (long) 2 * i);
         return result;
     }
-    
+
     public static void main(final String[] args) {
         log.info(merge(12345678L, 98765432L));
         log.info(merge("msaseei", "ih hvln, an author"));
@@ -82,7 +82,7 @@ public class Merge {
             if (m == 0 && half < leftCh.length) {
                 sb.append(leftCh[half]);
             }
-            if (m == 1 && half < rightCh.length){
+            if (m == 1 && half < rightCh.length) {
                 sb.append(rightCh[half]);
             }
         }

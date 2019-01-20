@@ -8,7 +8,6 @@ import java.util.Collection;
  * @param <T> a type of content
  */
 public interface Node<T> {
-
     Node<T> getParent();
 
     void setParent(Node<T> n);

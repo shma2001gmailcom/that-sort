@@ -1,8 +1,8 @@
 package org.misha.chocolate;
 
 class Chocolate {
-
-    private Chocolate() {}
+    private Chocolate() {
+    }
 
     static int equalize(int[] arr) {
         int n = arr.length;

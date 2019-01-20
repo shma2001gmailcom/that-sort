@@ -19,11 +19,9 @@ import static org.junit.Assert.assertEquals;
 public class BoundedBufferTest {
     @Autowired
     private BoundedBuffer<Integer> boundedBuffer;
-
     @Autowired
     @Qualifier("producers")
     private ExecutorService producers;
-
     @Autowired
     @Qualifier("consumers")
     private ExecutorService consumers;

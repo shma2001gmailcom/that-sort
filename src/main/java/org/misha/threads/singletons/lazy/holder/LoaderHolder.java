@@ -12,7 +12,6 @@ import static org.apache.commons.lang3.StringUtils.EMPTY;
  * time: 5:41 PM
  */
 public final class LoaderHolder {
-
     private LoaderHolder() {
     }
 

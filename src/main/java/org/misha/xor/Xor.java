@@ -12,7 +12,7 @@ import java.util.Objects;
  */
 public class Xor {
     private static final Logger log = Logger.getLogger(Xor.class);
-    
+
     public static void main(String... args) {
         List<Integer> integers = new ArrayList<>();
         integers.add(1);

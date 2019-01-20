@@ -16,7 +16,6 @@ import static org.misha.links.Patterns.WEB_URL;
  * time: 7:35 PM
  */
 public class PatternsTest {
-
     @Test
     public void test() {
         String data = null;

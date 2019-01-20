@@ -11,7 +11,6 @@ import java.lang.reflect.InvocationTargetException;
  * Date: 2/2/15
  * Time: 5:56 PM
  */
-
 public class ProxyService {
     private static final String PROXY_PACKAGE = "org.misha.proxy.proxyjdk.impl.";//todo: configure or inject
     private static final String REAL_PROXY = "RealProxy";//todo: configure or inject

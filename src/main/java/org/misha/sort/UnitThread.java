@@ -11,13 +11,13 @@ class UnitThread implements Runnable {
     private final int integer;
     private final CountDownLatch latch;
     private final List<Integer> list;
-    
+
     UnitThread(final int i, final CountDownLatch cdl, final List<Integer> l) {
         integer = i;
         latch = cdl;
         list = l;
     }
-    
+
     @Override
     public void run() {
         try {

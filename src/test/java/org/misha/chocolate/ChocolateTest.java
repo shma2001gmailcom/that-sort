@@ -10,7 +10,6 @@ import static org.apache.commons.lang3.StringUtils.isNumeric;
 import static org.junit.Assert.fail;
 
 public class ChocolateTest {
-
     @Test
     public void equal() {
         String data = null;

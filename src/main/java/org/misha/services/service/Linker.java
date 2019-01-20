@@ -11,9 +11,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * Date: 10/9/14
  * Time: 11:56 AM
  */
-
 public final class Linker {
-
     private Linker() {
     }
 

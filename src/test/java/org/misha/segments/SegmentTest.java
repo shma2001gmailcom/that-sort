@@ -9,7 +9,9 @@ import java.util.List;
 import java.util.regex.Matcher;
 
 import static java.util.regex.Pattern.compile;
-import static org.apache.commons.lang3.StringUtils.*;
+import static org.apache.commons.lang3.StringUtils.removeEnd;
+import static org.apache.commons.lang3.StringUtils.removeStart;
+import static org.apache.commons.lang3.StringUtils.split;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
 import static org.misha.beanutils.xml.Reader.read;

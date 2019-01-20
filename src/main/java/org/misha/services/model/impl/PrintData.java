@@ -7,7 +7,6 @@ import org.misha.services.model.Data;
  * Date: 10/8/14
  * Time: 3:32 PM
  */
-
 public final class PrintData implements Data<String> {
     private final String value;
 

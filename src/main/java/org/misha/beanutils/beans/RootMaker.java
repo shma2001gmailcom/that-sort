@@ -8,7 +8,6 @@ import java.util.Date;
  * time: 9:35 PM
  */
 public class RootMaker {
-
     public static Root makeRoot() {
         Root root = new Root();
         Node0 node0 = new Node0();

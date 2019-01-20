@@ -26,7 +26,6 @@ public class Interview {
     }
 
     private static class derived extends base {
-
         @Override
         public String method1() {
             return "derived";
@@ -40,7 +39,6 @@ public class Interview {
             try {
                 log.info("string: \"" + getString() + "\", length: " + getString().length());
             } catch (NullPointerException e) {
-
             }
         }
 

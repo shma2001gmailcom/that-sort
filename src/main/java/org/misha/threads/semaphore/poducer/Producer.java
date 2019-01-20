@@ -1,15 +1,14 @@
-package org.misha.threads.semaphore.ProducerConsumer;
+package org.misha.threads.semaphore.poducer;
 
 /**
  * Author: mshevelin
  * Date: 2/3/15
  * Time: 10:12 AM
  */
-
 public abstract class Producer<T> implements Runnable {
     private final BlockingQueueSemaphore<T> queue;
 
-    public Producer(final BlockingQueueSemaphore<T> queue) {
+    protected Producer(final BlockingQueueSemaphore<T> queue) {
         this.queue = queue;
     }
 

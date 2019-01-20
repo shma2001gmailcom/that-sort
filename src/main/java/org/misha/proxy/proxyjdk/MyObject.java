@@ -14,7 +14,6 @@ public interface MyObject {//make abstract
     void printName(int times);
 
     final class Factory {
-
         private Factory() {
         }
 

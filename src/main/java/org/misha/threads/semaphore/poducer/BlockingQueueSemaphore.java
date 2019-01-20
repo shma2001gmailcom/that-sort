@@ -1,4 +1,4 @@
-package org.misha.threads.semaphore.ProducerConsumer;
+package org.misha.threads.semaphore.poducer;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,7 +9,6 @@ import java.util.concurrent.Semaphore;
  * Date: 2/2/15
  * Time: 10:49 AM
  */
-
 public final class BlockingQueueSemaphore<T> {
     private final int capacity;
     private final List<T> queue = new ArrayList<>();

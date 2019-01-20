@@ -70,7 +70,6 @@ public class Root {
     }
 
     public static class RootMaker {
-
         private RootMaker() {
         }
 
