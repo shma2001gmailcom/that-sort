@@ -1,5 +1,7 @@
 package org.misha.threads.waitnotify;
 
+import org.apache.log4j.Logger;
+
 import java.util.Random;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.atomic.AtomicBoolean;
@@ -10,6 +12,8 @@ import java.util.concurrent.atomic.AtomicBoolean;
  * time: 10:31 AM
  */
 public class Main {
+    private static final Logger LOG = Logger.getLogger(Main.class);
+
     public static void main(String... args) {
         final CopyOnWriteArrayList<Integer> res = new CopyOnWriteArrayList<>();
         final Random random = new Random();
@@ -50,13 +54,13 @@ public class Main {
                     while (b) {
                         if (u.i >= 1000000) {
                             done.compareAndSet(false, true);
-                            System.err.println(res);
+                            LOG.debug(res);
                             Thread.currentThread().interrupt();
                             return;
                         }
                         u.inc();
                         res.add(u.i);
-                        System.err.println(u.i);
+                        LOG.debug(u.i);
                     }
                 }
             }.y();
@@ -96,7 +100,7 @@ public class Main {
                         }
                         u.inc();
                         res.add(u.i);
-                        System.err.println(u.i + "                0");
+                        LOG.debug(u.i + "                0");
                         doNotify();
                     }
                 }
