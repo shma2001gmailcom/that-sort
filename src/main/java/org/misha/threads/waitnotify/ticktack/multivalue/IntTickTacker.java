@@ -1,4 +1,4 @@
-package org.misha.threads.waitnotify.ticktack;
+package org.misha.threads.waitnotify.ticktack.multivalue;
 
 import org.apache.log4j.Logger;
 
@@ -6,8 +6,8 @@ import java.util.List;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.atomic.AtomicInteger;
 
-class TickTacker implements Runnable {
-    private static final Logger LOG = Logger.getLogger(TickTacker.class);
+class IntTickTacker implements Runnable {
+    private static final Logger LOG = Logger.getLogger(IntTickTacker.class);
     private final int historyLimit;
     private final AtomicInteger tracer;
     private final List<String> track;
@@ -16,13 +16,13 @@ class TickTacker implements Runnable {
     private final Modulo m;
     private final AtomicInteger counter;
 
-    TickTacker(final CountDownLatch countDownLatch,
-               final AtomicInteger tickTackTracer,
-               final List<String> history,
-               final int value,
-               final int modulo,
-               final int historyLimit,
-               final AtomicInteger counter
+    IntTickTacker(final CountDownLatch countDownLatch,
+                  final AtomicInteger tickTackTracer,
+                  final List<String> history,
+                  final int value,
+                  final int modulo,
+                  final int historyLimit,
+                  final AtomicInteger counter
     ) {
         tracer = tickTackTracer;
         ownValue = value;

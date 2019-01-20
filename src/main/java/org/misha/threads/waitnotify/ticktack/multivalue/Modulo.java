@@ -1,4 +1,4 @@
-package org.misha.threads.waitnotify.ticktack;
+package org.misha.threads.waitnotify.ticktack.multivalue;
 
 import static com.google.common.base.Preconditions.checkArgument;
 
