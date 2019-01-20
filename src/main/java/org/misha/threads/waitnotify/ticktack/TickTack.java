@@ -24,15 +24,18 @@ public class TickTack {
     }
 
     private void tickTack() {
-        final TickTack tickTack = new TickTack();
-        new Thread(tickTack.tick).start();
-        new Thread(tickTack.tack).start();
+        new Thread(tick).start();
+        new Thread(tack).start();
+        startLatch();
+        LOG.debug(history);
+    }
+
+    private void startLatch() {
         try {
-            tickTack.latch.await();
+            latch.await();
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
         }
-        LOG.debug(tickTack.history);
     }
 
     public static void main(String... a) {
