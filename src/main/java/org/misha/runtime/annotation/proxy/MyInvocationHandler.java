@@ -1,6 +1,5 @@
 package org.misha.runtime.annotation.proxy;
 
-import org.misha.runtime.annotation.objects.Your;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.InvocationHandler;
@@ -10,7 +9,7 @@ import java.lang.reflect.Method;
  * author: misha
  * date: 10/18/15 10:40 AM.
  */
-class MyInvocationHandler implements InvocationHandler {
+abstract class MyInvocationHandler implements InvocationHandler {
     private final Object proxied;
     private final Class<? extends Annotation> annotation;
 
@@ -23,8 +22,10 @@ class MyInvocationHandler implements InvocationHandler {
     public Object invoke(final Object proxy, final Method method, final Object[] args) throws Throwable {
         Method m = proxied.getClass().getMethod(method.getName(), method.getParameterTypes());
         if (m.isAnnotationPresent(annotation)) {
-            new Your().write();
+            return doMethod(args);
         }
         return method.invoke(proxied, args);
     }
+
+    abstract Object doMethod(Object[] args);
 }

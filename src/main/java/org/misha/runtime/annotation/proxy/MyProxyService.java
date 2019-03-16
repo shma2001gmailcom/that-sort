@@ -14,7 +14,13 @@ import java.lang.reflect.Proxy;
 public class MyProxyService {
     private static Object createProxy(final Object proxied, final Class<?> someInterface) {
         return Proxy.newProxyInstance(MyInvocationHandler.class.getClassLoader(), new Class[]{someInterface},
-                                      new MyInvocationHandler(proxied, UseProxy.class)
+                                      new MyInvocationHandler(proxied, UseProxy.class) {
+                                          @Override
+                                          Object doMethod(final Object[] args) {
+                                              new My().print();
+                                              return null;
+                                          }
+                                      }
         );
     }
 
