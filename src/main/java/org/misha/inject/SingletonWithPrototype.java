@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.function.Function;
 
 @Named
-public class SingletonWithPrototype {
+class SingletonWithPrototype {
     private final Function<List<String>, PrototypeInSingleton> beanFactory;
 
     SingletonWithPrototype(final Function<List<String>, PrototypeInSingleton> beanFactory) {

@@ -8,9 +8,10 @@ import java.util.List;
 import java.util.function.Function;
 
 @Configuration
-public class BeanConfig {
+class BeanConfig {
+
     @Bean
-    public Function<List<String>, PrototypeInSingleton> beanFactory() {
+    Function<List<String>, PrototypeInSingleton> beanFactory() {
         return list -> prototype(list);
     }
 
@@ -22,7 +23,7 @@ public class BeanConfig {
     }
 
     @Bean
-    public SingletonWithPrototype singleton() {
+    SingletonWithPrototype singleton() {
         return new SingletonWithPrototype(beanFactory());
     }
 }
