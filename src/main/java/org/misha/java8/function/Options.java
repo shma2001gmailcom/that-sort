@@ -1,5 +1,6 @@
 package org.misha.java8.function;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Function;
@@ -18,20 +19,12 @@ public class Options {
 
     @SafeVarargs
     static Predicate<Integer> allOf(Predicate<Integer>... predicates) {
-        Predicate<Integer> result = integer -> true;
-        for (Predicate<Integer> p : predicates) {
-            result = result.and(p);
-        }
-        return result;
+        return Arrays.stream(predicates).reduce(Predicate::and).orElse(i -> true);
     }
 
     @SafeVarargs
     static Predicate<Integer> anyOf(Predicate<Integer>... predicates) {
-        Predicate<Integer> result = integer -> false;
-        for (Predicate<Integer> p : predicates) {
-            result = result.or(p);
-        }
-        return result;
+        return Arrays.stream(predicates).reduce(Predicate::and).orElse(i -> false);
     }
 
     public static void main(String... args) {
@@ -42,9 +35,7 @@ public class Options {
                .processRules(i -> i < 1000);
     }
 
-    private void addRule(final Predicate<Integer> condition, final Function<Integer, Integer> action) {
-        optionToAction.put(condition, action);
-    }
+
 
     private void processRules(Predicate<Integer> terminalCondition) {
         int i = 0;
@@ -66,8 +57,12 @@ public class Options {
         }
 
         OptionsBuilder addRule(final Predicate<Integer> condition, final Function<Integer, Integer> action) {
-            result.addRule(condition, action);
+            doAddRule(condition, action);
             return this;
+        }
+
+        private void doAddRule(final Predicate<Integer> condition, final Function<Integer, Integer> action) {
+            result.optionToAction.put(condition, action);
         }
 
         Options build() {
