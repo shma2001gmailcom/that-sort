@@ -1,14 +1,14 @@
 package org.misha.antibinary;
 
 import java.security.SecureRandom;
-import java.util.Random;
+import java.util.Arrays;
 
 import static java.lang.Math.log;
 
 public class AntiBinary {
     private final int[] a;
     private final int n;
-    private int count;
+    private long count;
 
     private AntiBinary(final int[] a) {
         this.a = a;
@@ -27,11 +27,11 @@ public class AntiBinary {
 
     private boolean doOnce() {
         boolean result = false;
-        for (int i = 0; i + 1 < n; ++i) {
+        for (int i = 0; i + 1 < n; i += 2) {
             result |= swap(i, i + 1);
             ++count;
         }
-        for (int i = 1; i + 1 < n; ++i) {
+        for (int i = 1; i + 1 < n; i += 2) {
             result |= swap(i, i + 1);
             ++count;
         }
@@ -39,13 +39,14 @@ public class AntiBinary {
     }
 
     public static void main(String... args) {
-        int[] a = new int[100000];
-        for (int i = 0; i < 100000; ++i) {
+        int size = 2 << 17;
+        int[] a = new int[size];
+        for (int i = 0; i < size; ++i) {
             a[i] = new SecureRandom().nextInt(1100200);
         }
         AntiBinary ab = new AntiBinary(a);
         while (ab.doOnce()) ;
         System.out.println(ab.count);
-        System.out.println((ab.count / (100000 * log(100000))));
+        System.out.println((ab.count / (size * log(size))));
     }
 }
