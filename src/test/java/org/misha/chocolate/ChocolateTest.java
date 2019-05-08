@@ -1,12 +1,14 @@
 package org.misha.chocolate;
 
+import com.google.common.base.Charsets;
+import com.google.common.io.Resources;
 import org.junit.Test;
 
-import java.io.File;
 import java.io.IOException;
 
-import static org.apache.commons.io.FileUtils.readFileToString;
+import static com.google.common.io.Resources.getResource;
 import static org.apache.commons.lang3.StringUtils.isNumeric;
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 
 public class ChocolateTest {
@@ -14,7 +16,7 @@ public class ChocolateTest {
     public void equal() {
         String data = null;
         try {
-            data = readFileToString(new File("src/test/resources/chocolate"), "UTF-8");
+            data = Resources.toString(getResource("chocolate"), Charsets.UTF_8);
         } catch (IOException e) {
             fail(e.getMessage());
         }
@@ -33,6 +35,6 @@ public class ChocolateTest {
             }
         }
         System.out.println(Chocolate.equalize(arr));
-        //assertEquals(315342, Chocolate.equalize(arr));
+        assertEquals(3153420, Chocolate.equalize(arr));
     }
 }
