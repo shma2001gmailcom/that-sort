@@ -1,4 +1,4 @@
-package org.misha.sort;
+package org.misha.sort.that;
 
 import java.util.concurrent.CountDownLatch;
 

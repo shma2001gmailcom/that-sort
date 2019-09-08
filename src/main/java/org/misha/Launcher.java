@@ -4,6 +4,7 @@ import org.misha.beanutils.BeanManipulator;
 import org.misha.interview.CounterLauncher;
 import org.misha.interview.Interview;
 import org.misha.merge.Merge;
+import org.misha.sort.that.Main;
 import org.misha.state.PlayerLauncher;
 import org.misha.threads.latch.Csv;
 
@@ -22,7 +23,7 @@ public class Launcher {
         org.misha.runtime.annotation.Main.main(newStringNull);
         org.misha.threads.semaphore.Main.main(newStringNull);
         org.misha.services.Launcher.main(newStringNull);
-        org.misha.sort.Main.main(newStringNull);
+        Main.main(newStringNull);
         CounterLauncher.main(newStringNull);
         BeanManipulator.main(newStringNull);
         org.misha.threads.singletons.Launcher.main(newStringNull);
