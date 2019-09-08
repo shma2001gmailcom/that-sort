@@ -28,6 +28,7 @@ public class BlockingQueueWaitNotify<T> {
                         Thread.currentThread().interrupt();
                     }
                 } catch (InterruptedException e) {
+                    Thread.currentThread().interrupt();
                     System.exit(0);
                 }
             }
@@ -44,6 +45,7 @@ public class BlockingQueueWaitNotify<T> {
                     }
                     System.err.println(queue.size() + " 2 added");
                 } catch (InterruptedException e) {
+                    Thread.currentThread().interrupt();
                     throw new RuntimeException(e);
                 }
             }
