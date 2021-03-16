@@ -15,7 +15,7 @@ public class Pipe {
     // this may result in the thread deadlocking itself.
     public static void main(String[] args) throws IOException {
         AtomicReference<StringBuilder> sb = new AtomicReference<>(new StringBuilder());
-        try (PipedOutputStream output = new PipedOutputStream() {};
+        try (PipedOutputStream output = new PipedOutputStream();
              PipedInputStream input = new PipedInputStream(output)
         ) {
             Thread writer = new Thread(() -> {
