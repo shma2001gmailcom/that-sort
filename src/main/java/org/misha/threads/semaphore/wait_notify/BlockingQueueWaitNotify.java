@@ -58,22 +58,27 @@ public class BlockingQueueWaitNotify<T> {
         return queue.size();
     }
 
-    public synchronized void add(final T item) throws InterruptedException {
-        while (queue.size() == limit) {
-            wait();
-        }
-        queue.add(item);
-        notifyAll();
-    }
-
-    private synchronized T remove() throws InterruptedException {
-        while (queue.isEmpty()) {
-            if (queue.isEmpty()) {
-                wait();
+    public void add(final T item) throws InterruptedException {
+        if (queue.size() == limit) {
+            synchronized (this) {
+                while (queue.size() == limit) {
+                    wait();
+                }
+                notifyAll();
             }
         }
-        final T t = queue.remove(0);
-        notifyAll();
-        return t;
+        queue.add(item);
+    }
+
+    private T remove() throws InterruptedException {
+        if (queue.isEmpty()) {
+            synchronized(this) {
+                while (queue.isEmpty()) {
+                    wait();
+                }
+                notifyAll();
+            }
+        }
+        return queue.remove(0);
     }
 }
