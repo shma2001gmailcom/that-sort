@@ -5,6 +5,7 @@ import java.io.PipedInputStream;
 import java.io.PipedOutputStream;
 import java.util.concurrent.atomic.AtomicReference;
 
+import static java.lang.Thread.currentThread;
 
 public class Pipe {
     // using the two connected pipe streams,
@@ -41,6 +42,7 @@ public class Pipe {
                 writer.join();
                 reader.join();
             } catch (InterruptedException e) {
+                currentThread().interrupt();
                 System.err.println(e.getMessage());
             }
         }
