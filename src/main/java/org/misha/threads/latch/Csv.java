@@ -35,7 +35,7 @@ public final class Csv {
 
     public static void main(final String[] args) {
         log.debug(new File("./").getAbsolutePath());
-        final Csv csv = new Csv("../../logs/lie.log");
+        final Csv csv = new Csv("../../logs/that-sort.log");
         csv.convert();
     }
 
