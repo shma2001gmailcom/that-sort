@@ -28,12 +28,14 @@ public final class BlockingQueueSemaphore<T> {
     public void add(final T object) throws InterruptedException {
         try {
             availableItems.acquire();
-            synchronized (this) {
-                while (size() == capacity - 1) {
-                    wait();
+            if (size() == capacity - 1) {
+                synchronized (this) {
+                    while (size() == capacity - 1) {
+                        wait();
+                    }
+                    queue.add(object);
+                    notifyAll();
                 }
-                queue.add(object);
-                notifyAll();
             }
         } finally {
             availableItems.release();
@@ -45,15 +47,17 @@ public final class BlockingQueueSemaphore<T> {
     }
 
     T remove() throws InterruptedException {
-        T result;
+        T result = null;
         try {
             item.acquire();
-            synchronized (this) {
-                while (queue.isEmpty()) {
-                    wait();
+            if (queue.isEmpty()) {
+                synchronized (this) {
+                    while (queue.isEmpty()) {
+                        wait();
+                    }
+                    result = queue.remove(0);
+                    notifyAll();
                 }
-                result = queue.remove(0);
-                notifyAll();
             }
         } finally {
             item.release();
