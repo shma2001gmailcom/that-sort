@@ -1,4 +1,4 @@
-package org.misha.interview.luxoft;
+package org.misha.luxoft;
 
 import java.util.LinkedList;
 import java.util.List;
