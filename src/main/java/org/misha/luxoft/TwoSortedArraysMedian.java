@@ -15,7 +15,7 @@ public class TwoSortedArraysMedian {
         return median(merge(a, b));
     }
 
-    private static int[] merge(int[] a, int[] b) {//O(a.length + b.length
+    private static int[] merge(int[] a, int[] b) {//O(a.length + b.length)
         final int[] left;
         final int[] right;
         if (b.length >= a.length) {//shortest is left
