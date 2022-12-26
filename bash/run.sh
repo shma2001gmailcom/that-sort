@@ -1,5 +1,6 @@
 #!/bin/sh
-javahome='/home/mshevelin/jdk/jdk1.8.0_211'
+
+javahome='/usr/lib/jvm/java-8-openjdk-amd64'
 M2_HOME='/usr/share/maven'
 export M2_HOME
 M2=${M2_HOME}/bin
@@ -7,7 +8,10 @@ export M2
 mvn=${M2}/mvn
 export JAVA_HOME=${javahome}
 cd ../
-rm -r ./target
+if [[ -d "./target" ]]; then
+    rm -r ./target;
+fi
+
 ${mvn} clean install
 cd target
 java -jar that-sort.jar

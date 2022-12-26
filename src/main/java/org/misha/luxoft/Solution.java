@@ -27,12 +27,12 @@ import java.util.List;
  * <p>
  * a letCode "hard" problem
  */
-class Solution {
+public class Solution {
     private static int max(final int leftVal, final int rightVal) {
         return leftVal > rightVal ? leftVal : rightVal;
     }
 
-    int maxPathSum(TreeNode root) {
+    public int maxPathSum(TreeNode root) {
         final TreeNode left = root.left;
         final TreeNode right = root.right;
         if (root.val < 0) {
@@ -80,11 +80,11 @@ class Solution {
         TreeNode left;
         TreeNode right;
 
-        TreeNode(int val) {
+        public TreeNode(int val) {
             this.val = val;
         }
 
-        TreeNode(int val, TreeNode left, TreeNode right) {
+        public TreeNode(int val, TreeNode left, TreeNode right) {
             this.val = val;
             this.left = left;
             this.right = right;

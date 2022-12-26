@@ -1,7 +1,8 @@
 package org.misha.interview.luxoft;
 
 import org.junit.Test;
-import org.misha.interview.luxoft.Solution.TreeNode;
+import org.misha.luxoft.Solution;
+import org.misha.luxoft.Solution.TreeNode;
 
 import static org.junit.Assert.assertEquals;
 
@@ -23,12 +24,12 @@ import static org.junit.Assert.assertEquals;
  */
 
 public class SolutionTest {
-    private final TreeNode l1 = new TreeNode(1);
-    private final TreeNode l2 = new TreeNode(3);
-    private final TreeNode l3 = new TreeNode(1);
-    private final TreeNode l4 = new TreeNode(4);
-    private final TreeNode l5 = new TreeNode(4);
-    private final TreeNode l6 = new TreeNode(2);
+    private final Solution.TreeNode l1 = new Solution.TreeNode(1);
+    private final Solution.TreeNode l2 = new Solution.TreeNode(3);
+    private final Solution.TreeNode l3 = new Solution.TreeNode(1);
+    private final Solution.TreeNode l4 = new Solution.TreeNode(4);
+    private final Solution.TreeNode l5 = new Solution.TreeNode(4);
+    private final Solution.TreeNode l6 = new TreeNode(2);
     private final TreeNode l7 = new TreeNode(7);
     private final TreeNode n1 = new TreeNode(2, l3, l4);
     private final TreeNode n2 = new TreeNode(3, l5, l6);

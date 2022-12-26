@@ -106,7 +106,7 @@ class Overlapping {
         while (it.hasNext()) {
             final Interval interval = it.next();
             if (map.containsKey(current.start)) {
-                if (current.contains(interval.start)) {//current overlaps the next interval
+                if (current.contains(interval.start)) {//current interval overlaps the next one
                     if (interval.end >= current.end) {
                         current = range(current.start, interval.end);//merge
                         map.put(current.start, current);

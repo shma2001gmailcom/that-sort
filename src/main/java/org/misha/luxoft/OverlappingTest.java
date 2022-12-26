@@ -2,7 +2,7 @@ package org.misha.luxoft;
 
 import org.junit.Test;
 
-import static org.misha.interview.Overlapping.range;
+import static org.misha.luxoft.Overlapping.range;
 
 public class OverlappingTest {
     @Test

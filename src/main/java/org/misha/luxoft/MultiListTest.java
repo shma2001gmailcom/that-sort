@@ -5,8 +5,8 @@ import org.junit.Test;
 import java.util.ArrayList;
 
 import static org.junit.Assert.assertEquals;
-import static org.misha.interview.luxoft.MultiList.withChildren;
-import static org.misha.interview.luxoft.MultiList.withData;
+import static org.misha.luxoft.MultiList.withChildren;
+import static org.misha.luxoft.MultiList.withData;
 
 public class MultiListTest {
 

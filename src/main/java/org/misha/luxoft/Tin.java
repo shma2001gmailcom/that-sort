@@ -12,6 +12,7 @@ import static com.google.common.collect.Lists.newArrayList;
 import static org.junit.Assert.assertEquals;
 
 public class Tin {
+    //washing
     //is it known how much time is needed for a person, standing in a line to the washing room, for washing
     //there is washingMachines washing machines in the washing room
     //calculate a time amount needed in order to all people done work.
@@ -50,6 +51,7 @@ public class Tin {
         return index;
     }
 
+    //Two integers in the array with given sum
     //in an array find two integers which sum is k
     private static String search(int[] a, int k) {//O(n)
         Map<Integer, Integer> map = new HashMap<>();
