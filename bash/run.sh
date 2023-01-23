@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 javahome='/usr/lib/jvm/java-8-openjdk-amd64'
 M2_HOME='/usr/share/maven'

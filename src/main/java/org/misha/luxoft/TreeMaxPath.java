@@ -27,7 +27,7 @@ import java.util.List;
  * <p>
  * a letCode "hard" problem
  */
-public class Solution {
+public class TreeMaxPath {
     private static int max(final int leftVal, final int rightVal) {
         return leftVal > rightVal ? leftVal : rightVal;
     }
