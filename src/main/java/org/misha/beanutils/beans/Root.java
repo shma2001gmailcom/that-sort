@@ -61,7 +61,7 @@ public class Root {
         }
         Root root = (Root) o;
         return new EqualsBuilder().append(node0, root.node0).append(node1, root.node1).append(date, root.date)
-                                  .append(node0s, root.node0s).isEquals();
+                .append(node0s, root.node0s).isEquals();
     }
 
     @Override

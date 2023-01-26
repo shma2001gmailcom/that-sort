@@ -79,5 +79,5 @@ public class TreeMaxPathTest {
         final TreeNode root;
         root = new TreeNode(1);
         commonCase(1, new TreeMaxPath().maxPathSum(root));
-    }       
+    }
 }

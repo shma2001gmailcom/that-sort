@@ -22,7 +22,9 @@ public class MultiListTest {
     }
 
     private void testSingleton() {
-        assertEquals(new ArrayList<Integer>() {{add(1);}}, withData(1).asList());
+        assertEquals(new ArrayList<Integer>() {{
+            add(1);
+        }}, withData(1).asList());
     }
 
     private void testCommon() {

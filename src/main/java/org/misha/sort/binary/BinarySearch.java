@@ -38,8 +38,8 @@ public final class BinarySearch<T extends Comparable<T>> {
 
     private BinarySearch<T> next(T target) {
         return data.get(middle).compareTo(target) < 0
-               ? new BinarySearch<>(middle + 1, high, data)
-               : new BinarySearch<>(low, middle - 1, data);
+                ? new BinarySearch<>(middle + 1, high, data)
+                : new BinarySearch<>(low, middle - 1, data);
     }
 
     private boolean hasNext() {

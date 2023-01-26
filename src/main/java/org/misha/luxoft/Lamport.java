@@ -5,13 +5,13 @@ import java.util.concurrent.atomic.AtomicIntegerArray;
 
 /**
  * Leslie Lamport's 'bakery' lock
- *
+ * <p>
  * "The bakery algorithm was also where I introduced the idea of variables belonging to a process -- that is, variables
  * that could be read by multiple processes, but written by only a single process.  I was aware from the beginning
  * that such algorithms had simple distributed implementations, where the variable resides at the owning process, and
  * other processes read it by sending messages to the owner.  Thus, the bakery algorithm marked the beginning of my
  * study of distributed algorithms."
- * see </https://lamport.azurewebsites.net/pubs/bakery.pdf>
+ * see <a href="https://lamport.azurewebsites.net/pubs/bakery.pdf">Bakery Algorithm</a>
  */
 class Lamport {
     private final int threadCount;
@@ -73,10 +73,9 @@ class Lamport {
                 ++j;
                 if (j > 1_000_000) break;
                 shared.set(0, j);
-                System.err.println(pid + " incremented " + shared.get(0));
+                System.err.println("Thread #" + pid + " incremented shared:" + shared.get(0));
                 if (lock != null) lock.unlock(pid);
             }
-            System.out.println(pid + ": " + shared.get(0));
         }
     }
 }

@@ -1,67 +1,41 @@
 package org.misha.interview;
 
-import org.apache.log4j.Logger;
+import java.util.Collection;
+import java.util.Comparator;
+import java.util.TreeSet;
 
 /**
  * author: misha
  * date: 6/24/15 8:53 PM.
  */
 public class Interview {
-    private static final Logger log = Logger.getLogger(Interview.class);
+    /**
+     * Given infinite stream of integers. Using only JDK library implement class which would process those
+     * integers and at any moment will be able to provide at most N unique biggest values among all processed.
+     * Class interface:
+     * 1. N is class constructor argument, immutable.
+     * 2. void push(int val) - process integers one-by-one.
+     * 3. Collection<Integer> top().
+     */
+    private final int N;
 
-    public static void main(String... args) {
-        base p = new Interview.derived();
-        log.info(p.method1() + "\n==========================");
-        String a = "a";
-        String b = "b";
-        a = a.concat(b);
-        log.info(a + "c" + "\n=============================");
-        B bb = new B();
+    public Interview(final int N) {
+        this.N = N;
+        topN = new TreeSet<>(Comparator.reverseOrder());
     }
 
-    static class base {
-        public String method1() {
-            return "base";
-        }
-    }
+    private final TreeSet<Integer> topN;
 
-    private static class derived extends base {
-        @Override
-        public String method1() {
-            return "derived";
-        }
-    }
-
-    static class A {
-        private String string = "Green";
-
-        public A() {
-            try {
-                log.info("string: \"" + getString() + "\", length: " + getString().length());
-            } catch (NullPointerException e) {
-            }
-        }
-
-        public String getString() {
-            return string;
-        }
-
-        public void setString(String string) {
-            this.string = string;
+    public void push(int val) {
+        if (topN.size() < N) {
+            topN.add(val);
+        } else {
+            if (val > topN.last()) topN.add(val);
+            if (topN.size() > N) topN.remove(topN.last());
         }
     }
 
-    static class B extends A {
-        private String string = "Red";
-
-        @Override
-        public String getString() {
-            return string;
-        }
-
-        @Override
-        public void setString(String string) {
-            this.string = string;
-        }
+    public Collection<Integer> top() {
+        return topN;
     }
 }

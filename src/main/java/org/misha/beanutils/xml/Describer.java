@@ -60,7 +60,7 @@ public class Describer {
                 sb.append(tab(depth)).append("}\n");
             } else {
                 sb.append(tab(depth)).append(getSimpleName(value)).append(": ").append(value).append("\n")
-                  .append(tab(depth - 1)).append("]\n");
+                        .append(tab(depth - 1)).append("]\n");
             }
             --depth;
         }

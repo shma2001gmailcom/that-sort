@@ -8,9 +8,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import static org.misha.java8.Gender.FEMALE;
-import static org.misha.java8.Gender.MALE;
-import static org.misha.java8.Gender.UNKNOWN;
+import static org.misha.java8.Gender.*;
 
 /**
  * author: misha
@@ -22,9 +20,9 @@ public class UserFilters {
         List<User> users =
                 Arrays.asList(new User(5, "John", MALE), new User(7, "Hannah", FEMALE), new User(95, "Zuv", MALE));
         users.stream().filter(u -> u.getGender() == FEMALE).map(u -> u.getName() + " is female")
-             .collect(Collectors.toList()).forEach(System.out::println);
+                .collect(Collectors.toList()).forEach(System.out::println);
         users.stream().filter(u -> u.getGender() == MALE).flatMap(u -> Stream.of(u.getName() + " is male"))
-             .collect(Collectors.toList()).forEach(System.out::println);
+                .collect(Collectors.toList()).forEach(System.out::println);
         System.out.println(users.stream().filter(u -> u.getGender() == UNKNOWN).findFirst().orElse(null));
         new HashMap<Integer, User>() {
             private static final long serialVersionUID = 5943959406804806096L;

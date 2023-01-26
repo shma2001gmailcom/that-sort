@@ -72,7 +72,7 @@ public class BlockingQueueWaitNotify<T> {
 
     private T remove() throws InterruptedException {
         if (queue.isEmpty()) {
-            synchronized(this) {
+            synchronized (this) {
                 while (queue.isEmpty()) {
                     wait();
                 }

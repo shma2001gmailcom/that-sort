@@ -46,7 +46,7 @@ public class FiboTest {
         long now = new Date().getTime();
         assertEquals(new Fibo().fibonacci(3320, bigInt(1), bigInt(1)), actual);
         log.info(MessageFormat.format("\n\nfibo({0}) has been calculated at {1}ms.\n\n", number,
-                                      new Date().getTime() - now
+                new Date().getTime() - now
         ));
     }
 }

@@ -14,7 +14,7 @@ public class Launcher {
     public static void main(String[] args) {
         LoaderInterface[] loaders =
                 {new FinalValueSingleton().getLoader(), new DoubleCheck().getLoader(), LoaderHolder.getLoader(),
-                 LoaderEnum.LOADER.getLoader()
+                        LoaderEnum.LOADER.getLoader()
                 };
         for (final LoaderInterface loader : loaders) {
             loader.printLoaders();

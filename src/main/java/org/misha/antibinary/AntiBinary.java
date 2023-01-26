@@ -1,7 +1,6 @@
 package org.misha.antibinary;
 
 import java.security.SecureRandom;
-import java.util.Arrays;
 
 import static java.lang.Math.log;
 

@@ -167,7 +167,7 @@
                             <goal>run</goal>
                         </goals>
                         <configuration>
-                            <tasks>
+                            <target>
                                 <copy todir="target/config" overwrite="true">
                                     <fileset dir="src/main/resources/">
                                         <include name="*.properties"/>
@@ -179,7 +179,7 @@
                                         <include name="*.json"/>
                                     </fileset>
                                 </copy>
-                            </tasks>
+                            </target>
                         </configuration>
                     </execution>
                 </executions>

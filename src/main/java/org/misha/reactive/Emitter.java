@@ -3,21 +3,15 @@ package org.misha.reactive;
 import io.reactivex.rxjava3.core.Observable;
 import io.reactivex.rxjava3.core.Observer;
 import io.reactivex.rxjava3.disposables.Disposable;
-import io.reactivex.rxjava3.functions.Consumer;
 import io.reactivex.rxjava3.subjects.PublishSubject;
 import org.junit.Test;
-import org.reactivestreams.Publisher;
-import org.reactivestreams.Subscriber;
-import org.reactivestreams.Subscription;
 
 import java.math.BigInteger;
 import java.util.Iterator;
 import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
 import java.util.concurrent.atomic.AtomicReference;
 
-import static java.lang.Thread.currentThread;
 import static org.junit.Assert.assertTrue;
 
 public class Emitter {
@@ -117,7 +111,6 @@ public class Emitter {
         source.subscribe(observer::onNext);
 
 
-
         PublishSubject<Integer> subject = PublishSubject.create();
         subject.subscribe(getFirstObserver());
         subject.onNext(1);
@@ -129,6 +122,7 @@ public class Emitter {
 
         assertTrue(subscriber1 + subscriber2 == 14);
     }
+
     private Observer<Integer> getFirstObserver() {
         return new Observer<Integer>() {
             @Override
@@ -144,7 +138,6 @@ public class Emitter {
             public void onError(Throwable e) {
                 System.out.println("error");
             }
-
 
 
             @Override
@@ -176,6 +169,7 @@ public class Emitter {
             }
         };
     }
+
     private Integer subscriber1 = 0;
     private Integer subscriber2 = 0;
 

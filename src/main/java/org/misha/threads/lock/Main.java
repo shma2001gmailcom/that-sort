@@ -30,7 +30,7 @@ class Main {
 
         @Override
         public void run() {
-            for (int i = 0; i < 1000 ; ++i) {
+            for (int i = 0; i < 1000; ++i) {
                 if (new Random().nextLong() % 1111395 == 1) {
                     int inc = shared.inc();
                     System.err.println(prefix() + " " + inc);

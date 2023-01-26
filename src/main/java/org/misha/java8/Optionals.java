@@ -8,7 +8,7 @@ public class Optionals {
         Optionals optionals = new Optionals();
         optionals.tryIfPresent();
         IntStream.range(0, 10)
-                 .forEach((int i) -> System.out.println(optionals.tryFilter(new Modem(i % 2 == 0 ? null : 11.5))));
+                .forEach((int i) -> System.out.println(optionals.tryFilter(new Modem(i % 2 == 0 ? null : 11.5))));
     }
 
     private boolean tryFilter(Modem modem) {

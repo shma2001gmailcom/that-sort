@@ -58,14 +58,14 @@ public class IdTest {
         pow2.forEach(input -> {
             System.out.println(input);
             System.out.println(new Premise(input.get(0).equals(input.get(1)))
-                                       .implies(input.get(0).hashCode() == input.get(1).hashCode()
-                                                        && input.get(1).equals(input.get(0))));
+                    .implies(input.get(0).hashCode() == input.get(1).hashCode()
+                            && input.get(1).equals(input.get(0))));
         });
         List<List<Object>> pow3 = Lists.cartesianProduct(all, all, all);
         pow3.forEach(input -> {
             System.out.println(input);
             System.out.println((new Premise((input.get(0).equals(input.get(1)) && input.get(1)
-                                                                                       .equals(input.get(2)))).implies(
+                    .equals(input.get(2)))).implies(
                     input.get(0).equals(input.get(2)))));
         });
     }

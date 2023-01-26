@@ -9,7 +9,7 @@ public class Differ {
     private void differ(int[] first, int[] second) {
         int f = 0;
         int s = 0;
-        while(f < first.length && s < second.length) {
+        while (f < first.length && s < second.length) {
             int a = first[f];
             int b = second[s];
             if (a > b) {

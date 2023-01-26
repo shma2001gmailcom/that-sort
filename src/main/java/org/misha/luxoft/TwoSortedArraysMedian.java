@@ -156,7 +156,7 @@ public class TwoSortedArraysMedian {
         int[] a = {1, 1, 4, 4, 5, 6, 8};
         int[] b = {2, 2, 3, 4, 5, 5, 6, 7, 9};
         assertTrue(areEqual(new int[]{1, 1, 2, 2, 3, 4, 4, 4, 5, 5, 5, 6, 6, 7, 8, 9},
-                            merge(a, b)));
+                merge(a, b)));
         assertEquals(4.5, median(a, b), .0);
     }
 }

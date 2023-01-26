@@ -11,7 +11,8 @@ import java.util.regex.Pattern;
 import static com.google.common.base.Preconditions.checkArgument;
 import static java.net.URLDecoder.decode;
 import static java.net.URLEncoder.encode;
-import static org.misha.HttpURLPostParams.Convert.*;
+import static org.misha.HttpURLPostParams.Convert.DECODE;
+import static org.misha.HttpURLPostParams.Convert.ENCODE;
 
 public class HttpURLPostParams {
     private static final Logger LOG = Logger.getLogger("");
@@ -20,10 +21,10 @@ public class HttpURLPostParams {
 
     private static String getQuery(LinkedHashMap<String, String> params) {
         return params.entrySet()
-                  .stream()
-                  .map(e -> joinEntry(ENCODE, e.getKey(), e.getValue()))
-                  .reduce((x, y) -> Joiner.on("&").join(x, y))
-                  .orElse("error");
+                .stream()
+                .map(e -> joinEntry(ENCODE, e.getKey(), e.getValue()))
+                .reduce((x, y) -> Joiner.on("&").join(x, y))
+                .orElse("error");
     }
 
     enum Convert {
@@ -58,13 +59,13 @@ public class HttpURLPostParams {
         }});
         LOG.error(query);
         LOG.error(Arrays.stream(query.split("&"))
-                        .map(pair -> joinEntry(DECODE, pair.split("=")))
-                        .reduce((x, y) -> Joiner.on("&").join(x, y))
-                        .orElse("error"));
+                .map(pair -> joinEntry(DECODE, pair.split("=")))
+                .reduce((x, y) -> Joiner.on("&").join(x, y))
+                .orElse("error"));
         checkArgument(pattern.matcher(Arrays.stream(query.split("&"))
-                                            .map(pair -> joinEntry(DECODE, pair.split("=")))
-                                            .reduce((x, y) -> Joiner.on("&").join(x, y))
-                                            .orElse("error")).matches());
+                .map(pair -> joinEntry(DECODE, pair.split("=")))
+                .reduce((x, y) -> Joiner.on("&").join(x, y))
+                .orElse("error")).matches());
         checkArgument(pattern.matcher(query).matches());
     }
 }

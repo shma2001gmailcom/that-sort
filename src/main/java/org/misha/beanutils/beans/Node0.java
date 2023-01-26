@@ -45,7 +45,7 @@ public class Node0 {
         Node0 node0 = (Node0) o;
         return (node00 != null ? node00.equals(node0.node00) : node0.node00 == null) && (node01 != null ? node01
                 .equals(node0.node01) : node0.node01 == null) && (node02 != null ? node02.equals(node0.node02)
-                                                                                 : node0.node02 == null);
+                : node0.node02 == null);
     }
 
     @Override

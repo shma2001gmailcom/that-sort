@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class LamportTest {
-    private static final int THREAD_COUNT = 3;
+    private static final int THREAD_COUNT = Runtime.getRuntime().availableProcessors() / 2;
 
     @Test
     public void testSharedCounter() throws InterruptedException {
@@ -16,7 +16,7 @@ public class LamportTest {
         final List<Thread> threads = new ArrayList<>();
         for (int i = 0; i < THREAD_COUNT; ++i) threads.add(new Thread(new Lamport.MyRunnable(i, lock, value)));
         threads.forEach(Thread::start);
-        Thread.sleep(5000);
+        Thread.sleep(2000);
         System.err.println("result: " + value.get(0));
     }
 }

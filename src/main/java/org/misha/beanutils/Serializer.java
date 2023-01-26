@@ -99,7 +99,7 @@ public final class Serializer {
 
     private static boolean needToBeDrawnAsIs(final Object value) {
         return classes.contains(value.getClass()) || !value.getClass().getCanonicalName()
-                                                           .contains("org.misha.beanutils.beans");
+                .contains("org.misha.beanutils.beans");
     }
 
     private static String calendarString(final GregorianCalendar c, final String name) {

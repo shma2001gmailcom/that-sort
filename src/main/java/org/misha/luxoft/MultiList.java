@@ -10,7 +10,7 @@ class MultiList {
     private final Integer data;
 
     private MultiList(List<MultiList> children) {
-        assert children != null: "children shouldn't be null";
+        assert children != null : "children shouldn't be null";
         this.data = null;
         this.children = children;
     }

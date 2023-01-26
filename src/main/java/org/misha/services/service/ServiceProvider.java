@@ -56,8 +56,8 @@ final class ServiceProvider {
     }
 
     private Service createService(final String name) throws ClassNotFoundException, IllegalAccessException,
-                                                            InstantiationException, NoSuchMethodException,
-                                                            InvocationTargetException {
+            InstantiationException, NoSuchMethodException,
+            InvocationTargetException {
         final Class<?> c = this.getClass().getClassLoader().loadClass(name);
         if (c.getInterfaces()[0].equals(Service.class)) {
             final Constructor<?> constructor = c.getDeclaredConstructor();

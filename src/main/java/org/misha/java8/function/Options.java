@@ -29,12 +29,11 @@ public class Options {
 
     public static void main(String... args) {
         Options.builder()
-               .addRule(i -> i % 2 == 0, i -> i / 2)
-               .addRule(i -> i % 3 == 0, i -> i / 3)
-               .build()
-               .processRules(i -> i < 1000);
+                .addRule(i -> i % 2 == 0, i -> i / 2)
+                .addRule(i -> i % 3 == 0, i -> i / 3)
+                .build()
+                .processRules(i -> i < 1000);
     }
-
 
 
     private void processRules(Predicate<Integer> terminalCondition) {

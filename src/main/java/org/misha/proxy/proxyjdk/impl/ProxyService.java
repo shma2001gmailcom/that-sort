@@ -32,7 +32,7 @@ public class ProxyService {
     static MyObject getMyObject(
             final String proxyFullyQualifiedName, final Integer count, final String objName
     ) throws ClassNotFoundException, IllegalAccessException, InstantiationException, NoSuchMethodException,
-             InvocationTargetException {
+            InvocationTargetException {
         final Class<?> c = ProxyService.class.getClassLoader().loadClass(proxyFullyQualifiedName);
         if (c.getInterfaces()[0].equals(MyObject.class)) {
             final Constructor constructor = c.getDeclaredConstructor(Integer.class, String.class);
