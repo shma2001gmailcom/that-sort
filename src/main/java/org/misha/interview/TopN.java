@@ -8,7 +8,7 @@ import java.util.TreeSet;
  * author: misha
  * date: 6/24/15 8:53 PM.
  */
-public class Interview {
+public class TopN {
     /**
      * Given infinite stream of integers. Using only JDK library implement class which would process those
      * integers and at any moment will be able to provide at most N unique biggest values among all processed.
@@ -19,7 +19,7 @@ public class Interview {
      */
     private final int N;
 
-    public Interview(final int N) {
+    public TopN(final int N) {
         this.N = N;
         topN = new TreeSet<>(Comparator.reverseOrder());
     }

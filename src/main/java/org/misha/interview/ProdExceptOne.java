@@ -24,7 +24,7 @@ import static java.util.stream.Collectors.toMap;
  * [0, 2, 3, 4, 5] -> [120,  0,  0,  0,  0]
  * [1, 2, 3, 4, 0] -> [  0,  0,  0,  0, 24]
  */
-public class Prod {//time: O(n * n), space: O(3 * n + (2 * n) * (2 * n)) = O(n * n)
+public class ProdExceptOne {//time: O(n * n), space: O(3 * n + (2 * n) * (2 * n)) = O(n * n)
 
     public static void main(String[] args) {
         List<Integer> a = newArrayList(1, 2, 3, 4, 5);
@@ -42,7 +42,7 @@ public class Prod {//time: O(n * n), space: O(3 * n + (2 * n) * (2 * n)) = O(n *
             exceptCurrent.remove(i);//O(1)
             map.put(i, exceptCurrent.values());
         });
-        return map.values().stream().map(Prod::prod).collect(Collectors.toList());//O(n * n)
+        return map.values().stream().map(ProdExceptOne::prod).collect(Collectors.toList());//O(n * n)
     }
 
     private static int prod(Collection<Integer> list) {
