@@ -66,7 +66,7 @@ public class GivenSumAndTest {
         for (int i = 0; i < array.length; ++i) {
             List<Integer> complementIndexes = complements.get(array[i]);
             if (complementIndexes != null) {
-                for (Integer c : complementIndexes) {
+                for (int c : complementIndexes) {
                     if (c != i) {
                         result.add(newHashSet(i, c));
                     }
@@ -98,13 +98,35 @@ public class GivenSumAndTest {
 
     /**
      * given an array of integers and integer s,
-     * find all the subsets of the indices,
+     * find all the subsets of the cardinality card of the indices,
      * such that the sum of the array elements, having indices in such a subset, equals to s
-     * ...
      */
+    Set<Set<Integer>> givenSumTuples(int s, int[] array, int card) {
+        Set<Set<Integer>> result = new HashSet<>();
+        if (card < 1) return new HashSet<>();
+        if (card == 1) {
+            for (int i = 1; i < array.length; ++i) {
+                if (array[i] == s) result.add(newHashSet(i));
+            }
+            return result;
+        }
+        if (card == 2) return givenSumPairs(s, array);
+        for (int i = 0; i < array.length; ++i) {
+            int a = array[i];
+            Set<Set<Integer>> temp = givenSumTuples(s - a, array, card - 1);
+            if (temp.isEmpty()) continue;
+            for (Set<Integer> set : temp) {
+                if (!set.contains(i)) {
+                    set.add(i);
+                    result.add(set);
+                }
+            }
+        }
+        return result;
+    }
 
     @Test
-    public void test() {
+    public void testPair() {
         int[] array = {1, 4, 1, 1, 4, 1};
         assertEquals(new ImmutablePair<>(0, 1), givenSumPair(5, array));
         array = new int[]{3, 1, 6, 9, 4, 11};
@@ -113,7 +135,7 @@ public class GivenSumAndTest {
 
     @SuppressWarnings("unchecked")
     @Test
-    public void testAllPairs() {
+    public void testPairs() {
         int[] array = {1, 4, 1, 1, 4, 1};
         assertEquals(newHashSet(newHashSet(0, 1), newHashSet(1, 2),
                         newHashSet(0, 4), newHashSet(1, 3), newHashSet(1, 5),
@@ -125,20 +147,34 @@ public class GivenSumAndTest {
     }
 
     @Test
-    public void testAllTriples() throws JsonProcessingException {
+    public void testTriples() throws JsonProcessingException {
         int[] array = {0, 0, 1, 0, 1, 2, 3, 0, 1, 2, 3, 4, 0, 1, 2, 3, 4, 5, 0, 1, 2, 3, 4, 5, 6};
         Set<Set<Integer>> sets = givenSumTriples(6, array);
-        Set<SumSet> sumSets = sets.stream().map(set -> new SumSet(array, set)).collect(toSet());
-        Set<SumSet> expected = mapper.readValue(resource("sum-sets.json"), new TypeReference<Set<SumSet>>() {
-        });
-        assertTrue(expected.size() == sumSets.size()
-                && expected.stream().map(sumSets::contains).reduce(true, (a, b) -> a && b));
+        Set<SumSet> sumSets = asSumSets(sets, array);
+        check("sum-sets.json", sumSets);
         int[] a = new int[]{1, 1, 1, 1};
         sets = givenSumTriples(3, a);
         assertEquals(4, sets.size());
         int[] b = new int[]{1, 1, 1, 0};
         sets = givenSumTriples(2, b);
         assertEquals(3, sets.size());
+    }
+
+    @Test
+    public void testTuples() throws JsonProcessingException {
+        int[] a = {2, 1, -2, 1, 3, 0, 1, 2, 1, 2};
+        check("tuple-card-7.json", asSumSets(givenSumTuples(5, a, 7), a));
+        int[] b = new int[]{2, 3, 6, 0, -1, 2, 3, 4, -1};
+        check("tuple-card-5.json", asSumSets(givenSumTuples(7, b, 5), b));
+    }
+
+    private Set<SumSet> asSumSets(Set<Set<Integer>> tuples, int[] array) {
+        return tuples.stream().map(set -> new SumSet(array, set)).collect(toSet());
+    }
+
+    private static void check(String name, Set<SumSet> sumSets) throws JsonProcessingException {
+        Set<SumSet> expected = mapper.readValue(resource(name), new TypeReference<Set<SumSet>>() {});
+        assertTrue(expected.size() <= sumSets.size() && expected.containsAll(sumSets));
     }
 
     public static class SumSet {
