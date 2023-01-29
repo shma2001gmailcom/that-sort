@@ -20,7 +20,7 @@ import static org.junit.Assert.assertTrue;
 
 /**
  * given an array of integers and an integer s,
- * find representations of s as a sum of the elements of array
+ * find representations of s as a sum of the elements of the array
  */
 public class GivenSumAndTest {
     private static final ObjectMapper mapper = new ObjectMapper();
