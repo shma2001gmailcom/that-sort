@@ -29,11 +29,11 @@ public final class Serializer {
         classes.add(GregorianCalendar.class);
     }
 
-    public static String serialize(final Object bean) {
-        return XML_HEADER + describe(bean);
+    private Serializer() {
     }
 
-    private Serializer() {
+    public static String serialize(final Object bean) {
+        return XML_HEADER + describe(bean);
     }
 
     private static String describe(final Object bean) {
@@ -112,12 +112,12 @@ public final class Serializer {
         return c.getTime().toString().replaceAll("00:00:00", EMPTY);
     }
 
-    private Root createActual() {
-        return Root.RootMaker.makeRoot();
-    }
-
     public static void main(String... args) {
         System.out.println(serialize(new Serializer().createActual()));
+    }
+
+    private Root createActual() {
+        return Root.RootMaker.makeRoot();
     }
 }
 

@@ -27,23 +27,6 @@ public class HttpURLPostParams {
                 .orElse("error");
     }
 
-    enum Convert {
-        ENCODE {
-            @Override
-            String convert(final String data) throws UnsupportedEncodingException {
-                return encode(data, ENC);
-            }
-        },
-        DECODE {
-            @Override
-            String convert(final String data) throws UnsupportedEncodingException {
-                return decode(data, ENC);
-            }
-        };
-
-        abstract String convert(String data) throws UnsupportedEncodingException;
-    }
-
     private static String joinEntry(Convert option, String... pair) {
         try {
             return Joiner.on("=").join(option.convert(pair[0]), option.convert(pair[1]));
@@ -67,5 +50,22 @@ public class HttpURLPostParams {
                 .reduce((x, y) -> Joiner.on("&").join(x, y))
                 .orElse("error")).matches());
         checkArgument(pattern.matcher(query).matches());
+    }
+
+    enum Convert {
+        ENCODE {
+            @Override
+            String convert(final String data) throws UnsupportedEncodingException {
+                return encode(data, ENC);
+            }
+        },
+        DECODE {
+            @Override
+            String convert(final String data) throws UnsupportedEncodingException {
+                return decode(data, ENC);
+            }
+        };
+
+        abstract String convert(String data) throws UnsupportedEncodingException;
     }
 }

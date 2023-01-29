@@ -107,31 +107,6 @@ public class TwoSortedArraysMedian {
         return minMax;
     }
 
-    static final class Irl {
-        private int i;
-        private int r;
-        private int l;
-
-        private Irl(int i, int r, int l) {
-            this.i = i;
-            this.r = r;
-            this.l = l;
-        }
-
-        private Irl incI() {
-            ++i;
-            return this;
-        }
-
-        private void incR() {
-            ++r;
-        }
-
-        private void incL() {
-            ++l;
-        }
-    }
-
     private static int[] minMax(int a, int b) {
         return new int[]{min(a, b), -min(-a, -b)};
     }
@@ -158,5 +133,30 @@ public class TwoSortedArraysMedian {
         assertTrue(areEqual(new int[]{1, 1, 2, 2, 3, 4, 4, 4, 5, 5, 5, 6, 6, 7, 8, 9},
                 merge(a, b)));
         assertEquals(4.5, median(a, b), .0);
+    }
+
+    static final class Irl {
+        private int i;
+        private int r;
+        private int l;
+
+        private Irl(int i, int r, int l) {
+            this.i = i;
+            this.r = r;
+            this.l = l;
+        }
+
+        private Irl incI() {
+            ++i;
+            return this;
+        }
+
+        private void incR() {
+            ++r;
+        }
+
+        private void incL() {
+            ++l;
+        }
     }
 }

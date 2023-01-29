@@ -16,32 +16,13 @@ import static org.junit.Assert.assertTrue;
 
 public class Emitter {
     private final AtomicReference<BigInteger> value;
+    Gen gen = new Gen(BigInteger.TEN);
+    private Integer subscriber1 = 0;
+    private Integer subscriber2 = 0;
 
     public Emitter() {
         this.value = new AtomicReference<>(BigInteger.ZERO);
     }
-
-    static class Gen implements Iterator<BigInteger> {
-        final BigInteger upperBound;
-        BigInteger current = BigInteger.ZERO;
-
-        Gen(BigInteger upperBound) {
-            this.upperBound = upperBound;
-        }
-
-        @Override
-        public boolean hasNext() {
-            return current.compareTo(upperBound) < 0;
-        }
-
-        @Override
-        public BigInteger next() {
-            current = current.add(BigInteger.ONE);
-            return current;
-        }
-    }
-
-    Gen gen = new Gen(BigInteger.TEN);
 
     private void emit() {
         Iterator<BigInteger> it = gen;
@@ -170,8 +151,25 @@ public class Emitter {
         };
     }
 
-    private Integer subscriber1 = 0;
-    private Integer subscriber2 = 0;
+    static class Gen implements Iterator<BigInteger> {
+        final BigInteger upperBound;
+        BigInteger current = BigInteger.ZERO;
+
+        Gen(BigInteger upperBound) {
+            this.upperBound = upperBound;
+        }
+
+        @Override
+        public boolean hasNext() {
+            return current.compareTo(upperBound) < 0;
+        }
+
+        @Override
+        public BigInteger next() {
+            current = current.add(BigInteger.ONE);
+            return current;
+        }
+    }
 
 
 }

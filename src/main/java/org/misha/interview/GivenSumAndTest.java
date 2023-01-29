@@ -35,8 +35,15 @@ public class GivenSumAndTest {
         }
     }
 
+    private static void check(String name, Set<SumSet> sumSets) throws JsonProcessingException {
+        Set<SumSet> expected = mapper.readValue(resource(name), new TypeReference<Set<SumSet>>() {
+        });
+        assertTrue(expected.size() <= sumSets.size());
+        expected.forEach(set -> assertTrue(": " + set, sumSets.contains(set)));
+    }
+
     /**
-     * given an array of integers and integer s, find a pair of elements with the sum s if present
+     * given an array of integers and an integer s, find a pair of elements with the sum s if present
      */
     ImmutablePair<Integer, Integer> givenSumPair(int sum, int[] array) {
         Map<Integer, Integer> complements = new HashMap<>();
@@ -53,7 +60,7 @@ public class GivenSumAndTest {
     }
 
     /**
-     * given an array ar of integers and integer s,
+     * given an array ar of integers and an integer s,
      * find all such unordered pairs of indices i, j that ar[i] + ar[j] = s
      */
     Set<Set<Integer>> givenSumPairs(int sum, int[] array) {
@@ -81,7 +88,7 @@ public class GivenSumAndTest {
     }
 
     /**
-     * given an array of integers and integer s,
+     * given an array of integers and an integer s,
      * find all the subsets of a cardinality 3 of the indices,
      * such that the sum of the array elements, having indices in such a subset, equals to s
      */
@@ -101,7 +108,7 @@ public class GivenSumAndTest {
     }
 
     /**
-     * given an array of integers and integer s,
+     * given an array of integers and an integer s,
      * find all the subsets of the cardinality card of the indices,
      * such that the sum of the array elements, having indices in such a subset, equals to s
      */
@@ -130,7 +137,7 @@ public class GivenSumAndTest {
     }
 
     /**
-     * given an array of integers and integer s,
+     * given an array of integers and an integer s,
      * find all the subsets of the indices,
      * such that the sum of the array elements, having indices in such a subset, equals to s.
      * The sum of the set containing single element is this element
@@ -202,13 +209,6 @@ public class GivenSumAndTest {
 
     private Set<SumSet> asSumSets(Set<Set<Integer>> tuples, int[] array) {
         return tuples.stream().map(set -> new SumSet(array, set)).collect(toSet());
-    }
-
-    private static void check(String name, Set<SumSet> sumSets) throws JsonProcessingException {
-        Set<SumSet> expected = mapper.readValue(resource(name), new TypeReference<Set<SumSet>>() {
-        });
-        assertTrue(expected.size() <= sumSets.size());
-                 expected.forEach(set -> assertTrue(": " + set , sumSets.contains(set)) );
     }
 
     public static class SumSet {

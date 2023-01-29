@@ -18,6 +18,29 @@ class Chocolate {
         return opCount;
     }
 
+    private static int opCount(double a) {
+        int i = (int) Math.round(a);
+        return i / 5 + (i % 5) / 2 + (i % 5) % 2;
+    }
+
+    private static double[] constMin(int length, double min) {
+        double[] result = new double[length];
+        for (int i = 0; i < length; ++i) {
+            result[i] = min;
+        }
+        return result;
+    }
+
+    private static double min(double[] x) {
+        double result = Double.MIN_VALUE;
+        for (final double d : x) {
+            if (d < result) {
+                result = d;
+            }
+        }
+        return result;
+    }
+
     public static class Trans {
         private final int dim;
         private final int[][] adj;
@@ -41,18 +64,6 @@ class Chocolate {
             return w;
         }
 
-        double[] timesToReversed(double[] arr) {
-            double[] result = new double[dim];
-            for (int i = 0; i < dim; ++i) {
-                double resI = 0;
-                for (int j = 0; j < dim; ++j) {
-                    resI += (arr[j] * (double) adj[i][j]);
-                }
-                result[i] = resI / (double) (dim - 1);
-            }
-            return result;
-        }
-
         static double[] plus(double[] left, double[] right) {
             final int length = left.length;
             double[] arr = new double[length];
@@ -69,28 +80,17 @@ class Chocolate {
             }
             return arr;
         }
-    }
 
-    private static int opCount(double a) {
-        int i = (int) Math.round(a);
-        return i / 5 + (i % 5) / 2 + (i % 5) % 2;
-    }
-
-    private static double[] constMin(int length, double min) {
-        double[] result = new double[length];
-        for (int i = 0; i < length; ++i) {
-            result[i] = min;
-        }
-        return result;
-    }
-
-    private static double min(double[] x) {
-        double result = Double.MIN_VALUE;
-        for (final double d : x) {
-            if (d < result) {
-                result = d;
+        double[] timesToReversed(double[] arr) {
+            double[] result = new double[dim];
+            for (int i = 0; i < dim; ++i) {
+                double resI = 0;
+                for (int j = 0; j < dim; ++j) {
+                    resI += (arr[j] * (double) adj[i][j]);
+                }
+                result[i] = resI / (double) (dim - 1);
             }
+            return result;
         }
-        return result;
     }
 }

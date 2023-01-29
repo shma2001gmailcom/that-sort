@@ -26,6 +26,50 @@ class Overlapping {
         this.intervals = intervals;
     }
 
+    static Interval range(int a, int b) {
+        return new Interval(a, b);
+    }
+
+    private Iterator it() {
+        return new Iterator(this);
+    }
+
+    @Override
+    public String toString() {
+        return Arrays.toString(intervals);
+    }
+
+    Collection merge() {// O(intervals.length)
+        final Map<Integer, Interval> map = new LinkedHashMap<>();
+        final Iterator it = it();
+        Interval current;
+        if (it.hasNext()) {
+            final Interval next = it.next();
+            map.put(next.start, next);
+            current = next;
+        } else {
+            return map.values();
+        }
+        while (it.hasNext()) {
+            final Interval interval = it.next();
+            if (map.containsKey(current.start)) {
+                if (current.contains(interval.start)) {//current interval overlaps the next one
+                    if (interval.end >= current.end) {
+                        current = range(current.start, interval.end);//merge
+                        map.put(current.start, current);
+                    }
+                } else {
+                    map.put(interval.start, interval);//the next interval
+                    current = interval;//will be current from now
+                }
+            } else {//none among previous intervals has common start with the next interval
+                map.put(interval.start, interval);
+                current = interval;
+            }
+        }
+        return map.values();
+    }
+
     static class Interval implements Comparable<Interval> {
         int start;
         int end;
@@ -58,10 +102,6 @@ class Overlapping {
         }
     }
 
-    private Iterator it() {
-        return new Iterator(this);
-    }
-
     static class Iterator {
         private Overlapping overlapping;
         private int length;
@@ -81,45 +121,5 @@ class Overlapping {
             ++i;
             return overlapping.intervals[i];
         }
-    }
-
-    @Override
-    public String toString() {
-        return Arrays.toString(intervals);
-    }
-
-    static Interval range(int a, int b) {
-        return new Interval(a, b);
-    }
-
-    Collection merge() {// O(intervals.length)
-        final Map<Integer, Interval> map = new LinkedHashMap<>();
-        final Iterator it = it();
-        Interval current;
-        if (it.hasNext()) {
-            final Interval next = it.next();
-            map.put(next.start, next);
-            current = next;
-        } else {
-            return map.values();
-        }
-        while (it.hasNext()) {
-            final Interval interval = it.next();
-            if (map.containsKey(current.start)) {
-                if (current.contains(interval.start)) {//current interval overlaps the next one
-                    if (interval.end >= current.end) {
-                        current = range(current.start, interval.end);//merge
-                        map.put(current.start, current);
-                    }
-                } else {
-                    map.put(interval.start, interval);//the next interval
-                    current = interval;//will be current from now
-                }
-            } else {//none among previous intervals has common start with the next interval
-                map.put(interval.start, interval);
-                current = interval;
-            }
-        }
-        return map.values();
     }
 }

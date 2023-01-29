@@ -3,10 +3,10 @@ package org.misha.threads.waitnotify.suspendresume;
 import org.apache.log4j.Logger;
 
 class Suspend implements Runnable {
+    private static final Logger log = Logger.getLogger("Suspend");
     protected String name;
     protected Thread t;
     private boolean suspendFlag;
-    private static final Logger log = Logger.getLogger("Suspend");
 
     Suspend(String threadName) {
         name = threadName;

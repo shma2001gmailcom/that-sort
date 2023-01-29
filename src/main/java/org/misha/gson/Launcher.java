@@ -143,6 +143,10 @@ public class Launcher {
             return setAttrs;
         }
 
+        public void setSetAttrs(SetAttrs setAttrs) {
+            this.setAttrs = setAttrs;
+        }
+
         @Override
         public String toString() {
             final StringBuffer sb = new StringBuffer("Op{");
@@ -151,10 +155,6 @@ public class Launcher {
             sb.append(", satellites=").append(satellites);
             sb.append('}');
             return sb.toString();
-        }
-
-        public void setSetAttrs(SetAttrs setAttrs) {
-            this.setAttrs = setAttrs;
         }
     }
 

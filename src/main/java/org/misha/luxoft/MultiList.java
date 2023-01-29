@@ -21,10 +21,6 @@ class MultiList {
         this.children = null;
     }
 
-    boolean isList() {
-        return data == null && children != null;
-    }
-
     static MultiList withChildren(MultiList... children) {
         final List<MultiList> list = new ArrayList<>();
         list.addAll(Arrays.asList(children));
@@ -33,6 +29,10 @@ class MultiList {
 
     static MultiList withData(Integer data) {
         return new MultiList(data);
+    }
+
+    boolean isList() {
+        return data == null && children != null;
     }
 
     List<Integer> asList() {

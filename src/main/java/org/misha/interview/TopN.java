@@ -18,13 +18,12 @@ public class TopN {
      * 3. Collection<Integer> top().
      */
     private final int N;
+    private final TreeSet<Integer> topN;
 
     public TopN(final int N) {
         this.N = N;
         topN = new TreeSet<>(Comparator.reverseOrder());
     }
-
-    private final TreeSet<Integer> topN;
 
     public void push(int val) {
         if (topN.size() < N) {

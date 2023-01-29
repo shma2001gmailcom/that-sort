@@ -32,9 +32,9 @@ public class TreeMaxPathTest {
     private final TreeMaxPath.TreeNode l6 = new TreeNode(2);
     private final TreeNode l7 = new TreeNode(7);
     private final TreeNode n1 = new TreeNode(2, l3, l4);
-    private final TreeNode n2 = new TreeNode(3, l5, l6);
     private final TreeNode n3 = new TreeNode(1, l2, n1);
     private final TreeNode n4 = new TreeNode(5, l1, n3);
+    private final TreeNode n2 = new TreeNode(3, l5, l6);
     private final TreeNode n5 = new TreeNode(4, n2, l7);
     private final TreeNode root = new TreeNode(1, n4, n5);
 

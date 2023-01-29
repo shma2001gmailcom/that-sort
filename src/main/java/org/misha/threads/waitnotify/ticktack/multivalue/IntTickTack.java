@@ -34,6 +34,10 @@ public class IntTickTack {
         }
     }
 
+    public static void main(String... a) {
+        new IntTickTack(13, 3).tickTack();
+    }
+
     private void tickTack() {
         final IntTickTack tickTack = new IntTickTack(historyLimit, tickTackersCount);
         tickTackers.forEach(t -> new Thread(t).start());
@@ -43,9 +47,5 @@ public class IntTickTack {
             Thread.currentThread().interrupt();
         }
         LOG.debug(tickTack.history);
-    }
-
-    public static void main(String... a) {
-        new IntTickTack(13, 3).tickTack();
     }
 }

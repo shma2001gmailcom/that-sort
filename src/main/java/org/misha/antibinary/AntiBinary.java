@@ -14,6 +14,18 @@ public class AntiBinary {
         n = a.length;
     }
 
+    public static void main(String... args) {
+        int size = 2 << 17;
+        int[] a = new int[size];
+        for (int i = 0; i < size; ++i) {
+            a[i] = new SecureRandom().nextInt(1100200);
+        }
+        AntiBinary ab = new AntiBinary(a);
+        while (ab.doOnce()) ;
+        System.out.println(ab.count);
+        System.out.println((ab.count / (size * log(size))));
+    }
+
     private boolean swap(int i, int j) {
         if (a[i] > a[j] && i < j) {
             int temp = a[i];
@@ -35,17 +47,5 @@ public class AntiBinary {
             ++count;
         }
         return result;
-    }
-
-    public static void main(String... args) {
-        int size = 2 << 17;
-        int[] a = new int[size];
-        for (int i = 0; i < size; ++i) {
-            a[i] = new SecureRandom().nextInt(1100200);
-        }
-        AntiBinary ab = new AntiBinary(a);
-        while (ab.doOnce()) ;
-        System.out.println(ab.count);
-        System.out.println((ab.count / (size * log(size))));
     }
 }
