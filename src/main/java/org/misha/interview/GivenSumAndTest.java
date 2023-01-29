@@ -18,6 +18,10 @@ import static java.util.stream.Collectors.toSet;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
+/**
+ * given an array of integers and an integer s,
+ * find representations of s as a sum of the elements of array
+ */
 public class GivenSumAndTest {
     private static final ObjectMapper mapper = new ObjectMapper();
 
@@ -105,7 +109,7 @@ public class GivenSumAndTest {
         Set<Set<Integer>> result = new HashSet<>();
         if (card < 1) return new HashSet<>();
         if (card == 1) {
-            for (int i = 1; i < array.length; ++i) {
+            for (int i = 0; i < array.length; ++i) {
                 if (array[i] == s) result.add(newHashSet(i));
             }
             return result;
@@ -121,6 +125,20 @@ public class GivenSumAndTest {
                     result.add(set);
                 }
             }
+        }
+        return result;
+    }
+
+    /**
+     * given an array of integers and integer s,
+     * find all the subsets of the indices,
+     * such that the sum of the array elements, having indices in such a subset, equals to s.
+     * The sum of the set containing single element is this element
+     */
+    Set<Set<Integer>> givenSumTuplesTotal(int s, int[] array) {
+        Set<Set<Integer>> result = newHashSet();
+        for (int card = 1; card < array.length; ++card) {
+            result.addAll(givenSumTuples(s, array, card));
         }
         return result;
     }
@@ -168,13 +186,29 @@ public class GivenSumAndTest {
         check("tuple-card-5.json", asSumSets(givenSumTuples(7, b, 5), b));
     }
 
+    @Test
+    public void testTuplesTotal() throws JsonProcessingException {
+        int[] a = {2, 1, -2, 1, 3, 0, 1, 2, 1, 2};
+        System.out.println(writeResult(a));
+        check("tuple-total-5.json", asSumSets(givenSumTuplesTotal(5, a), a));
+        int[] b = new int[]{2, 3, 6, 0, -1, 2, 3, 4, -1};
+        System.out.println(writeResult(b));
+        check("tuple-total-7.json", asSumSets(givenSumTuplesTotal(7, b), b));
+    }
+
+    private String writeResult(int[] a) throws JsonProcessingException {
+        return mapper.writeValueAsString(givenSumTuplesTotal(5, a).stream().map(set -> new SumSet(a, set)).collect(toSet()));
+    }
+
     private Set<SumSet> asSumSets(Set<Set<Integer>> tuples, int[] array) {
         return tuples.stream().map(set -> new SumSet(array, set)).collect(toSet());
     }
 
     private static void check(String name, Set<SumSet> sumSets) throws JsonProcessingException {
-        Set<SumSet> expected = mapper.readValue(resource(name), new TypeReference<Set<SumSet>>() {});
-        assertTrue(expected.size() <= sumSets.size() && expected.containsAll(sumSets));
+        Set<SumSet> expected = mapper.readValue(resource(name), new TypeReference<Set<SumSet>>() {
+        });
+        assertTrue(expected.size() <= sumSets.size());
+                 expected.forEach(set -> assertTrue(": " + set , sumSets.contains(set)) );
     }
 
     public static class SumSet {
