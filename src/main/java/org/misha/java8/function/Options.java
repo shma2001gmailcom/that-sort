@@ -35,7 +35,6 @@ public class Options {
                 .processRules(i -> i < 1000);
     }
 
-
     private void processRules(Predicate<Integer> terminalCondition) {
         int i = 0;
         while (terminalCondition.test(i)) {

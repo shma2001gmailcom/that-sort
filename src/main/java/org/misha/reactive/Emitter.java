@@ -88,10 +88,7 @@ public class Emitter {
                 System.out.println("Data is .. " + arg0);
             }
         };
-
         source.subscribe(observer::onNext);
-
-
         PublishSubject<Integer> subject = PublishSubject.create();
         subject.subscribe(getFirstObserver());
         subject.onNext(1);
@@ -100,7 +97,6 @@ public class Emitter {
         subject.subscribe(getSecondObserver());
         subject.onNext(4);
         subject.onComplete();
-
         assertTrue(subscriber1 + subscriber2 == 14);
     }
 
@@ -119,7 +115,6 @@ public class Emitter {
             public void onError(Throwable e) {
                 System.out.println("error");
             }
-
 
             @Override
             public void onComplete() {
@@ -170,6 +165,5 @@ public class Emitter {
             return current;
         }
     }
-
 
 }

@@ -162,13 +162,9 @@ public class GivenSumAndTest {
     @Test
     public void testPairs() {
         int[] array = {1, 4, 1, 1, 4, 1};
-        assertEquals(newHashSet(newHashSet(0, 1), newHashSet(1, 2),
-                        newHashSet(0, 4), newHashSet(1, 3), newHashSet(1, 5),
-                        newHashSet(4, 2), newHashSet(4, 3), newHashSet(4, 5)),
-                givenSumPairs(5, array));
+        assertEquals(newHashSet(newHashSet(0, 1), newHashSet(1, 2), newHashSet(0, 4), newHashSet(1, 3), newHashSet(1, 5), newHashSet(4, 2), newHashSet(4, 3), newHashSet(4, 5)), givenSumPairs(5, array));
         array = new int[]{12, 3, 1, 6, 9, 4, 11};
-        assertEquals(newHashSet(newHashSet(0, 1), newHashSet(4, 3), newHashSet(5, 6)),
-                givenSumPairs(15, array));
+        assertEquals(newHashSet(newHashSet(0, 1), newHashSet(4, 3), newHashSet(5, 6)), givenSumPairs(15, array));
     }
 
     @Test

@@ -2,7 +2,6 @@ package org.misha.sort.quick;
 
 import java.util.Arrays;
 
-
 class QuickSort {
     private static int partition(int array[], int low, int high) {
         int pivot = array[high];

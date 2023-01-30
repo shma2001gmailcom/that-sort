@@ -10,7 +10,6 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.stereotype.Component;
 
-
 @Configuration
 class Config implements ApplicationListener<ContextRefreshedEvent> {
     private static final Logger log = Logger.getLogger(Config.class);
@@ -31,7 +30,6 @@ class Config implements ApplicationListener<ContextRefreshedEvent> {
         observable.connect();
     }
 }
-
 
 @Component
 class Foo {
