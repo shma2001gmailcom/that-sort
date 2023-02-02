@@ -18,7 +18,7 @@ public class TinPartitionsTest {
         return c;
     }
 
-    //given a set og integers S and an integer n, count all sequences of the elements of S, whose sums are equals n
+    //given a set og integers S and an integer n, count all sequences of the elements of S, whose sums are equal to n
     static int partitions(int n, Set<Integer> s) {
         int result = 0;
         for (int x : s) {
