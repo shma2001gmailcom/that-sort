@@ -16,7 +16,6 @@ class Config implements ApplicationListener<ContextRefreshedEvent> {
     private final ConnectableObservable<Object> observable =
             Observable.<Object>create(subscriber -> {
                 log.info("Starting");
-
             }).publish();
 
     @Bean

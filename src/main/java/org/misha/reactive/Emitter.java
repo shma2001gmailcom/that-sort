@@ -80,7 +80,6 @@ public class Emitter {
             @Override
             public void onSubscribe(Disposable d) {
                 System.out.println("subscribing");
-
             }
 
             @Override
@@ -165,5 +164,4 @@ public class Emitter {
             return current;
         }
     }
-
 }

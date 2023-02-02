@@ -192,15 +192,21 @@ public class GivenSumAndTest {
     @Test
     public void testTuplesTotal() throws JsonProcessingException {
         int[] a = {2, 1, -2, 1, 3, 0, 1, 2, 1, 2};
-        System.out.println(writeResult(a));
+        System.out.println(writeResult(7, a));
         check("tuple-total-5.json", asSumSets(givenSumTuplesTotal(5, a), a));
         int[] b = new int[]{2, 3, 6, 0, -1, 2, 3, 4, -1};
-        System.out.println(writeResult(b));
+        System.out.println(writeResult(5, b));
         check("tuple-total-7.json", asSumSets(givenSumTuplesTotal(7, b), b));
     }
 
-    private String writeResult(int[] a) throws JsonProcessingException {
-        return mapper.writeValueAsString(givenSumTuplesTotal(5, a).stream().map(set -> new SumSet(a, set)).collect(toSet()));
+    @Test
+    public void test() throws JsonProcessingException {
+        int[] a = {1, 1, -1, 0, 1, 2};
+        System.out.println(writeResult(2, a));
+    }
+
+    private String writeResult(int s, int[] a) throws JsonProcessingException {
+        return mapper.writeValueAsString(givenSumTuplesTotal(s, a).stream().map(set -> new SumSet(a, set)).collect(toSet()));
     }
 
     private Set<SumSet> asSumSets(Set<Set<Integer>> tuples, int[] array) {
