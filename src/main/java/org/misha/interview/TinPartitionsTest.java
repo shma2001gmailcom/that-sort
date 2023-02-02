@@ -2,10 +2,7 @@ package org.misha.interview;
 
 import org.junit.Test;
 
-import java.util.Set;
 import java.util.stream.IntStream;
-
-import static com.google.common.collect.Sets.newHashSet;
 
 public class TinPartitionsTest {
     /**
@@ -18,23 +15,9 @@ public class TinPartitionsTest {
         return c;
     }
 
-    //given a set og integers S and an integer n, count all sequences of the elements of S, whose sums are equal to n
-    static int partitions(int n, Set<Integer> s) {
-        int result = 0;
-        for (int x : s) {
-            result += partitions(n - x, s);
-        }
-        return result;
-    }
-
     @Test
-    public void test() {
+    public void testPart() {
         IntStream.range(0, 21).forEach(i -> System.err.println(i + "->" + part(i)));
-    }
-
-    @Test
-    public void test1() {
-        IntStream.range(0, 21).forEach(i -> System.err.println(i + "->" + partitions(i, newHashSet(2))));
     }
 
     /**
