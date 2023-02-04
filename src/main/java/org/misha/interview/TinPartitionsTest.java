@@ -114,7 +114,7 @@ public class TinPartitionsTest {
     void union(int[] a, int[] b) {
         int i = 0, j = 0;
         int c = 0;
-        while (i < a.length || j < b.length) {
+        while (true) {
             if (i < a.length) {
                 if (a[i] > c) {
                     System.out.println(c + "  a->" + a[i]);
@@ -128,6 +128,9 @@ public class TinPartitionsTest {
                     c = b[j];
                 }
                 ++j;
+            }
+            if (i == a.length && j == b.length) {
+                return;
             }
         }
     }
