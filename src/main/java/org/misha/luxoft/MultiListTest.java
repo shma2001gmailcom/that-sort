@@ -28,8 +28,8 @@ public class MultiListTest {
     }
 
     private void testCommon() {
-        MultiList x =
-                withChildren(
+        MultiList<Integer> x =
+                MultiList.withChildren(
                         withChildren(
                                 withData(1),
                                 withData(6),
