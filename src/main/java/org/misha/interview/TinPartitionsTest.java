@@ -6,6 +6,8 @@ import java.util.Arrays;
 import java.util.NoSuchElementException;
 import java.util.stream.IntStream;
 
+import static java.util.Arrays.sort;
+
 public class TinPartitionsTest {
     /**
      * Given an integer n, how many sequences containing 1 and 2 whose sums are equal to n there are?
@@ -142,23 +144,18 @@ public class TinPartitionsTest {
         union(a, b);
     }
 
-    /**
-     * Необходимо найти ОДНУ пару непересекающихся отрезков.
-     * Пример: [[20, 30], [19, 21], [20, 26], [29, 35]] -> [[19, 21], [29, 35]] || [[20, 26], [29, 35]]
-     */
-    void disjoint(int[][] a) {
-        for (int i = 0; i < a.length; ++i) {
-            for (int j = i + 1; j < a.length; ++j) {
-                if (a[i][1] < a[j][0]) {
-                    System.err.println(Arrays.toString(a[i]) + " " + Arrays.toString(a[j]));
-                    //return;
-                }
+    void sortDisjoint(int[][] a) {
+        sort(a, ((a1, b) -> a1[1] - b[1] == 0 ? a1[0] - b[0] : a1[1] - b[1]));// O(n * log(n))
+        int[] o = a[0];
+        for (int[] c : a) {// O(n)
+            if (c[0] > o[1]) {
+                System.err.println(Arrays.toString(o) + " " + Arrays.toString(c));
             }
         }
     }
 
     @Test
     public void testDisjoint() {
-        disjoint(new int[][]{new int[]{20, 30}, new int[]{19, 21}, new int[]{20, 26}, new int[]{29, 35}});
+        sortDisjoint(new int[][]{new int[]{20, 30}, new int[]{19, 21}, new int[]{20, 26}, new int[]{29, 35}});
     }
 }
