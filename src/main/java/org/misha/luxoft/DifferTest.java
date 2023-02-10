@@ -3,7 +3,7 @@ package org.misha.luxoft;
 import org.junit.Test;
 //print all numbers from the first sorted array not containing in the second sorted array
 
-public class Differ {
+public class DifferTest {
 
     private void differ(int[] first, int[] second) {
         int f = 0;

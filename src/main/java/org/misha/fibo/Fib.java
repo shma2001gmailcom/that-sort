@@ -7,7 +7,7 @@ import java.math.BigInteger;
  * date: 10/27/16
  * time: 2:46 AM
  */
-class Fibo {
+class Fib {
     static BigInteger bigInt(long val) {
         return BigInteger.valueOf(val);
     }
@@ -21,8 +21,8 @@ class Fibo {
         return y;
     }
 
-    long fibo(long n, long a, long b) {
-        return n < 1 ? 0 : n < 2 ? 1 : n == 2 ? b : fibo(n - 1, b, a + b);
+    long fib(long n, long a, long b) {
+        return n < 1 ? 0 : n < 2 ? 1 : n == 2 ? b : fib(n - 1, b, a + b);
     }
 
     BigInteger fibonacci(int n, BigInteger a, BigInteger b) {
