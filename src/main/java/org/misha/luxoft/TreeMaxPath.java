@@ -29,7 +29,7 @@ import java.util.List;
  */
 public class TreeMaxPath {
     private static int max(final int leftVal, final int rightVal) {
-        return leftVal > rightVal ? leftVal : rightVal;
+        return Math.max(leftVal, rightVal);
     }
 
     public int maxPathSum(TreeNode root) {
@@ -133,7 +133,9 @@ public class TreeMaxPath {
                 }
             };
             result.add(this);
-            while (!result.peek().isPreLeaf()) {
+            while (true) {
+                assert result.peek() != null;
+                if (result.peek().isPreLeaf()) break;
                 result.pop();
             }
             return result;

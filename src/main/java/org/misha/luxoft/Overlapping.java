@@ -19,7 +19,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 class Overlapping {
-    private Interval[] intervals;
+    private final Interval[] intervals;
 
     Overlapping(Interval... intervals) {
         Arrays.sort(intervals);//O(intervals.length * log(intervals.length))
@@ -39,7 +39,7 @@ class Overlapping {
         return Arrays.toString(intervals);
     }
 
-    Collection merge() {// O(intervals.length)
+    Collection<Interval> merge() {// O(intervals.length)
         final Map<Integer, Interval> map = new LinkedHashMap<>();
         final Iterator it = it();
         Interval current;
@@ -103,8 +103,8 @@ class Overlapping {
     }
 
     static class Iterator {
-        private Overlapping overlapping;
-        private int length;
+        private final Overlapping overlapping;
+        private final int length;
         private int i;
 
         Iterator(Overlapping overlapping) {

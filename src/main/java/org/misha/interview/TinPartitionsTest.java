@@ -44,7 +44,7 @@ public class TinPartitionsTest {
     }
 
     /**
-     * Даны три неубывающих массива чисел. Найти число, которое присутствует во всех трех массивах.
+     * Write a java method, that finds common int containing in the tree ordered arrays.
      */
     static int common(int[] a, int[] b, int[] c) {
         int i = 0, j = 0, k = 0;
@@ -143,7 +143,7 @@ public class TinPartitionsTest {
     }
 
     /**
-     * Given a finite set of integer segments, find a pair of the disjoint ones.
+     *
      */
     void sortDisjoint(int[][] a) {
         int[] x = a[0];

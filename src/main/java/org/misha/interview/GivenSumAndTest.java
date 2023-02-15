@@ -150,6 +150,19 @@ public class GivenSumAndTest {
         return result;
     }
 
+    public static List<int[]> findPairs(int[] ar, int s) {
+        List<int[]> pairs = new ArrayList<>();
+        for (int i = 0; i < ar.length; i++) {
+            for (int j = i + 1; j < ar.length; j++) {
+                if (ar[i] + ar[j] == s) {
+                    int[] pair = {i, j};
+                    pairs.add(pair);
+                }
+            }
+        }
+        return pairs;
+    }
+
     @Test
     public void testPair() {
         int[] array = {1, 4, 1, 1, 4, 1};
